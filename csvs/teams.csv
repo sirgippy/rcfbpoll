@@ -1,0 +1,1861 @@
+bostoncollege,ACC,FBS,1,Boston College Eagles
+clemson,ACC,FBS,1,Clemson Tigers
+duke,ACC,FBS,1,Duke Blue Devils
+floridastate,ACC,FBS,1,Florida State Seminoles
+georgiatech,ACC,FBS,1,Georgia Tech Yellow Jackets
+louisville,ACC,FBS,1,Louisville Cardinals
+miami,ACC,FBS,1,Miami Hurricanes
+northcarolina,ACC,FBS,1,North Carolina Tar Heels
+northcarolinastate,ACC,FBS,1,North Carolina State Wolfpack
+pittsburgh,ACC,FBS,1,Pittsburgh Panthers
+syracuse,ACC,FBS,1,Syracuse Orange
+virginia,ACC,FBS,1,Virginia Cavaliers
+virginiatech,ACC,FBS,1,Virginia Tech Hokies
+wakeforest,ACC,FBS,1,Wake Forest Demon Deacons
+baylor,Big 12,FBS,1,Baylor Bears
+iowastate,Big 12,FBS,1,Iowa State Cyclones
+kansas,Big 12,FBS,1,Kansas Jayhawks
+kansasstate,Big 12,FBS,1,Kansas State Wildcats
+oklahoma,Big 12,FBS,1,Oklahoma Sooners
+oklahomastate,Big 12,FBS,1,Oklahoma State Cowboys
+tcu,Big 12,FBS,1,TCU Horned Frogs
+texas,Big 12,FBS,1,Texas Longhorns
+texastech,Big 12,FBS,1,Texas Tech Red Raiders
+westvirginia,Big 12,FBS,1,West Virginia Mountaineers
+illinois,Big Ten,FBS,1,Illinois Fighting Illini
+indiana,Big Ten,FBS,1,Indiana Hoosiers
+iowa,Big Ten,FBS,1,Iowa Hawkeyes
+maryland,Big Ten,FBS,1,Maryland Terrapins
+michigan,Big Ten,FBS,1,Michigan Wolverines
+michiganstate,Big Ten,FBS,1,Michigan State Spartans
+minnesota,Big Ten,FBS,1,Minnesota Golden Gophers
+nebraska,Big Ten,FBS,1,Nebraska Cornhuskers
+northwestern,Big Ten,FBS,1,Northwestern Wildcats
+ohiostate,Big Ten,FBS,1,Ohio State Buckeyes
+pennstate,Big Ten,FBS,1,Penn State Nittany Lions
+purdue,Big Ten,FBS,1,Purdue Boilermakers
+rutgers,Big Ten,FBS,1,Rutgers Scarlet Knights
+wisconsin,Big Ten,FBS,1,Wisconsin Badgers
+arizona,Pac-12,FBS,1,Arizona Wildcats
+arizonastate,Pac-12,FBS,1,Arizona State Sun Devils
+california,Pac-12,FBS,1,California Golden Bears
+colorado,Pac-12,FBS,1,Colorado Buffaloes
+oregon,Pac-12,FBS,1,Oregon Ducks
+oregonstate,Pac-12,FBS,1,Oregon State Beavers
+stanford,Pac-12,FBS,1,Stanford Cardinal
+ucla,Pac-12,FBS,1,UCLA Bruins
+usc,Pac-12,FBS,1,USC Trojans
+utah,Pac-12,FBS,1,Utah Utes
+washington,Pac-12,FBS,1,Washington Huskies
+washingtonstate,Pac-12,FBS,1,Washington State Cougars
+alabama,SEC,FBS,1,Alabama Crimson Tide
+arkansas,SEC,FBS,1,Arkansas Razorbacks
+auburn,SEC,FBS,1,Auburn Tigers
+florida,SEC,FBS,1,Florida Gators
+georgia,SEC,FBS,1,Georgia Bulldogs
+kentucky,SEC,FBS,1,Kentucky Wildcats
+lsu,SEC,FBS,1,LSU Tigers
+mississippistate,SEC,FBS,1,Mississippi State Bulldogs
+missouri,SEC,FBS,1,Missouri Tigers
+olemiss,SEC,FBS,1,Ole Miss Rebels
+southcarolina,SEC,FBS,1,South Carolina Gamecocks
+tennessee,SEC,FBS,1,Tennessee Volunteers
+texasam,SEC,FBS,1,Texas A&M Aggies
+vanderbilt,SEC,FBS,1,Vanderbilt Commodores
+army,Independents,FBS,1,Army West Point
+byu,Independents,FBS,1,BYU Cougars
+notredame,Independents,FBS,1,Notre Dame Fighting Irish
+umass,Independents,FBS,1,UMass Minutemen
+coastalcarolina,Independents,FBS,0,Coastal Carolina Chanticleers
+cincinnati,American,FBS,1,Cincinnati Bearcats
+connecticut,American,FBS,1,Connecticut Huskies
+eastcarolina,American,FBS,1,East Carolina Pirates
+houston,American,FBS,1,Houston Cougars
+memphis,American,FBS,1,Memphis Tigers
+navy,American,FBS,1,Navy Midshipmen
+smu,American,FBS,1,SMU Mustangs
+temple,American,FBS,1,Temple Owls
+tulane,American,FBS,1,Tulane Green Wave
+tulsa,American,FBS,1,Tulsa Golden Hurricane
+ucf,American,FBS,1,UCF Knights
+usf,American,FBS,1,USF Bulls
+charlotte,Conference USA,FBS,1,Charlotte 49ers
+fau,Conference USA,FBS,1,FAU Owls
+fiu,Conference USA,FBS,1,FIU Panthers
+louisianatech,Conference USA,FBS,1,Louisiana Tech Bulldogs
+marshall,Conference USA,FBS,1,Marshall Thundering Herd
+middletennessee,Conference USA,FBS,1,Middle Tennessee Blue Raiders
+northtexas,Conference USA,FBS,1,North Texas Mean Green
+olddominion,Conference USA,FBS,1,Old Dominion Monarchs
+rice,Conference USA,FBS,1,Rice Owls
+southernmiss,Conference USA,FBS,1,Southern Miss Golden Eagles
+uab,Conference USA,FBS,1,UAB Blazers
+utep,Conference USA,FBS,1,UTEP Miners
+utsa,Conference USA,FBS,1,UTSA Roadrunners
+westernkentucky,Conference USA,FBS,1,Western Kentucky Hilltoppers
+akron,MAC,FBS,1,Akron Zips
+ballstate,MAC,FBS,1,Ball State Cardinals
+bowlinggreen,MAC,FBS,1,Bowling Green Falcons
+buffalo,MAC,FBS,1,Buffalo Bulls
+centralmichigan,MAC,FBS,1,Central Michigan Chippewas
+easternmichigan,MAC,FBS,1,Eastern Michigan Eagles
+kentstate,MAC,FBS,1,Kent State Golden Flashes
+miamioh,MAC,FBS,1,Miami (OH) RedHawks
+northernillinois,MAC,FBS,1,Northern Illinois Huskies
+ohio,MAC,FBS,1,Ohio Bobcats
+toledo,MAC,FBS,1,Toledo Rockets
+westernmichigan,MAC,FBS,1,Western Michigan Broncos
+airforce,Mountain West,FBS,1,Air Force Falcons
+boisestate,Mountain West,FBS,1,Boise State Broncos
+coloradostate,Mountain West,FBS,1,Colorado State Rams
+fresnostate,Mountain West,FBS,1,Fresno State Bulldogs
+hawaii,Mountain West,FBS,1,Hawai'i Rainbow Warriors
+nevada,Mountain West,FBS,1,Nevada Wolf Pack
+newmexico,Mountain West,FBS,1,New Mexico Lobos
+sandiegostate,Mountain West,FBS,1,San Diego State Aztecs
+sanjosestate,Mountain West,FBS,1,San José State Spartans
+unlv,Mountain West,FBS,1,UNLV Rebels
+utahstate,Mountain West,FBS,1,Utah State Aggies
+wyoming,Mountain West,FBS,1,Wyoming Cowboys
+appalachianstate,Sun Belt,FBS,1,Appalachian State Mountaineers
+arkansasstate,Sun Belt,FBS,1,Arkansas State Red Wolves
+georgiasouthern,Sun Belt,FBS,1,Georgia Southern Eagles
+georgiastate,Sun Belt,FBS,1,Georgia State Panthers
+idaho,Sun Belt,FBS,1,Idaho Vandals
+louisiana,Sun Belt,FBS,1,Louisiana Ragin' Cajuns
+newmexicostate,Sun Belt,FBS,1,New Mexico State Aggies
+southalabama,Sun Belt,FBS,1,South Alabama Jaguars
+texasstate,Sun Belt,FBS,1,Texas State Bobcats
+troy,Sun Belt,FBS,1,Troy Trojans
+ulm,Sun Belt,FBS,1,ULM Warhawks
+calpoly,Big Sky,FCS,0,Cal Poly Mustangs
+easternwashington,Big Sky,FCS,0,Eastern Washington Eagles
+idahostate,Big Sky,FCS,0,Idaho State Bengals
+montana,Big Sky,FCS,0,Montana Grizzlies
+montanastate,Big Sky,FCS,0,Montana State Bobcats
+northdakota,Big Sky,FCS,0,North Dakota Fighting Hawks
+northernarizona,Big Sky,FCS,0,Northern Arizona Lumberjacks
+northerncolorado,Big Sky,FCS,0,Northern Colorado Bears
+portlandstate,Big Sky,FCS,0,Portland State Vikings
+sacramentostate,Big Sky,FCS,0,Sacramento State Hornets
+southernutah,Big Sky,FCS,0,Southern Utah Thunderbirds
+ucdavis,Big Sky,FCS,0,UC Davis Aggies
+weberstate,Big Sky,FCS,0,Weber State Wildcats
+charlestonsouthern,Big South,FCS,0,Charleston Southern Buccaneers
+gardnerwebb,Big South,FCS,0,Gardner-Webb Runnin' Bulldogs
+kennesaw,Big South,FCS,0,Kennesaw State Owls
+liberty,Big South,FCS,0,Liberty Flames
+monmouth,Big South,FCS,0,Monmouth Hawks
+presbyterian,Big South,FCS,0,Presbyterian Blue Hose
+albany,CAA,FCS,0,Albany Great Danes
+delaware,CAA,FCS,0,Delaware Fightin' Blue Hens
+elon,CAA,FCS,0,Elon Phoenix
+jamesmadison,CAA,FCS,0,James Madison Dukes
+maine,CAA,FCS,0,Maine Black Bears
+newhampshire,CAA,FCS,0,New Hampshire Wildcats
+rhodeisland,CAA,FCS,0,Rhode Island Rams
+richmond,CAA,FCS,0,Richmond Spiders
+stonybrook,CAA,FCS,0,Stony Brook Seawolves
+towson,CAA,FCS,0,Towson Tigers
+villanova,CAA,FCS,0,Villanova Wildcats
+williammary,CAA,FCS,0,William & Mary Tribe
+brown,Ivy,FCS,0,Brown Bears
+columbia,Ivy,FCS,0,Columbia Lions
+cornell,Ivy,FCS,0,Cornell Big Red
+dartmouth,Ivy,FCS,0,Dartmouth Big Green
+harvard,Ivy,FCS,0,Harvard Crimson
+pennsylvania,Ivy,FCS,0,Pennsylvania Quakers
+princeton,Ivy,FCS,0,Princeton Tigers
+yale,Ivy,FCS,0,Yale Bulldogs
+bethunecookman,MEAC,FCS,0,Bethune-Cookman Wildcats
+delawarestate,MEAC,FCS,0,Delaware State Hornets
+floridaam,MEAC,FCS,0,Florida A&M Rattlers
+hampton,MEAC,FCS,0,Hampton Pirates
+howard,MEAC,FCS,0,Howard Bison
+morganstate,MEAC,FCS,0,Morgan State Bears
+norfolkstate,MEAC,FCS,0,Norfolk State Spartans
+northcarolinaat,MEAC,FCS,0,North Carolina A&T Aggies
+nccentral,MEAC,FCS,0,North Carolina Central Eagles
+savannahstate,MEAC,FCS,0,Savannah State Tigers
+southcarolinastate,MEAC,FCS,0,South Carolina State Bulldogs
+illinoisstate,Missouri Valley,FCS,0,Illinois State Redbirds
+indianastate,Missouri Valley,FCS,0,Indiana State Sycamores
+missouristate,Missouri Valley,FCS,0,Missouri State Bears
+northdakotastate,Missouri Valley,FCS,1,North Dakota State Bison
+northerniowa,Missouri Valley,FCS,0,Northern Iowa Panthers
+southdakota,Missouri Valley,FCS,0,South Dakota Coyotes
+southdakotastate,Missouri Valley,FCS,0,South Dakota State Jackrabbits
+southernillinois,Missouri Valley,FCS,0,Southern Illinois Salukis
+westernillinois,Missouri Valley,FCS,0,Western Illinois Leathernecks
+youngstownstate,Missouri Valley,FCS,0,Youngstown State Penguins
+bryant,Northeast,FCS,0,Bryant Bulldogs
+centralconnecticutstate,Northeast,FCS,0,Central Connecticut State Blue Devils
+duquesne,Northeast,FCS,0,Duquesne Dukes
+robertmorris,Northeast,FCS,0,Robert Morris Colonials
+sacredheart,Northeast,FCS,0,Sacred Heart Pioneers
+stfrancis,Northeast,FCS,0,St. Francis Red Flash
+wagner,Northeast,FCS,0,Wagner Seahawks
+austinpeay,Ohio Valley,FCS,0,Austin Peay Governors
+easternillinois,Ohio Valley,FCS,0,Eastern Illinois Panthers
+easternkentucky,Ohio Valley,FCS,0,Eastern Kentucky Colonels
+jacksonvillestate,Ohio Valley,FCS,0,Jacksonville State Gamecocks
+murraystate,Ohio Valley,FCS,0,Murray State Racers
+southeastmissouristate,Ohio Valley,FCS,0,Southeast Missouri State Redhawks
+tennesseestate,Ohio Valley,FCS,0,Tennessee State Tigers
+tennesseetech,Ohio Valley,FCS,0,Tennessee Tech Golden Eagles
+tennesseemartin,Ohio Valley,FCS,0,Tennessee-Martin Skyhawks
+bucknell,Patriot,FCS,0,Bucknell Bison
+colgate,Patriot,FCS,0,Colgate Raiders
+fordham,Patriot,FCS,0,Fordham Rams
+georgetown,Patriot,FCS,0,Georgetown Hoyas
+holycross,Patriot,FCS,0,Holy Cross Crusaders
+lafayette,Patriot,FCS,0,Lafayette Leopards
+lehigh,Patriot,FCS,0,Lehigh Mountain Hawks
+butler,Pioneer,FCS,0,Butler Bulldogs
+campbell,Pioneer,FCS,0,Campbell Fighting Camels
+davidson,Pioneer,FCS,0,Davidson Wildcats
+dayton,Pioneer,FCS,0,Dayton Flyers
+drake,Pioneer,FCS,0,Drake Bulldogs
+jacksonville,Pioneer,FCS,0,Jacksonville Dolphins
+marist,Pioneer,FCS,0,Marist Red Foxes
+moreheadstate,Pioneer,FCS,0,Morehead State Eagles
+sandiego,Pioneer,FCS,0,San Diego Toreros
+stetson,Pioneer,FCS,0,Stetson Hatters
+valparaiso,Pioneer,FCS,0,Valparaiso Crusaders
+chattanooga,Southern,FCS,0,Chattanooga Mocs
+easttennesseestate,Southern,FCS,0,East Tennessee State Buccaneers
+furman,Southern,FCS,0,Furman Paladins
+mercer,Southern,FCS,0,Mercer Bears
+samford,Southern,FCS,0,Samford Bulldogs
+citadel,Southern,FCS,0,The Citadel Bulldogs
+virginiamilitaryinstitute,Southern,FCS,0,VMI Keydets
+westerncarolina,Southern,FCS,0,Western Carolina Catamounts
+wofford,Southern,FCS,0,Wofford Terriers
+abilenechristian,Southland,FCS,0,Abilene Christian Wildcats
+centralarkansas,Southland,FCS,0,Central Arkansas Bears
+houstonbaptist,Southland,FCS,0,Houston Baptist Huskies
+incarnateword,Southland,FCS,0,Incarnate Word Cardinals
+lamar,Southland,FCS,0,Lamar Cardinals
+mcneesestate,Southland,FCS,0,McNeese State Cowboys
+nichollsstate,Southland,FCS,0,Nicholls State Colonels
+northwesternstate,Southland,FCS,0,Northwestern State Demons
+samhoustonstate,Southland,FCS,0,Sam Houston State Bearkats
+southeasternlouisiana,Southland,FCS,0,Southeastern Louisiana Lions
+stephenfaustin,Southland,FCS,0,Stephen F. Austin Lumberjacks
+alabamaam,SWAC,FCS,0,Alabama A&M Bulldogs
+alabamastate,SWAC,FCS,0,Alabama State Hornets
+alcornstate,SWAC,FCS,0,Alcorn State Braves
+arkansaspinebluff,SWAC,FCS,0,Arkansas-Pine Bluff Golden Lions
+gramblingstate,SWAC,FCS,0,Grambling State Tigers
+jacksonstate,SWAC,FCS,0,Jackson State Tigers
+mississippivalleystate,SWAC,FCS,0,Mississippi Valley State Delta Devils
+prairieviewam,SWAC,FCS,0,Prairie View A&M Panthers
+southern,SWAC,FCS,0,Southern University Jaguars
+texassouthern,SWAC,FCS,0,Texas Southern Tigers
+bowiestate,CIAA,D2,0,Bowie State Bulldogs
+chowan,CIAA,D2,0,Chowan Hawks
+elizabethcitystate,CIAA,D2,0,Elizabeth City State Vikings
+fayettevillestate,CIAA,D2,0,Fayetteville State Broncos
+johnsoncsmith,CIAA,D2,0,Johnson C. Smith Golden Bulls
+lincolnpa,CIAA,D2,0,Lincoln (PA) Lions
+livingstone,CIAA,D2,0,Livingstone Blue Bears
+shawuniversity,CIAA,D2,0,Shaw Bears
+staugustines,CIAA,D2,0,St. Augustine's Falcons
+virginiastate,CIAA,D2,0,Virginia State Trojans
+virginiaunion,CIAA,D2,0,Virginia Union Panthers
+winstonsalemstate,CIAA,D2,0,Winston-Salem State Rams
+aldersonbroaddus,G-MAC,D2,0,Alderson Broaddus Battlers
+kentuckywesleyan,G-MAC,D2,0,Kentucky Wesleyan Panthers
+malone,G-MAC,D2,0,Malone Pioneers
+arkansastech,GAC,D2,0,Arkansas Tech Wonder Boys
+arkansasmonticello,GAC,D2,0,Arkansas-Monticello Boll Weevils
+eastcentral,GAC,D2,0,East Central Tigers
+harding,GAC,D2,0,Harding Bison
+hendersonstate,GAC,D2,0,Henderson State Reddies
+northwestoklahomastate,GAC,D2,0,Northwestern Oklahoma State Rangers
+oklahomabaptist,GAC,D2,0,Oklahoma Baptist Bison
+ouachitabaptist,GAC,D2,0,Ouachita Baptist Tigers
+southeasternoklahomastate,GAC,D2,0,Southeastern Oklahoma State Savage Storm
+southernarkansas,GAC,D2,0,Southern Arkansas Muleriders
+southernnazarene,GAC,D2,0,Southern Nazarene Crimson Storm
+southwesternoklahomastate,GAC,D2,0,Southwestern Oklahoma State Bulldogs
+ashland,GLIAC,D2,0,Ashland Eagles
+davenport,GLIAC,D2,0,Davenport Panthers
+ferrisstate,GLIAC,D2,0,Ferris State Bulldogs
+findlay,GLIAC,D2,0,Findlay Oilers
+grandvalleystate,GLIAC,D2,0,Grand Valley State Lakers
+hillsdale,GLIAC,D2,0,Hillsdale Chargers
+lakeerie,GLIAC,D2,0,Lake Erie Storm
+michigantech,GLIAC,D2,0,Michigan Tech Huskies
+northernmichigan,GLIAC,D2,0,Northern Michigan Wildcats
+northwood,GLIAC,D2,0,Northwood (MI) Timberwolves
+ohiodominican,GLIAC,D2,0,Ohio Dominican Panthers
+saginawvalleystate,GLIAC,D2,0,Saginaw Valley State Cardinals
+tiffin,GLIAC,D2,0,Tiffin Dragons
+walsh,GLIAC,D2,0,Walsh Cavaliers
+waynestatemi,GLIAC,D2,0,Wayne State (MI) Warriors
+indianapolis,GLVC,D2,0,Indianapolis Greyhounds
+lincolnmo,GLVC,D2,0,Lincoln (MO) Blue Tigers
+mckendree,GLVC,D2,0,McKendree Bearcats
+missourisnt,GLVC,D2,0,Missouri S&T Miners
+quincy,GLVC,D2,0,Quincy Hawks
+southwestbaptist,GLVC,D2,0,Southwest Baptist Bearcats
+stjosephs,GLVC,D2,0,St. Joseph's (IN) Pumas
+trumanstate,GLVC,D2,0,Truman State Bulldogs
+williamjewell,GLVC,D2,0,William Jewell Cardinals
+azusapacific,GNAC,D2,0,Azusa Pacific Cougars
+centralwashington,GNAC,D2,0,Central Washington Wildcats
+humboldtstate,GNAC,D2,0,Humboldt State Lumberjacks
+simonfraser,GNAC,D2,0,Simon Fraser Clan
+westernoregon,GNAC,D2,0,Western Oregon Wolves
+deltastate,Gulf South,D2,0,Delta State Statesmen
+floridatech,Gulf South,D2,0,Florida Tech Panthers
+mississippicollege,Gulf South,D2,0,Mississippi College Choctaws
+northalabama,Gulf South,D2,0,North Alabama Lions
+northgreenville,Gulf South,D2,0,North Greenville Crusaders
+shorter,Gulf South,D2,0,Shorter Hawks
+valdostastate,Gulf South,D2,0,Valdosta State Blazers
+westalabama,Gulf South,D2,0,West Alabama Tigers
+uwf,Gulf South,D2,0,West Florida Argonauts
+westgeorgia,Gulf South,D2,0,West Georgia Wolves
+angelostate,LSC,D2,0,Angelo State Rams
+easternnewmexico,LSC,D2,0,Eastern New Mexico Greyhounds
+midwesternstate,LSC,D2,0,Midwestern State Mustangs
+oklahomapanhandle,LSC,D2,0,Oklahoma Panhandle State Aggies
+tarletonstate,LSC,D2,0,Tarleton State Texans
+texasamcommerce,LSC,D2,0,Texas A&M-Commerce Lions
+texasamkingsville,LSC,D2,0,Texas A&M-Kingsville Javelinas
+utpb,LSC,D2,0,Texas-Permian Basin Falcons
+westtexasam,LSC,D2,0,West Texas A&M Buffs
+westernnewmexico,LSC,D2,0,Western New Mexico Mustangs
+charleston,MEC,D2,0,Charleston (WV) Golden Eagles
+concord,MEC,D2,0,Concord Mountain Lions
+fairmontstate,MEC,D2,0,Fairmont State Falcons
+glenvillestate,MEC,D2,0,Glenville State Pioneers
+notredameoh,MEC,D2,0,Notre Dame (OH) Falcons
+shepherd,MEC,D2,0,Shepherd Rams
+urbana,MEC,D2,0,Urbana Blue Knights
+virginiawise,MEC,D2,0,Virginia-Wise Highland Cavaliers
+westliberty,MEC,D2,0,West Liberty Hilltoppers
+westvirginiastate,MEC,D2,0,West Virginia State Yellow Jackets
+westvirginiawesleyan,MEC,D2,0,West Virginia Wesleyan Bobcats
+centralmissouri,MIAA,D2,0,Central Missouri Mules
+centraloklahoma,MIAA,D2,0,Central Oklahoma Bronchos
+emporiastate,MIAA,D2,0,Emporia State Hornets
+forthaysstate,MIAA,D2,0,Fort Hays State Tigers
+lindenwood,MIAA,D2,0,Lindenwood Lions
+missourisouthern,MIAA,D2,0,Missouri Southern Lions
+missouriwestern,MIAA,D2,0,Missouri Western Griffons
+nebraskakearney,MIAA,D2,0,Nebraska-Kearney Lopers
+northeasternstate,MIAA,D2,0,Northeastern State RiverHawks
+northwestmissouristate,MIAA,D2,0,Northwest Missouri State Bearcats
+pittsburgstate,MIAA,D2,0,Pittsburg State Gorillas
+washburn,MIAA,D2,0,Washburn Ichabods
+americaninternational,Northeast 10,D2,0,American International Yellow Jackets
+assumption,Northeast 10,D2,0,Assumption Greyhounds
+bentley,Northeast 10,D2,0,Bentley Falcons
+liupost,Northeast 10,D2,0,Long Island-Post Pioneers
+merrimack,Northeast 10,D2,0,Merrimack Warriors
+newhaven,Northeast 10,D2,0,New Haven Chargers
+pace,Northeast 10,D2,0,Pace Setters
+southernconnecticutstate,Northeast 10,D2,0,Southern Connecticut Fighting Owls
+stanselm,Northeast 10,D2,0,St. Anselm Hawks
+stonehill,Northeast 10,D2,0,Stonehill Skyhawks
+augustanasd,Northern Sun,D2,0,Augustana (SD) Vikings
+bemidjistate,Northern Sun,D2,0,Bemidji State Beavers
+concordiastpaul,Northern Sun,D2,0,Concordia (MN-St.Paul) Golden Bears
+mary,Northern Sun,D2,0,Mary Marauders
+minnesotacrookston,Northern Sun,D2,0,Minnesota-Crookston Golden Eagles
+minnesotaduluth,Northern Sun,D2,0,Minnesota-Duluth Bulldogs
+minotstate,Northern Sun,D2,0,Minot State Beavers
+mankatostate,Northern Sun,D2,0,MSU-Mankato Mavericks
+minnesotastatemoorhead,Northern Sun,D2,0,MSU-Moorhead Dragons
+northernstate,Northern Sun,D2,0,Northern State Wolves
+siouxfalls,Northern Sun,D2,0,Sioux Falls Cougars
+southwestminnesotastate,Northern Sun,D2,0,Southwest Minnesota State Mustangs
+stcloudstate,Northern Sun,D2,0,St. Cloud State Huskies
+upperiowa,Northern Sun,D2,0,Upper Iowa Peacocks
+waynestate,Northern Sun,D2,0,Wayne State (NE) Wildcats
+winonastate,Northern Sun,D2,0,Winona State Warriors
+bloomsburg,PSAC,D2,0,Bloomsburg Huskies
+californiapa,PSAC,D2,0,California (PA) Vulcans
+cheyney,PSAC,D2,0,Cheyney Wolves
+clarion,PSAC,D2,0,Clarion Golden Eagles
+eaststroudsburg,PSAC,D2,0,East Stroudsburg Warriors
+edinboro,PSAC,D2,0,Edinboro Fighting Scots
+gannon,PSAC,D2,0,Gannon Golden Knights
+indianapa,PSAC,D2,0,Indiana (PA) Crimson Hawks
+kutztown,PSAC,D2,0,Kutztown Golden Bears
+lockhaven,PSAC,D2,0,Lock Haven Bald Eagles
+mercyhurst,PSAC,D2,0,Mercyhurst Lakers
+millersville,PSAC,D2,0,Millersville Marauders
+setonhill,PSAC,D2,0,Seton Hill Griffins
+shippensburg,PSAC,D2,0,Shippensburg Red Raiders
+slipperyrock,PSAC,D2,0,Slippery Rock The Rock
+westchester,PSAC,D2,0,West Chester Golden Rams
+adamsstate,RMAC,D2,0,Adams State Grizzlies
+blackhillsstate,RMAC,D2,0,Black Hills State Yellow Jackets
+chadronstate,RMAC,D2,0,Chadron State Eagles
+coloradomesa,RMAC,D2,0,Colorado Mesa Mavericks
+coloradomines,RMAC,D2,0,Colorado Mines Orediggers
+csupueblo,RMAC,D2,0,CSU-Pueblo ThunderWolves
+dixiestate,RMAC,D2,0,Dixie State Red Storm
+fortlewis,RMAC,D2,0,Fort Lewis Skyhawks
+newmexicohighlands,RMAC,D2,0,New Mexico Highlands Cowboys
+southdakotamines,RMAC,D2,0,South Dakota Mines Hardrockers
+westernstate,RMAC,D2,0,Western State Colorado Mountaineers
+albanystate,SIAC,D2,0,Albany State Golden Rams
+benedict,SIAC,D2,0,Benedict Tigers
+centralstate,SIAC,D2,0,Central State Marauders
+clarkatlanta,SIAC,D2,0,Clark Atlanta Panthers
+fortvalleystate,SIAC,D2,0,Fort Valley State Wildcats
+kentuckystate,SIAC,D2,0,Kentucky State Thorobreds
+lane,SIAC,D2,0,Lane Dragons
+milescollege,SIAC,D2,0,Miles Golden Bears
+morehouse,SIAC,D2,0,Morehouse Maroon Tigers
+tuskegee,SIAC,D2,0,Tuskegee Golden Tigers
+brevard,South Atlantic,D2,0,Brevard Tornados
+carsonnewman,South Atlantic,D2,0,Carson-Newman Eagles
+catawba,South Atlantic,D2,0,Catawba Indians
+lenoirrhyne,South Atlantic,D2,0,Lenoir-Rhyne Bears
+limestone,South Atlantic,D2,0,Limestone Saints
+marshill,South Atlantic,D2,0,Mars Hill Lions
+newberry,South Atlantic,D2,0,Newberry Wolves
+tusculum,South Atlantic,D2,0,Tusculum Pioneers
+uncpembroke,South Atlantic,D2,0,UNC Pembroke Braves
+wingate,South Atlantic,D2,0,Wingate Bulldogs
+belhaven,ASC,D3,0,Belhaven Blazers
+easttexasbaptist,ASC,D3,0,East Texas Baptist Tigers
+hardinsimmons,ASC,D3,0,Hardin-Simmons Cowboys
+howardpayne,ASC,D3,0,Howard Payne Yellow Jackets
+louisianacollege,ASC,D3,0,Louisiana College Wildcats
+umhb,ASC,D3,0,Mary Hardin-Baylor Crusaders
+mcmurry,ASC,D3,0,McMurry War Hawks
+sulrossstate,ASC,D3,0,Sul Ross State Lobos
+augustana,CCIW,D3,0,Augustana (IL) Vikings
+carthage,CCIW,D3,0,Carthage Red Men
+carrollwi,CCIW,D3,0,Carroll (WI) Pioneers
+elmhurst,CCIW,D3,0,Elmhurst Bluejays
+illinoiswesleyan,CCIW,D3,0,Illinois Wesleyan Titans
+millikin,CCIW,D3,0,Millikin Big Blue
+northcentral,CCIW,D3,0,North Central Cardinals
+northpark,CCIW,D3,0,North Park Vikings
+wheaton,CCIW,D3,0,Wheaton (IL) Thunder
+dickinson,Centennial,D3,0,Dickinson Red Devils
+franklinmarshall,Centennial,D3,0,Franklin & Marshall Diplomats
+gettysburg,Centennial,D3,0,Gettysburg Bullets
+johnshopkins,Centennial,D3,0,Johns Hopkins Blue Jays
+juniata,Centennial,D3,0,Juniata Eagles
+mcdaniel,Centennial,D3,0,McDaniel Green Terror
+moravian,Centennial,D3,0,Moravian Greyhounds
+muhlenberg,Centennial,D3,0,Muhlenberg Mules
+susquehanna,Centennial,D3,0,Susquehanna River Hawks
+ursinus,Centennial,D3,0,Ursinus Bears
+alfredstate,ECFC,D3,0,Alfred State Pioneers
+annamaria,ECFC,D3,0,Anna Maria AMCATS
+becker,ECFC,D3,0,Becker Hawks
+castleton,ECFC,D3,0,Castleton Spartans
+dean,ECFC,D3,0,Dean Bulldogs
+gallaudet,ECFC,D3,0,Gallaudet Bison
+husson,ECFC,D3,0,Husson Eagles
+mountida,ECFC,D3,0,Mount Ida Mustangs
+norwich,ECFC,D3,0,Norwich Cadets
+sunymaritime,ECFC,D3,0,SUNY-Maritime Privateers
+alfred,Empire 8,D3,0,Alfred Saxons
+brockport,Empire 8,D3,0,Brockport Golden Eagles
+buffalostate,Empire 8,D3,0,Buffalo State Bengals
+sunycortland,Empire 8,D3,0,Cortland State Red Dragons
+hartwick,Empire 8,D3,0,Hartwick Hawks
+ithaca,Empire 8,D3,0,Ithaca Bombers
+morrisvillestate,Empire 8,D3,0,Morrisville State Mustangs
+stjohnfisher,Empire 8,D3,0,St. John Fisher Cardinals
+utica,Empire 8,D3,0,Utica Pioneers
+anderson,HCAC,D3,0,Anderson (IN) Ravens
+bluffton,HCAC,D3,0,Bluffton Beavers
+defiance,HCAC,D3,0,Defiance Yellow Jackets
+earlham,HCAC,D3,0,Earlham Quakers
+franklin,HCAC,D3,0,Franklin Grizzlies
+hanover,HCAC,D3,0,Hanover Panthers
+manchester,HCAC,D3,0,Manchester (IN) Spartans
+mountstjoseph,HCAC,D3,0,Mount St. Joseph Lions
+rosehulman,HCAC,D3,0,Rose-Hulman Engineers
+buenavista,IIAC,D3,0,Buena Vista Beavers
+central,IIAC,D3,0,Central Dutch
+coe,IIAC,D3,0,Coe Kohawks
+dubuque,IIAC,D3,0,Dubuque Spartans
+loras,IIAC,D3,0,Loras Duhawks
+luther,IIAC,D3,0,Luther Norse
+nebraskawesleyan,IIAC,D3,0,Nebraska Wesleyan Prairie Wolves
+simpson,IIAC,D3,0,Simpson Storm
+wartburg,IIAC,D3,0,Wartburg Knights
+hobart,Liberty,D3,0,Hobart Statesmen
+merchantmarine,Liberty,D3,0,Merchant Marine Mariners
+rochester,Liberty,D3,0,Rochester Yellowjackets
+rpi,Liberty,D3,0,RPI Engineers
+springfield,Liberty,D3,0,Springfield Pride
+stlawrence,Liberty,D3,0,St. Lawrence Saints
+union,Liberty,D3,0,Union (NY) Dutchmen
+wpi,Liberty,D3,0,Worcester Poly Engineers
+bridgewaterstate,MASCAC,D3,0,Bridgewater State Bears
+fitchburgstate,MASCAC,D3,0,Fitchburg State Falcons
+framinghamstate,MASCAC,D3,0,Framingham State Rams
+massachusettsmaritime,MASCAC,D3,0,Massachusetts Maritime Buccaneers
+plymouthstate,MASCAC,D3,0,Plymouth State Panthers
+umassdartmouth,MASCAC,D3,0,UMass-Dartmouth Corsairs
+westernconnecticutstate,MASCAC,D3,0,Western Connecticut Colonials
+westfieldstate,MASCAC,D3,0,Westfield State Owls
+worcesterstate,MASCAC,D3,0,Worcester State Lancers
+augsburg,MIAC,D3,0,Augsburg Auggies
+bethel,MIAC,D3,0,Bethel (MN) Royals
+carletonmn,MIAC,D3,0,Carleton (MN) Knights
+concordiamoorhead,MIAC,D3,0,Concordia (MN-Moorhead) Cobbers
+gustavusadolphus,MIAC,D3,0,Gustavus Adolphus Golden Gusties
+hamline,MIAC,D3,0,Hamline Pipers
+stjohnsmn,MIAC,D3,0,St. John's (MN) Johnnies
+stolaf,MIAC,D3,0,St. Olaf Oles
+stthomasmn,MIAC,D3,0,St. Thomas Tommies
+adrian,Michigan Intercollegiate,D3,0,Adrian Bulldogs
+albion,Michigan Intercollegiate,D3,0,Albion Britons
+alma,Michigan Intercollegiate,D3,0,Alma Scots
+hope,Michigan Intercollegiate,D3,0,Hope Flying Dutchmen
+kalamazoo,Michigan Intercollegiate,D3,0,Kalamazoo Hornets
+olivet,Michigan Intercollegiate,D3,0,Olivet Comets
+trine,Michigan Intercollegiate,D3,0,Trine Thunder
+albright,Middle Atlantic,D3,0,Albright Lions
+delawarevalley,Middle Atlantic,D3,0,Delaware Valley Aggies
+fduflorham,Middle Atlantic,D3,0,FDU-Florham Devils
+kings,Middle Atlantic,D3,0,King's (PA) Monarchs
+lebanonvalley,Middle Atlantic,D3,0,Lebanon Valley Flying Dutchmen
+lycoming,Middle Atlantic,D3,0,Lycoming Warriors
+misericordia,Middle Atlantic,D3,0,Misericordia Cougars
+stevenson,Middle Atlantic,D3,0,Stevenson Mustangs
+widener,Middle Atlantic,D3,0,Widener Pride
+wilkes,Middle Atlantic,D3,0,Wilkes Colonels
+beloit,Midwest,D3,0,Beloit Buccaneers
+cornellia,Midwest,D3,0,Cornell (IA) Rams
+grinnell,Midwest,D3,0,Grinnell Pioneers
+illinoiscollege,Midwest,D3,0,Illinois College Blueboys
+knox,Midwest,D3,0,Knox Prairie Fire
+lakeforest,Midwest,D3,0,Lake Forest Foresters
+lawrence,Midwest,D3,0,Lawrence Vikings
+macalester,Midwest,D3,0,Macalester Scots
+monmouthil,Midwest,D3,0,Monmouth (IL) Fighting Scots
+ripon,Midwest,D3,0,Ripon Red Hawks
+stnorbert,Midwest,D3,0,St. Norbert Green Knights
+aurora,NACC,D3,0,Aurora Spartans
+benedictine,NACC,D3,0,Benedictine (IL) Eagles
+concordiachicago,NACC,D3,0,Concordia (IL) Cougars
+concordiawi,NACC,D3,0,Concordia (WI) Falcons
+lakeland,NACC,D3,0,Lakeland Muskies
+rockford,NACC,D3,0,Rockford Regents
+wisconsinlutheran,NACC,D3,0,Wisconsin Lutheran Warriors
+allegheny,NCAC,D3,0,Allegheny Gators
+denison,NCAC,D3,0,Denison Big Red
+depauw,NCAC,D3,0,DePauw Tigers
+hiram,NCAC,D3,0,Hiram Terriers
+kenyon,NCAC,D3,0,Kenyon Lords
+oberlin,NCAC,D3,0,Oberlin Yeomen
+ohiowesleyan,NCAC,D3,0,Ohio Wesleyan Battling Bishops
+wabash,NCAC,D3,0,Wabash Little Giants
+wittenberg,NCAC,D3,0,Wittenberg Tigers
+wooster,NCAC,D3,0,Wooster Fighting Scots
+coastguard,NEFC,D3,0,Coast Guard Bears
+curry,NEFC,D3,0,Curry Colonels
+endicott,NEFC,D3,0,Endicott Power Gulls
+mainemaritime,NEFC,D3,0,Maine Maritime Mariners
+mit,NEFC,D3,0,MIT Engineers
+nichols,NEFC,D3,0,Nichols Bison
+salveregina,NEFC,D3,0,Salve Regina Seahawks
+westernnewengland,NEFC,D3,0,Western New England Golden Bears
+amherst,NESCAC,D3,0,Amherst College
+bates,NESCAC,D3,0,Bates Bobcats
+bowdoin,NESCAC,D3,0,Bowdoin Polar Bears
+colby,NESCAC,D3,0,Colby White Mules
+hamilton,NESCAC,D3,0,Hamilton Continentals
+middlebury,NESCAC,D3,0,Middlebury Panthers
+trinityct,NESCAC,D3,0,Trinity (CT) Bantams
+tufts,NESCAC,D3,0,Tufts Jumbos
+wesleyan,NESCAC,D3,0,Wesleyan Cardinals
+williams,NESCAC,D3,0,Williams Ephs
+christophernewport,NJAC,D3,0,Christopher Newport Captains
+tcnj,NJAC,D3,0,College of New Jersey Lions
+frostburgstate,NJAC,D3,0,Frostburg State Bobcats
+kean,NJAC,D3,0,Kean Cougars
+montclairstate,NJAC,D3,0,Montclair State Red Hawks
+rowan,NJAC,D3,0,Rowan Professors
+salisbury,NJAC,D3,0,Salisbury Seagulls
+southernvirginia,NJAC,D3,0,Southern Virginia Knights
+wesley,NJAC,D3,0,Wesley Wolverines
+williampaterson,NJAC,D3,0,William Paterson Pioneers
+georgefox,NWC,D3,0,George Fox Bruins
+lewisclark,NWC,D3,0,Lewis & Clark Pioneers
+linfield,NWC,D3,0,Linfield Wildcats
+pacificor,NWC,D3,0,Pacific (OR) Boxers
+pacificlutheran,NWC,D3,0,Pacific Lutheran Lutes
+pugetsound,NWC,D3,0,Puget Sound Loggers
+whitworth,NWC,D3,0,Whitworth Pirates
+willamette,NWC,D3,0,Willamette Bearcats
+baldwinwallace,OAC,D3,0,Baldwin-Wallace Yellow Jackets
+capital,OAC,D3,0,Capital Crusaders
+heidelberg,OAC,D3,0,Heidelberg Fighting Student Princes
+johncarroll,OAC,D3,0,John Carroll Blue Streaks
+marietta,OAC,D3,0,Marietta Pioneers
+mountunion,OAC,D3,0,Mount Union Purple Raiders
+muskingum,OAC,D3,0,Muskingum Fighting Muskies
+ohionorthern,OAC,D3,0,Ohio Northern Polar Bears
+otterbein,OAC,D3,0,Otterbein Cardinals
+wilmington,OAC,D3,0,Wilmington Quakers
+bridgewater,ODAC,D3,0,Bridgewater Eagles
+catholic,ODAC,D3,0,Catholic Cardinals
+emoryhenry,ODAC,D3,0,Emory & Henry Wasps
+guilford,ODAC,D3,0,Guilford Quakers
+hampdensydney,ODAC,D3,0,Hampden-Sydney Tigers
+randolphmacon,ODAC,D3,0,Randolph-Macon Yellow Jackets
+shenandoah,ODAC,D3,0,Shenandoah Hornets
+washingtonlee,ODAC,D3,0,Washington & Lee Generals
+bethanywv,PAC,D3,0,Bethany (WV) Bison
+carnegiemellon,PAC,D3,0,Carnegie Mellon Tartans
+casewestern,PAC,D3,0,Case Western Reserve Spartans
+geneva,PAC,D3,0,Geneva Golden Tornadoes
+grovecity,PAC,D3,0,Grove City Wolverines
+saintvincent,PAC,D3,0,St. Vincent Bearcats
+thiel,PAC,D3,0,Thiel Tomcats
+thomasmore,PAC,D3,0,Thomas More Saints
+washingtonjefferson,PAC,D3,0,Washington & Jefferson Presidents
+waynesburg,PAC,D3,0,Waynesburg Yellow Jackets
+westministerpa,PAC,D3,0,Westminster (PA) Titans
+berry,SAA,D3,0,Berry Vikings
+birminghamsouthern,SAA,D3,0,Birmingham-Southern Panthers
+centre,SAA,D3,0,Centre Praying Colonels
+chicago,SAA,D3,0,Chicago Maroons
+hendrix,SAA,D3,0,Hendrix Warriors
+millsaps,SAA,D3,0,Millsaps Majors
+rhodes,SAA,D3,0,Rhodes Lynx
+sewanee,SAA,D3,0,Sewanee Tigers
+washingtonu,SAA,D3,0,Washington (MO) Bears
+austin,SCAC,D3,0,Austin Kangaroos
+southwesterntx,SCAC,D3,0,Southwestern (TX) Pirates
+texaslutheran,SCAC,D3,0,Texas Lutheran Bulldogs
+trinitytx,SCAC,D3,0,Trinity (TX) Tigers
+callutheran,SCIAC,D3,0,Cal Lutheran Kingsmen
+chapman,SCIAC,D3,0,Chapman Panthers
+claremontmuddscripps,SCIAC,D3,0,Claremont-Mudd-Scripps Stags
+laverne,SCIAC,D3,0,La Verne Leopards
+occidental,SCIAC,D3,0,Occidental Tigers
+pomonapitzer,SCIAC,D3,0,Pomona-Pitzer Sagehens
+redlands,SCIAC,D3,0,Redlands Bulldogs
+whittier,SCIAC,D3,0,Whittier Poets
+crown,UMAC,D3,0,Crown Storm
+eureka,UMAC,D3,0,Eureka Red Devils
+greenville,UMAC,D3,0,Greenville Panthers
+iowawesleyan,UMAC,D3,0,Iowa Wesleyan Tigers
+macmurray,UMAC,D3,0,MacMurray Highlanders
+martinluther,UMAC,D3,0,Martin Luther Knights
+minnesotamorris,UMAC,D3,0,Minnesota-Morris Cougars
+northwesternstpaul,UMAC,D3,0,Northwestern (MN) Eagles
+stscholastica,UMAC,D3,0,St. Scholastica Saints
+westministermo,UMAC,D3,0,Westminster (MO) Blue Jays
+averett,USA South,D3,0,Averett Cougars
+ferrum,USA South,D3,0,Ferrum Panthers
+greensboro,USA South,D3,0,Greensboro Pride
+huntingdon,USA South,D3,0,Huntingdon Hawks
+lagrange,USA South,D3,0,LaGrange Panthers
+maryville,USA South,D3,0,Maryville Scots
+methodist,USA South,D3,0,Methodist Monarchs
+ncwesleyan,USA South,D3,0,NC Wesleyan Battling Bishops
+wisconsineauclaire,WIAC,D3,0,Wisconsin-Eau Claire Blugolds
+wisconsinlacrosse,WIAC,D3,0,Wisconsin-La Crosse Eagles
+wisconsinoshkosh,WIAC,D3,0,Wisconsin-Oshkosh Titans
+wisconsinplatteville,WIAC,D3,0,Wisconsin-Platteville Pioneers
+wisconsinriverfalls,WIAC,D3,0,Wisconsin-River Falls Falcons
+wisconsinstevenspoint,WIAC,D3,0,Wisconsin-Stevens Point Pointers
+wisconsinstout,WIAC,D3,0,Wisconsin-Stout Blue Devils
+wisconsinwhitewater,WIAC,D3,0,Wisconsin-Whitewater Warhawks
+finlandia,D3 Independents,D3,0,Finlandia Lions
+maranathabaptist,D3 Independents,D3,0,Maranatha Baptist Sabercats
+une,D3 Independents,D3,0,UNE Nor'easters
+azchristian,CSFL,NAIA,0,Arizona Christian Firestorm
+bacone,CSFL,NAIA,0,Bacone Warriors
+langston,CSFL,NAIA,0,Langston Lions
+lyon,CSFL,NAIA,0,Lyon Scots
+southwesternassembliesofgod,CSFL,NAIA,0,SW Assemblies of God Lions
+texascollege,CSFL,NAIA,0,Texas College Steers
+waylandbaptist,CSFL,NAIA,0,Wayland Baptist Pioneers
+carrollmt,Frontier,NAIA,0,Carroll (MT) Fighting Saints
+easternoregon,Frontier,NAIA,0,Eastern Oregon Mountaineers
+montanastatenorthern,Frontier,NAIA,0,Montana State-Northern Northern Lights
+montanatech,Frontier,NAIA,0,Montana Tech Orediggers
+montanawestern,Frontier,NAIA,0,Montana-Western Bulldogs
+rockymountain,Frontier,NAIA,0,Rocky Mountain Battlin' Bears
+southernoregon,Frontier,NAIA,0,Southern Oregon Raiders
+collegeidaho,Frontier,NAIA,0,College of Idaho Coyotes
+briarcliff,Great Plains,NAIA,0,Briar Cliff Chargers
+concordiane,Great Plains,NAIA,0,Concordia (NE) Bulldogs
+dakotawesleyan,Great Plains,NAIA,0,Dakota Wesleyan Tigers
+doane,Great Plains,NAIA,0,Doane Tigers
+dordt,Great Plains,NAIA,0,Dordt Defenders
+hastings,Great Plains,NAIA,0,Hastings Broncos
+midland,Great Plains,NAIA,0,Midland Warriors
+morningside,Great Plains,NAIA,0,Morningside Mustangs
+northwesternia,Great Plains,NAIA,0,Northwestern (IA) Red Raiders
+avila,Heart of America,NAIA,0,Avila Eagles
+baker,Heart of America,NAIA,0,Baker Wildcats
+benedictineks,Heart of America,NAIA,0,Benedictine (KS) Ravens
+centralmethodist,Heart of America,NAIA,0,Central Methodist Eagles
+clarke,Heart of America,NAIA,0,Clarke Crusaders
+culverstockton,Heart of America,NAIA,0,Culver-Stockton Wildcats
+evangel,Heart of America,NAIA,0,Evangel Crusaders
+graceland,Heart of America,NAIA,0,Graceland Yellowjackets
+grandview,Heart of America,NAIA,0,Grand View Vikings
+midamericanazarene,Heart of America,NAIA,0,MidAmerica Nazarene Pioneers
+missourivalley,Heart of America,NAIA,0,Missouri Valley Vikings
+perustate,Heart of America,NAIA,0,Peru State Bobcats
+williampenn,Heart of America,NAIA,0,William Penn Statesmen
+bethanyks,Kansas Collegiate,NAIA,0,Bethany (KS) Terrible Swedes
+bethelks,Kansas Collegiate,NAIA,0,Bethel (KS) Threshers
+friends,Kansas Collegiate,NAIA,0,Friends Falcons
+kansaswesleyan,Kansas Collegiate,NAIA,0,Kansas Wesleyan Coyotes
+mcpherson,Kansas Collegiate,NAIA,0,McPherson Bulldogs
+ottawaks,Kansas Collegiate,NAIA,0,Ottawa (KS) Braves
+southwesternks,Kansas Collegiate,NAIA,0,Southwestern (KS) Moundbuilders
+saintmary,Kansas Collegiate,NAIA,0,St. Mary (KS) Spires
+sterling,Kansas Collegiate,NAIA,0,Sterling Warriors
+tabor,Kansas Collegiate,NAIA,0,Tabor Bluejays
+betheltn,Mid-South,NAIA,0,Bethel (TN) Wildcats
+bluefield,Mid-South,NAIA,0,Bluefield Rams
+campbellsville,Mid-South,NAIA,0,Campbellsville Tigers
+cincinnatichristian,Mid-South,NAIA,0,Cincinnati Christian Eagles
+cumberland,Mid-South,NAIA,0,Cumberland Phoenix
+cumberlands,Mid-South,NAIA,0,Cumberlands Patriots
+faulkner,Mid-South,NAIA,0,Faulkner Eagles
+georgetownky,Mid-South,NAIA,0,Georgetown (KY) Tigers
+kentuckychristian,Mid-South,NAIA,0,Kentucky Christian Knights
+lindseywilson,Mid-South,NAIA,0,Lindsey Wilson Blue Raiders
+pikeville,Mid-South,NAIA,0,Pikeville Bears
+reinhardt,Mid-South,NAIA,0,Reinhardt Eagles
+standrewsnc,Mid-South,NAIA,0,St. Andrew's (NC) Knights
+unionky,Mid-South,NAIA,0,Union (KY) Bulldogs
+concordiami,MSFA,NAIA,0,Concordia (MI) Cardinals
+indianawesleyan,MSFA,NAIA,0,Indiana Wesleyan Wildcats
+lindenwoodbelleville,MSFA,NAIA,0,Lindenwood-Belleville Lynx
+marian,MSFA,NAIA,0,Marian Knights
+missouribaptist,MSFA,NAIA,0,Missouri Baptist Spartans
+olivetnazarene,MSFA,NAIA,0,Olivet Nazarene Tigers
+robertmorrisil,MSFA,NAIA,0,Robert Morris (IL) Eagles
+sienaheights,MSFA,NAIA,0,Siena Heights Saints
+stambrose,MSFA,NAIA,0,St. Ambrose Fighting Bees
+stfrancisil,MSFA,NAIA,0,St. Francis (IL) Fighting Saints
+saintfrancisin,MSFA,NAIA,0,St. Francis (IN) Cougars
+saintxavier,MSFA,NAIA,0,St. Xavier Cougars
+taylor,MSFA,NAIA,0,Taylor Trojans
+trinityinternational,MSFA,NAIA,0,Trinity International Trojans
+dakotastate,NSAA,NAIA,0,Dakota State Trojans
+dickinsonstate,NSAA,NAIA,0,Dickinson State Blue Hawks
+jamestown,NSAA,NAIA,0,Jamestown Jimmies
+mayvillestate,NSAA,NAIA,0,Mayville State Comets
+presentation,NSAA,NAIA,0,Presentation Saints
+valleycitystate,NSAA,NAIA,0,Valley City State Vikings
+waldorf,NSAA,NAIA,0,Waldorf Warriors
+avemaria,The Sun,NAIA,0,Ave Maria Gyrenes
+edwardwaters,The Sun,NAIA,0,Edward Waters Tigers
+point,The Sun,NAIA,0,Point Skyhawks
+southeastern,The Sun,NAIA,0,Southeastern Fire
+warner,The Sun,NAIA,0,Warner Royals
+webberinternational,The Sun,NAIA,0,Webber International Warriors
+apprentice,USCAA,USCAA,0,Apprentice Ship Builders
+concordiaal,USCAA,USCAA,0,Concordia (AL) Hornets
+ohiomw,USCAA,USCAA,0,Ohio Midwestern Rams
+virginialynchburg,USCAA,USCAA,0,Virginia-Lynchburg Dragons
+williamson,USCAA,USCAA,0,Williamson Mechanics
+cabrillo,North American,CCCAA,0,Cabrillo Seahawks
+collegeredwoods,North American,CCCAA,0,College of the Redwoods Corsairs
+foothill,North American,CCCAA,0,Foothill Owls
+gavilan,North American,CCCAA,0,Gavilan Rams
+hartnell,North American,CCCAA,0,Hartnell Panthers
+losmedanos,North American,CCCAA,0,Los Medanos Mustangs
+mendocino,North American,CCCAA,0,Mendocino Eagles
+merced,North American,CCCAA,0,Merced Blue Devils
+montereypeninsula,North American,CCCAA,0,Monterey Peninsula Lobos
+reedley,North American,CCCAA,0,Reedley Tigers
+sanjosecity,North American,CCCAA,0,San Jose City Jaguars
+shasta,North American,CCCAA,0,Shasta Knights
+westhills,North American,CCCAA,0,West Hills Falcons
+yuba,North American,CCCAA,0,Yuba 49ers
+americanriver,North National,CCCAA,0,American River Beavers
+butte,North National,CCCAA,0,Butte Roadrunners
+ccsanfrancisco,North National,CCCAA,0,CC San Francisco Rams
+chabot,North National,CCCAA,0,Chabot Gladiators
+collegesequoias,North National,CCCAA,0,College of the Sequoias Giants
+collegesiskiyous,North National,CCCAA,0,College of the Siskiyous Eagles
+contracosta,North National,CCCAA,0,Contra Costa Comets
+deanza,North National,CCCAA,0,De Anza Dons
+diablovalley,North National,CCCAA,0,Diablo Valley Vikings
+featherriver,North National,CCCAA,0,Feather River Golden Eagles
+fresnocity,North National,CCCAA,0,Fresno City Rams
+laney,North National,CCCAA,0,Laney Eagles
+modestojunior,North National,CCCAA,0,Modesto Junior Pirates
+sacramentocity,North National,CCCAA,0,Sacramento City Panthers
+sanjoaquindelta,North National,CCCAA,0,San Joaquin Delta Mustangs
+sanmateo,North National,CCCAA,0,San Mateo Bulldogs
+santarosajunior,North National,CCCAA,0,Santa Rosa Junior Bear Cubs
+sierra,North National,CCCAA,0,Sierra Wolverines
+allanhancock,South American,CCCAA,0,Allan Hancock Bulldogs
+antelopevalley,South American,CCCAA,0,Antelope Valley Marauders
+citrus,South American,CCCAA,0,Citrus Fighting Owls
+collegedesert,South American,CCCAA,0,College of the Desert Roadrunners
+comptoncc,South American,CCCAA,0,Compton CC Tartars
+eastlosangeles,South American,CCCAA,0,East Los Angeles Huskies
+glendaleccca,South American,CCCAA,0,Glendale CC (CA) Vaqueros
+losangelespierce,South American,CCCAA,0,Los Angeles Pierce Brahma Bulls
+losangelessouthwest,South American,CCCAA,0,Los Angeles Southwest Cougars
+losangelesvalley,South American,CCCAA,0,Los Angeles Valley Monarchs
+mtsanjacinto,South American,CCCAA,0,Mt. San Jacinto Eagles
+pasadenacity,South American,CCCAA,0,Pasadena City Lancers
+sanbernardinovalley,South American,CCCAA,0,San Bernardino Valley Wolverines
+sandiegomesa,South American,CCCAA,0,San Diego Mesa Olympians
+santaana,South American,CCCAA,0,Santa Ana Dons
+santabarbaracity,South American,CCCAA,0,Santa Barbara City Vaqueros
+southwestern,South American,CCCAA,0,Southwestern Jaguars
+victorvalley,South American,CCCAA,0,Victor Valley Rams
+westlosangeles,South American,CCCAA,0,West Los Angeles Wildcats
+bakersfield,South National,CCCAA,0,Bakersfield Renegades
+cerritos,South National,CCCAA,0,Cerritos Falcons
+chaffey,South National,CCCAA,0,Chaffey Panthers
+collegecanyons,South National,CCCAA,0,College of the Canyons Cougars
+elcamino,South National,CCCAA,0,El Camino Warriors
+fullerton,South National,CCCAA,0,Fullerton Hornets
+goldenwest,South National,CCCAA,0,Golden West Rustlers
+grossmont,South National,CCCAA,0,Grossmont Griffins
+longbeachcity,South National,CCCAA,0,Long Beach City Vikings
+losangelesharbor,South National,CCCAA,0,Los Angeles Harbor Seahawks
+moorpark,South National,CCCAA,0,Moorpark Raiders
+mountsanantonio,South National,CCCAA,0,Mt. SAC Mounties
+orangecoast,South National,CCCAA,0,Orange Coast Pirates
+palomar,South National,CCCAA,0,Palomar Comets
+riversidecc,South National,CCCAA,0,Riverside CC Tigers
+saddleback,South National,CCCAA,0,Saddleback Gauchos
+santamonica,South National,CCCAA,0,Santa Monica Corsairs
+ventura,South National,CCCAA,0,Ventura Pirates
+ellsworthcc,Iowa Community College Athletic Conference,NJCAA,0,Ellsworth CC Panthers
+iowacentralcc,Iowa Community College Athletic Conference,NJCAA,0,Iowa Central CC Tritons
+iowawesterncc,Iowa Community College Athletic Conference,NJCAA,0,Iowa Western CC Reivers
+butlercc,Kansas Jayhawk Community College Conference,NJCAA,0,Butler CC Grizzlies
+coffeyvillecc,Kansas Jayhawk Community College Conference,NJCAA,0,Coffeyville CC Red Ravens
+dodgecitycc,Kansas Jayhawk Community College Conference,NJCAA,0,Dodge City CC Conquistadors
+fortscottcc,Kansas Jayhawk Community College Conference,NJCAA,0,Fort Scott CC Greyhounds
+gardencitycc,Kansas Jayhawk Community College Conference,NJCAA,0,Garden City CC Broncbusters
+highlandcc,Kansas Jayhawk Community College Conference,NJCAA,0,Highland CC Scotties
+hutchinsoncc,Kansas Jayhawk Community College Conference,NJCAA,0,Hutchinson CC Dragons
+independencecc,Kansas Jayhawk Community College Conference,NJCAA,0,Independence CC Pirates
+centrallakes,Minnesota College Athletic Conference,NJCAA,0,Central Lakes Raiders
+dakotacollege,Minnesota College Athletic Conference,NJCAA,0,Dakota College Lumberjacks
+fonddulac,Minnesota College Athletic Conference,NJCAA,0,Fond du Lac Thunder
+itascacc,Minnesota College Athletic Conference,NJCAA,0,Itasca CC Vikings
+mesabirangectc,Minnesota College Athletic Conference,NJCAA,0,Mesabi Range CTC Norse
+minnesotastatectc,Minnesota College Athletic Conference,NJCAA,0,Minnesota State CTC Spartans
+minnesotawestctc,Minnesota College Athletic Conference,NJCAA,0,Minnesota West CTC Bluejays
+northdakotascience,Minnesota College Athletic Conference,NJCAA,0,North Dakota Science Wildcats
+northlandctc,Minnesota College Athletic Conference,NJCAA,0,Northland CTC Pioneers
+ridgewater,Minnesota College Athletic Conference,NJCAA,0,Ridgewater Warriors
+rochesterctc,Minnesota College Athletic Conference,NJCAA,0,Rochester CTC Yellowjackets
+vermillion,Minnesota College Athletic Conference,NJCAA,0,Vermilion CC Ironmen
+coahomacc,MACJC,NJCAA,0,Coahoma CC Tigers
+copiahlincolncc,MACJC,NJCAA,0,Copiah-Lincoln CC Wolfpack
+eastcentralcc,MACJC,NJCAA,0,East Central CC Warriors
+eastmississippicc,MACJC,NJCAA,0,East Mississippi CC Lions
+hinds,MACJC,NJCAA,0,Hinds CC Eagles
+holmes,MACJC,NJCAA,0,Holmes CC Bulldogs
+itawambacc,MACJC,NJCAA,0,Itawamba CC Indians
+jonescountyjc,MACJC,NJCAA,0,Jones County JC Bobcats
+mississippideltacc,MACJC,NJCAA,0,Mississippi Delta CC Trojans
+mississippigulfcoastcc,MACJC,NJCAA,0,Mississippi Gulf Coast CC Bulldogs
+northeastmississippicc,MACJC,NJCAA,0,Northeast Mississippi CC Tigers
+northwestmississippicc,MACJC,NJCAA,0,Northwest Mississippi CC Rangers
+pearlrivercc,MACJC,NJCAA,0,Pearl River CC Wildcats
+southwestmississippicc,MACJC,NJCAA,0,Southwest Mississippi CC Bears
+asa,Northeast JC Football Conference,NJCAA,0,ASA Avengers
+lackawanna,Northeast JC Football Conference,NJCAA,0,Lackawanna Falcons
+louisburg,Northeast JC Football Conference,NJCAA,0,Louisburg Hurricanes
+monroe,Northeast JC Football Conference,NJCAA,0,Monroe Mustangs
+nassaucc,Northeast JC Football Conference,NJCAA,0,Nassau CC Lions
+blinn,Southwest Junior College Football Conference,NJCAA,0,Blinn Buccaneers
+cisco,Southwest Junior College Football Conference,NJCAA,0,Cisco Wranglers
+kilgore,Southwest Junior College Football Conference,NJCAA,0,Kilgore Rangers
+navarro,Southwest Junior College Football Conference,NJCAA,0,Navarro Bulldogs
+northeasternoklahomaam,Southwest Junior College Football Conference,NJCAA,0,Northeastern Oklahoma A&M Golden Norsemen
+trinityvalleycc,Southwest Junior College Football Conference,NJCAA,0,Trinity Valley CC Cardinals
+tylerjc,Southwest Junior College Football Conference,NJCAA,0,Tyler JC Apaches
+arizonawestern,Western States Football League,NJCAA,0,Arizona Western Matadors
+easternarizona,Western States Football League,NJCAA,0,Eastern Arizona Gila Monsters
+glendaleccaz,Western States Football League,NJCAA,0,Glendale CC (AZ) Gauchos
+mesacc,Western States Football League,NJCAA,0,Mesa CC Thunderbirds
+newmexicomilitary,Western States Football League,NJCAA,0,New Mexico Military Broncos
+phoenix,Western States Football League,NJCAA,0,Phoenix Bears
+pimacc,Western States Football League,NJCAA,0,Pima CC Aztecs
+scottsdalecc,Western States Football League,NJCAA,0,Scottsdale CC Fighting Artichokes
+snow,Western States Football League,NJCAA,0,Snow Badgers
+arkansasbaptist,NJCAA Independents,NJCAA,0,Arkansas Baptist Buffaloes
+asamiami,NJCAA Independents,NJCAA,0,ASA Miami Silver Storm
+dupage,NJCAA Independents,NJCAA,0,DuPage Chaparrals
+eriecc,NJCAA Independents,NJCAA,0,Erie CC Kats
+georgiamilitary,NJCAA Independents,NJCAA,0,Georgia Military Bulldogs
+globetech,NJCAA Independents,NJCAA,0,Globe Institute of Technology Knights
+hocking,NJCAA Independents,NJCAA,0,Hocking Hawks
+hudsonvalleycc,NJCAA Independents,NJCAA,0,Hudson Valley CC Vikings
+alabamaprep,AIFC,Other,0,Alabama Prep-Birmingham Spartans
+apa,AIFC,Other,0,APA Panthers
+atlantasportsacademy,AIFC,Other,0,Atlanta Sports Academy Spartans
+eliteoneacademy,AIFC,Other,0,Elite One Academy Lions
+littlejohnsportsacademy,AIFC,Other,0,Littlejohn Sports Academy Ravens
+portcity,AIFC,Other,0,Port City Ocean Crusaders
+universitygodschosen,AIFC,Other,0,University of God's Chosen Disciples
+collegeoffaithar,ASCAA,Other,0,College of Faith (AR) Warriors
+collegeoffaith,ASCAA,Other,0,College of Faith (NC) Saints
+universityoffaith,ASCAA,Other,0,University of Faith (FL) Glory Eagles
+universityfaithok,ASCAA,Other,0,University of Faith (OK) Kings
+gattacaflorida,EAC,Other,0,Gattaca Florida Hurricanes
+georgiaprepsa,EAC,Other,0,Georgia Prep SA Lions
+northgeorgiasa,EAC,Other,0,North Georgia SA Mountaineers
+octech,EAC,Other,0,OC Tech Gladiators
+palmettoprep,EAC,Other,0,Palmetto Prep Minutemen
+centralsoundjc,NWJCFL,Other,0,Central Sound Warhawks
+eastsidejc,NWJCFL,Other,0,Eastside JC Bulldogs
+everett,NWJCFL,Other,0,Everett Red Raiders
+lewisclarkvalley,NWJCFL,Other,0,Lewis and Clark Valley Loggers
+slcc,UTFL,Other,0,Salt Lake CC Bruins
+centralinternational,Independent,Other,0,Central International Cardinals
+dcmetro,Independent,Other,0,DC Metro Wolves
+delawaretechcc,Independent,Other,0,Delaware Tech CC Gamecocks
+fortlauderdale,Independent,Other,0,Fort Lauderdale Eagles
+jerseycoast,Independent,Other,0,Jersey Coast Academy Jaguars
+morthland,Independent,Other,0,Morthland Patriots
+redemption,Independent,Other,0,Redemption Dragon Slayers
+redemptionacademy,Independent,Other,0,Redemption Academy Dragons
+texasat,Independent,Other,0,Texas A&T Drillers
+thaddeusstevens,Independent,Other,0,Thaddeus Stevens Bulldogs
+trinitybible,Independent,Other,0,Trinity Bible College Lions
+valleyforgemac,Independent,Other,0,Valley Forge MA&C Trojans
+zoubidacole,Independent,Other,0,Zoubida Cole Jaguars
+chattahoocheetc,NCFA,Club,0,Chattahoochee Technical College Golden Eagles
+columbusstate,NCFA,Club,0,Columbus State Cougars
+coppinstate,NCFA,Club,0,Coppin State Eagles
+easternconnecticutstate,NCFA,Club,0,Eastern Connecticut State Warriors
+georgemason,NCFA,Club,0,George Mason Patriots
+longwood,NCFA,Club,0,Longwood Lancers
+michiganflint,NCFA,Club,0,Michigan-Flint Kodiaks
+middlegeorgiastate,NCFA,Club,0,Middle Georgia State Knights
+oakland,NCFA,Club,0,Oakland Golden Grizzlies
+onondagacc,NCFA,Club,0,Onondaga CC Ogres
+radford,NCFA,Club,0,Radford Highlanders
+robertmorrispeoria,NCFA,Club,0,Robert Morris-Peoria Eagles
+shepherdbiblecollege,NCFA,Club,0,Shepherd Bible College Eagles
+siue,NCFA,Club,0,SIUE Cougars
+vcu,NCFA,Club,0,VCU Rams
+wisconsinparkside,NCFA,Club,0,Wisconsin-Parkside Rangers
+wrightstate,NCFA,Club,0,Wright State Raiders
+ohiotech,ICFF,Club,0,Central Ohio Tech Titans
+hartford,ICFF,Club,0,Hartford Hawks
+swconnecticutprep,ICFF,Club,0,SW Connecticut Prep Grizzlies
+caldwell,CSFL,Club,0,Caldwell Cougars
+chestnuthill,CSFL,Club,0,Chestnut Hill Griffins
+franklinpierce,CSFL,Club,0,Franklin Pierce Ravens
+mansfield,CSFL,Club,0,Mansfield Mountaineers
+post,CSFL,Club,0,Post Eagles
+australia,IFAF,IFAF,0,Australia Outback
+austria,IFAF,IFAF,0,Austria National Team
+brazil,IFAF,IFAF,0,Brazil Onças
+canada,IFAF,IFAF,0,Canada National Team
+china,IFAF,IFAF,0,China National Team
+finland,IFAF,IFAF,0,Finland National Team
+france,IFAF,IFAF,0,France Les Bluets
+guatemala,IFAF,IFAF,0,Guatemala Tigres
+germany,IFAF,IFAF,0,Germany National Team
+india,IFAF,IFAF,0,India National Team
+italy,IFAF,IFAF,0,Italy National Team
+japan,IFAF,IFAF,0,Japan National Team
+mexico,IFAF,IFAF,0,Mexico El Tri
+newzealand,IFAF,IFAF,0,New Zealand Steelblacks
+southkorea,IFAF,IFAF,0,South Korea National Team
+sweden,IFAF,IFAF,0,Sweden National Team
+usa,IFAF,IFAF,0,USA Eagles
+bath,Premier,BUCS,0,Bath Killer Bees
+birmingham,Premier,BUCS,0,Birmingham Lions
+derby,Premier,BUCS,0,Derby Braves
+durham,Premier,BUCS,0,Durham Saints
+hertfordshire,Premier,BUCS,0,Hertfordshire Hurricanes
+kingston,Premier,BUCS,0,Kingston Cougars
+loughborough,Premier,BUCS,0,Loughborough Students
+ntu,Premier,BUCS,0,NTU Renegades
+stirling,Premier,BUCS,0,Stirling Clansmen
+swansea,Premier,BUCS,0,Swansea Titans
+glasgow,1A North,BUCS,0,Glasgow Tigers
+hallam,1A North,BUCS,0,Hallam Warriors
+hull,1A North,BUCS,0,Hull Sharks
+leedsbeckett,1A North,BUCS,0,Leeds Beckett Carnegie
+ljm,1A North,BUCS,0,LJMU Fury
+universitymanchester,1A North,BUCS,0,Manchester (UK) Tyrants
+newcastle,1A North,BUCS,0,Newcastle Raiders
+northumbria,1A North,BUCS,0,Northumbria Mustangs
+nottingham,1A North,BUCS,0,Nottingham Outlaws
+sheffield,1A North,BUCS,0,Sheffield Sabres
+staffordshire,1A North,BUCS,0,Staffordshire Stallions
+sunderland,1A North,BUCS,0,Sunderland Spartans
+uclan,1A North,BUCS,0,UCLan Rams
+warwick,1A North,BUCS,0,Warwick Wolves
+worcester,1A North,BUCS,0,Worcester Royals
+brighton,1A South,BUCS,0,Brighton Tsunami
+cambridge,1A South,BUCS,0,Cambridge Pythons
+cardiff,1A South,BUCS,0,Cardiff Cobras
+exeter,1A South,BUCS,0,Exeter Demons
+imperial,1A South,BUCS,0,Imperial Immortals
+kent,1A South,BUCS,0,Kent Falcons
+oxford,1A South,BUCS,0,Oxford Lancers
+portsmouth,1A South,BUCS,0,Portsmouth Destroyers
+reading,1A South,BUCS,0,Reading Knights
+royalholloway,1A South,BUCS,0,Royal Holloway Bears
+solent,1A South,BUCS,0,Solent Redhawks
+surrey,1A South,BUCS,0,Surrey Stingers
+sussex,1A South,BUCS,0,Sussex Saxons
+uea,1A South,BUCS,0,UEA Pirates
+uwe,1A South,BUCS,0,UWE Bullets
+bangor,2A North,BUCS,0,Bangor MudDogs
+bradford,2A North,BUCS,0,Bradford Bears
+coventry,2A North,BUCS,0,Coventry Jets
+dmu,2A North,BUCS,0,DMU Falcons
+edgehill,2A North,BUCS,0,Edge Hill Vikings
+edinburgh,2A North,BUCS,0,Edinburgh Predators
+napier,2A North,BUCS,0,Edinburgh Napier Knights
+heriotwatt,2A North,BUCS,0,Heriot-Watt AFC
+huddersfield,2A North,BUCS,0,Huddersfield Hawks
+keele,2A North,BUCS,0,Keele Crusaders
+lancaster,2A North,BUCS,0,Lancaster Bombers
+leeds,2A North,BUCS,0,Leeds Celtics
+leicester,2A North,BUCS,0,Leicester Longhorns
+lincoln,2A North,BUCS,0,Lincoln (UK) Colonials
+liverpool,2A North,BUCS,0,Liverpool Raptors
+mmu,2A North,BUCS,0,MMU Eagles
+northampton,2A North,BUCS,0,Northampton Nemesis
+teesside,2A North,BUCS,0,Teesside Cougars
+westofscotland,2A North,BUCS,0,West of Scotland Pyros
+universityyork,2A North,BUCS,0,York (UK) Centurions
+aberystwyth,2A South,BUCS,0,Tarannau Aberystwyth
+angliaruskin,2A South,BUCS,0,Anglia Ruskin Rhinos
+bathspa,2A South,BUCS,0,Bath Spa Bulldogs
+bnu,2A South,BUCS,0,BNU Buccaneers
+bournemouth,2A South,BUCS,0,Bournemouth Bobcats
+bristol,2A South,BUCS,0,Bristol Barracuda
+brunel,2A South,BUCS,0,Brunel Burners
+canterbury,2A South,BUCS,0,Canterbury Chargers
+chichester,2A South,BUCS,0,Chichester Spitfires
+essex,2A South,BUCS,0,Essex Blades
+gloucestershire,2A South,BUCS,0,Gloucestershire Gladiators
+greenwich,2A South,BUCS,0,Greenwich Mariners
+kingscollege,2A South,BUCS,0,King's College (UK) Regents
+londoncity,2A South,BUCS,0,London City Sentinels
+lsbu,2A South,BUCS,0,LSBU Spartans
+obu,2A South,BUCS,0,OBU Panthers
+plymouth,2A South,BUCS,0,Plymouth Blitz
+southampton,2A South,BUCS,0,Southampton Stags
+eastlondon,2A South,BUCS,0,UEL Titans
+westminster,2A South,BUCS,0,Westminster Dragons
+acadia,Atlantic University Football Conference,CIS,0,Acadia Axemen
+mountallison,Atlantic University Football Conference,CIS,0,Mount Allison Mounties
+stfrancisxavier,Atlantic University Football Conference,CIS,0,St. Francis Xavier X-Men
+saintmarys,Atlantic University Football Conference,CIS,0,St. Mary's (NS) Huskies
+alberta,Canada West Football Conference,CIS,0,Alberta Golden Bears
+calgary,Canada West Football Conference,CIS,0,Calgary Dinos
+manitoba,Canada West Football Conference,CIS,0,Manitoba Bisons
+regina,Canada West Football Conference,CIS,0,Regina Rams
+saskatchewan,Canada West Football Conference,CIS,0,Saskatchewan Huskies
+ubc,Canada West Football Conference,CIS,0,UBC Thunderbirds
+carletonca,Ontario University Athletics,CIS,0,Carleton (ON) Ravens
+guelph,Ontario University Athletics,CIS,0,Guelph Gryphons
+mcmaster,Ontario University Athletics,CIS,0,McMaster Marauders
+uottawa,Ontario University Athletics,CIS,0,Ottawa (ON) Gee-Gees
+queens,Ontario University Athletics,CIS,0,Queen's University Gaels
+toronto,Ontario University Athletics,CIS,0,Toronto Varsity Blues
+waterloo,Ontario University Athletics,CIS,0,Waterloo Warriors
+westernontario,Ontario University Athletics,CIS,0,Western Ontario Mustangs
+wilfridlaurier,Ontario University Athletics,CIS,0,Wilfrid Laurier Golden Hawks
+windsor,Ontario University Athletics,CIS,0,Windsor Lancers
+york,Ontario University Athletics,CIS,0,York (ON) Lions
+bishops,RSEQ,CIS,0,Bishop's University Gaiters
+concordiaca,RSEQ,CIS,0,Concordia (QC) Stingers
+laval,RSEQ,CIS,0,Laval Rouge et Or
+mcgill,RSEQ,CIS,0,McGill Redmen
+montreal,RSEQ,CIS,0,Montréal Carabins
+sherbrooke,RSEQ,CIS,0,Sherbrooke Vert et Or
+uqtr,RSEQ,CIS,0,UQTR Patriotes
+dalhousie,Atlantic Football League,Atlantic Football League,0,Dalhousie Tigers
+holland,Atlantic Football League,Atlantic Football League,0,Holland Hurricanes
+newbrunswick,Atlantic Football League,Atlantic Football League,0,UNB Fredericton Red Bombers
+unbsaintjohn,Atlantic Football League,Atlantic Football League,0,UNB Saint John Seawolves
+andregrasset,Collégial Division 1,CCAA,0,Le Phénix de André-Grasset
+champlainlennoxville,Collégial Division 1,CCAA,0,Les Cougars de Champlain Lennoxville
+cndf,Collégial Division 1,CCAA,0,Le Notre-Dame du CNDF
+edouardmonpetit,Collégial Division 1,CCAA,0,Les Lynx d'Édouard Montpetit
+garneau,Collégial Division 1,CCAA,0,Les Élans de Garneau
+levislauzon,Collégial Division 1,CCAA,0,Les Faucons de Lévis-Lauzon
+limoilou,Collégial Division 1,CCAA,0,Les Titans de Limoilou
+montmorency,Collégial Division 1,CCAA,0,Les Nomades du Montmorency
+vanierqc,Collégial Division 1,CCAA,0,Les Cheetahs de Vanier
+vieuxmontreal,Collégial Division 1,CCAA,0,Les Spartiates du Vieux-Montréal
+beauceappalaches,Collégial Division 2,CCAA,0,Les Condors du Beauce-Appalaches
+cegepsherbrooke,Collégial Division 2,CCAA,0,Les Volontaires du Cégep de Sherbrooke
+drummondville,Collégial Division 2,CCAA,0,Les Voltigeurs de Drummondville
+johnabbott,Collégial Division 2,CCAA,0,John Abbott Islanders
+lanaudiere,Collégial Division 2,CCAA,0,Les Triades de Lanaudière
+lionelgroulx,Collégial Division 2,CCAA,0,Les Nordiques du Lionel-Groulx
+stjeansurrichelieu,Collégial Division 2,CCAA,0,Les Géants du St-Jean-sur-Richelieu
+troisrivieres,Collégial Division 2,CCAA,0,Les Diablos de Trois-Rivières
+valleyfield,Collégial Division 2,CCAA,0,Le Noir et Or de Valleyfield
+victoriaville,Collégial Division 2,CCAA,0,Les Vulkins de Victoriaville
+ahuntsic,Collégial Division 3,CCAA,0,Les Indiens de Ahuntsic
+champlainstlambert,Collégial Division 3,CCAA,0,Champlain Saint-Lambert Cavaliers
+chicoutimi,Collégial Division 3,CCAA,0,Les Couguars de Chicoutimi
+collegedalma,Collégial Division 3,CCAA,0,Les Jeannois du Collège d'Alma
+jonquiere,Collégial Division 3,CCAA,0,Les Gaillards de Jonquière
+loutaouais,Collégial Division 3,CCAA,0,Les Griffons de l'Outaouais
+lapocatiere,Collégial Division 3,CCAA,0,Les Gaulois de La Pocatière
+rimouski,Collégial Division 3,CCAA,0,Les Pionniers de Rimouski
+shawinigan,Collégial Division 3,CCAA,0,Les Électriks de Shawinigan
+sthyacinthe,Collégial Division 3,CCAA,0,Les Lauréats de St-Hyacinthe
+stjerome,Collégial Division 3,CCAA,0,Les Cheminots de St-Jérôme
+thetford,Collégial Division 3,CCAA,0,Les Filons du Cégep de Thetford
+cgpresidenciales,Conferencia de los Ochos Grandes,ONEFA,0,Centinelas CGP
+unam,Conferencia de los Ochos Grandes,ONEFA,0,Pumas CU UNAM
+ipnsantotomas,Conferencia de los Ochos Grandes,ONEFA,0,Águilas Blancas IPN
+ipnzacatenco,Conferencia de los Ochos Grandes,ONEFA,0,Burros Blancos IPN
+tepeyac,Conferencia de los Ochos Grandes,ONEFA,0,Frailes Tepeyac
+chihuahua,Conferencia de los Ochos Grandes,ONEFA,0,Águilas UACH
+uanl,Conferencia de los Ochos Grandes,ONEFA,0,Auténticos Tigres UANL
+lomasverdes,Conferencia de los Ochos Grandes,ONEFA,0,Linces UVM Lomas Verdes
+itq,Conferencia Nacional,ONEFA,0,Zorros ITQ
+anahuaccancun,Conferencia Nacional,ONEFA,0,Leones UACAN
+uach,Conferencia Nacional,ONEFA,0,Toros Salvajes UACh
+uadec,Conferencia Nacional,ONEFA,0,Lobos UAdeC
+uaem,Conferencia Nacional,ONEFA,0,Potros Salvajes UAEM
+uag,Conferencia Nacional,ONEFA,0,Tecos UAG
+uatreynosa,Conferencia Nacional,ONEFA,0,Correcaminos UAT Reynosa
+uatvictoria,Conferencia Nacional,ONEFA,0,Correcaminos UAT Victoria
+unamacatlan,Conferencia Nacional,ONEFA,0,Pumas Acatlán UNAM
+veracruzana,Conferencia Nacional,ONEFA,0,Halcones UV
+cem,Independencia,CONADEIP,0,Borregos ITESM Estado México
+monterrey,Independencia,CONADEIP,0,Borregos ITESM Monterrey
+puebla,Independencia,CONADEIP,0,Borregos ITESM Puebla
+csf,Independencia,CONADEIP,0,Borregos ITESM Santa Fe
+toluca,Independencia,CONADEIP,0,Borregos ITESM Toluca
+udlap,Independencia,CONADEIP,0,Aztecas UDLAP
+cetysmexicali,Libertad,CONADEIP,0,Zorros CETYS Mexicali
+cetystijuana,Libertad,CONADEIP,0,Osos CETYS Tijuana
+itson,Libertad,CONADEIP,0,Potros ITSON Obregón
+lapaz,Libertad,CONADEIP,0,Lobos Marinos La Paz
+ensenada,Libertad,CONADEIP,0,Cimarrones UABC Ensenada
+mexicali,Libertad,CONADEIP,0,Cimarrones UABC Mexicali
+tijuana,Libertad,CONADEIP,0,Cimarrones UABC Tijuana
+unison,Libertad,CONADEIP,0,Búhos UNISON
+ccm,Revolución,CONADEIP,0,Borregos ITESM Ciudad México
+guadalajara,Revolución,CONADEIP,0,Borregos ITESM Guadalajara
+queretaro,Revolución,CONADEIP,0,Borregos ITESM Querétaro
+uamn,Revolución,CONADEIP,0,Leones UAMN
+umad,Revolución,CONADEIP,0,Tigres Blancos UMAD
+adelaide,Gridiron Australia,Gridiron Australia,0,Adelaide RazorBlacks
+canberra,Gridiron Australia,Gridiron Australia,0,Canberra Firebirds
+melbourne,Gridiron Australia,Gridiron Australia,0,Melbourne Royals
+monash,Gridiron Australia,Gridiron Australia,0,Monash Warriors
+sydney,Gridiron Australia,Gridiron Australia,0,Sydney Lions
+unisa,Gridiron Australia,Gridiron Australia,0,UniSA Eagles
+unsw,Gridiron Australia,Gridiron Australia,0,UNSW Raiders
+uts,Gridiron Australia,Gridiron Australia,0,UTS Gators
+ufersa,CBFA,CBFA,0,UFERSA Petroleiros
+ufpr,CBFA,CBFA,0,UFPR Brown Spiders
+aast,EFAF,EFAF,0,AAST Gorillas
+auc,EFAF,EFAF,0,AUC Titans
+bue,EFAF,EFAF,0,BUE Bulls
+cairo,EFAF,EFAF,0,Cairo Wolves
+guc,EFAF,EFAF,0,GUC Eagles
+msa,EFAF,EFAF,0,MSA Tigers
+aachen,Hochschulbowl,Hochschulbowl,0,Aachen Rockets
+cologne,Hochschulbowl,Hochschulbowl,0,UNIversal Soldires Cologne 
+hsu,Hochschulbowl,Hochschulbowl,0,HSU Snipers
+karlsruhe,Hochschulbowl,Hochschulbowl,0,KIT Engineers
+mainz,Hochschulbowl,Hochschulbowl,0,Mainz Legionaires
+mannheim,Hochschulbowl,Hochschulbowl,0,Mannheim Knights
+niederrhein,Hochschulbowl,Hochschulbowl,0,Niederrhein Specialists
+paderborn,Hochschulbowl,Hochschulbowl,0,Paderborn UNIcorns
+passau,Hochschulbowl,Hochschulbowl,0,Passau Red Wolves
+limerick,Shamrock Bowl Conference,IAFA,0,Limerick Vikings
+trinity,Shamrock Bowl Conference,IAFA,0,Trinity (Dublin) AFC
+ucdublin,Shamrock Bowl Conference,IAFA,0,UC Dublin AFC
+aalto,UIFL,UIFL,0,Aalto Predators
+aboakademi,UIFL,UIFL,0,Abo Akademi 09ers
+jyvaskyla,UIFL,UIFL,0,Jyväskylä Renegades
+kyamk,UIFL,UIFL,0,KyAMK Eagles
+lappeenranta,UIFL,UIFL,0,Lappeenranta Wildmen
+ndu,UIFL,UIFL,0,NDU Black Knights
+shs,UIFL,UIFL,0,SHS Bears
+tamperetech,UIFL,UIFL,0,Tampere Tech Mavericks
+tcfa,UIFL,UIFL,0,TCFA Unicorns
+tuas,UIFL,UIFL,0,TUAS Tornadoes
+utu,UIFL,UIFL,0,UTU Beaver Hunters
+wasa,UIFL,UIFL,0,Wasa Dogs
+carlberg,Touchdown Sverige,Touchdown Sverige,0,Carlberg Cavaliers
+handels,Touchdown Sverige,Touchdown Sverige,0,Handels Traders
+kau,Touchdown Sverige,Touchdown Sverige,0,KAU Lumberjacks
+kth,Touchdown Sverige,Touchdown Sverige,0,KTH Royals
+orebro,Touchdown Sverige,Touchdown Sverige,0,Örebro Black Jacks
+stockholm,Touchdown Sverige,Touchdown Sverige,0,Stockholm Capitols
+uppsala,Touchdown Sverige,Touchdown Sverige,0,Uppsala Snakeheads
+jkuat,Kenya NFL,Kenya NFL,0,JKUAT Sparrows
+samburu,Kenya NFL,Kenya NFL,0,Samburu Cowboys
+umoja,Kenya NFL,Kenya NFL,0,Umoja Chiefs
+uon,Kenya NFL,Kenya NFL,0,UON Nyati
+gardabrae,ISAF,ISAF,0,Garðabæ Stjarnan
+grafarvogur,ISAF,ISAF,0,Grafarvogur Fjölnir
+kopavogur,ISAF,ISAF,0,Kópavogur Breiðablik
+amu,LUFFA,LUFFA,0,Outlaws AMU
+bordeaux,LUFFA,LUFFA,0,Raiders Bordeaux
+bordeauxmontaigne,LUFFA,LUFFA,0,Stunners de Bordeaux Montaigne
+cpelyon,LUFFA,LUFFA,0,Apaches CPE Lyon
+escdijon,LUFFA,LUFFA,0,Dark Owls ESC Dijon
+esmeesg,LUFFA,LUFFA,0,Titans ESME-ESG
+inptoulouse,LUFFA,LUFFA,0,Phoenix INP Toulouse
+liesti,LUFFA,LUFFA,0,Pandas de l'EISTI
+leonarddevinci,LUFFA,LUFFA,0,Eagles Leonard de Vinci
+lorraine,LUFFA,LUFFA,0,Tigres Lorraine
+parisinalco,LUFFA,LUFFA,0,Castors-Border de Paris & INALCO
+paris813,LUFFA,LUFFA,0,Blackjack 21 Paris 8 & 13
+parisdauphine,LUFFA,LUFFA,0,Paris Dauphine AFD
+parisdiderot,LUFFA,LUFFA,0,Lighters de Paris Diderot
+parisrenedescartes,LUFFA,LUFFA,0,Snakes de Paris René Descartes
+usac,AGFA,AGFA,0,USAC Panteras
+abu,Nigeria,Nigeria,0,ABU Titans
+lagos,Nigeria,Nigeria,0,Lagos Marines
+kyoto,Kansai,JAFA,0,京都大学 (Kyōto) Gangsters
+doshisha,Kansai,JAFA,0,同志社大学 (Dōshisha) Wild Rover
+konan,Kansai,JAFA,0,甲南大学 (Konan) Red Gang
+kobe,Kansai,JAFA,0,神戸大学 (Kōbe) Ravens
+ritsumeikan,Kansai,JAFA,0,立命館大学 (Ritsumeikan) Panthers
+kansai,Kansai,JAFA,0,関西大学 (Kansai) Kaisers
+kwanseigakuin,Kansai,JAFA,0,関西学院大学 (Kwansei Gakuin) Fighters
+ryukoku,Kansai,JAFA,0,龍谷大学 (Ryūkoku) Seahorse
+nssu,Kanto Top 8,JAFA,0,NSSU Triumphant Lion
+chuo,Kanto Top 8,JAFA,0,中央大学 (Chūō) Raccoons
+keio,Kanto Top 8,JAFA,0,慶應義塾大学 (Keiō) Unicorns
+nihon,Kanto Top 8,JAFA,0,日本大学 (Nihon) Phoenix
+waseda,Kanto Top 8,JAFA,0,早稲田大学 (Waseda) Big Bears
+meiji,Kanto Top 8,JAFA,0,明治大学 (Meiji) Griffins
+hosei,Kanto Top 8,JAFA,0,法政大学 (Hōsei) Tomahawks
+rikkyo,Kanto Top 8,JAFA,0,立教大学 (Rikkyō) Rushers
+kokushikan,Kanto Big 8,JAFA,0,国士舘大学 (Kokushikan) Rhinoceros
+senshu,Kanto Big 8,JAFA,0,専修大学 (Senshu) Green Machine
+teikyo,Kanto Big 8,JAFA,0,帝京大学 (Teikyo) Assassins
+takushoku,Kanto Big 8,JAFA,0,拓殖大学 (Takushoku) Rattlesnakes
+tokyo,Kanto Big 8,JAFA,0,東京大学 (Tōkyō) Warriors
+tokyogakugei,Kanto Big 8,JAFA,0,東京学芸大学 (Tokyo Gakugei) Snails
+yokohamanational,Kanto Big 8,JAFA,0,横浜国立大学 (Yokohama National) Mastiffs
+komazawa,Kanto Big 8,JAFA,0,駒澤大学 (Komazawa) Blue Tide
+yamaguchi,Chushikoku,JAFA,0,山口大学 (Yamaguchi) Gamblers
+shimane,Chushikoku,JAFA,0,島根大学 (Shimane) Warriors
+hiroshima,Chushikoku,JAFA,0,広島大学 (Hiroshima) Raccoons
+ehime,Chushikoku,JAFA,0,愛媛大学 (Ehime) Bombers
+hokuseigakuen,Hokkaido,JAFA,0,北星学園大学 (Hokusei Gakuen) Pirates
+hokkaigakuen,Hokkaido,JAFA,0,北海学園大学 (Hokkai Gakuen) Golden Bears
+hokkaido,Hokkaido,JAFA,0,北海道大学 (Hokkaidō) Big Green
+obihiro,Hokkaido,JAFA,0,帯広大学 (Obihiro) Cowboys
+sapporo,Hokkaido,JAFA,0,札幌大学 (Sapporo) Cubs
+sapporogakuin,Hokkaido,JAFA,0,札幌学院大学 (Sapporo Gakuin) Crimson Knights
+toyama,Hokuriku,JAFA,0,富山大学 (Toyama) Firebulls
+fukui,Hokuriku,JAFA,0,福井大学 (Fukui) Silver Phoenix
+fukuiprefectural,Hokuriku,JAFA,0,福井県立大学 (Fukui Prefectural) Wilders
+kanazawa,Hokuriku,JAFA,0,金沢大学 (Kanazawa) Evergreen
+kanazawatech,Hokuriku,JAFA,0,金沢工業大学 (Kanazawa Institute of Technology) Eagles
+kurume,Kyushu,JAFA,0,久留米大学 (Kurume) Mean Fighters
+kyushu,Kyushu,JAFA,0,九州大学 (Kyūshū) Palookas
+ryukyus,Kyushu,JAFA,0,琉球大学大学 (Ryūkyūs) Stingrays
+fukuoka,Kyushu,JAFA,0,福岡大学 (Fukuoka) Black Knights
+fukuokaeducation,Kyushu,JAFA,0,福岡教育大学 (Fukuoka University of Education) Lions
+seinangakuin,Kyushu,JAFA,0,西南学院大学 (Seinan Gakuin) Green Dolphins
+sendai,Tohoku,JAFA,0,仙台大学 (Sendai) Silver Falcons
+iwate,Tohoku,JAFA,0,岩手大学 (Iwate) Bisons
+tohoku,Tohoku,JAFA,0,東北大学 (Tōhoku) Hornets
+tohokugakuin,Tohoku,JAFA,0,東北学院大学 (Tōhoku Gakuin) Kayaks
+akita,Tohoku,JAFA,0,秋田大学 (Akita) Ogres
+chukyo,Tokai,JAFA,0,中京大学 (Chūkyō) Red Panthers
+nanzan,Tokai,JAFA,0,南山大学 (Nanzan) Crusaders
+nagoya,Tokai,JAFA,0,名古屋大学 (Nagoya) Grampus
+meijo,Tokai,JAFA,0,名城大学 (Meijō) Golden Lions
+gifu,Tokai,JAFA,0,岐阜大学 (Gifu) Phantoms
+aichi,Tokai,JAFA,0,愛知大学 (Aichi) Hercules
+kyotosangyo,Kansai Tier 2,JAFA,0,京都産業大学 (Kyoto Sangyo) Sagittarius
+hyogo,Kansai Tier 2,JAFA,0,兵庫大学 (Hyogo) Trailblazers
+osakahs,Kansai Tier 2,JAFA,0,大阪体育科学大学 (Osaka Health and Sport Science) Spartans
+osaka,Kansai Tier 2,JAFA,0,大阪大学 (Osaka) Tridents
+osakagakuin,Kansai Tier 2,JAFA,0,大阪学院大学 (Osaka Gakuin) Phoenix
+osakaprefecture,Kansai Tier 2,JAFA,0,大阪府立大学 (Osaka Prefecture) Shrikes
+osakakyoiku,Kansai Tier 2,JAFA,0,大阪教育大学 (Osaka Kyoiku) Dragons
+osakasangyo,Kansai Tier 2,JAFA,0,大阪産業大学 (Osaka Sangyo) Lions
+standrews,Kansai Tier 2,JAFA,0,桃山学院大学アメリカンフットボール部 (St. Andrew's) Thundering Legion Lions
+kobegakuin,Kansai Tier 2,JAFA,0,神戸学院大学 (Kobe Gakuin) Navy Seals
+kindai,Kansai Tier 2,JAFA,0,近畿大学 (Kinki) Devils
+otemongakuin,Kansai Tier 2,JAFA,0,追手門学院大学 (Otemon Gakuin) Soldiers
+hitotsubashi,Kanto Tier 2,JAFA,0,一橋大学 (Hitotsubashi) Crimson
+sophia,Kanto Tier 2,JAFA,0,上智大学 (Sophia) Golden Eagles
+gakushuin,Kanto Tier 2,JAFA,0,学習院大学 (Gakushuin) Generals
+seijo,Kanto Tier 2,JAFA,0,成城大学 (Seijo) Orange Beams
+seiki,Kanto Tier 2,JAFA,0,成蹊大学 (Seikei) Zelkovas
+meijigakuin,Kanto Tier 2,JAFA,0,明治学院大学 (Meiji Gakuin) Saints
+tit,Kanto Tier 2,JAFA,0,東工大 (Tōkyō Institute of Tech) Buffaloes
+toyo,Kanto Tier 2,JAFA,0,東洋大学 (Toyo) Vikings
+tokai,Kanto Tier 2,JAFA,0,東海大学 (Tokai) Tritons
+obirin,Kanto Tier 2,JAFA,0,桜美林大学 (Obirin) Three Nails Crowns
+musashi,Kanto Tier 2,JAFA,0,武蔵大学 (Musashi) Pheasants
+kanagawa,Kanto Tier 2,JAFA,0,神奈川大学 (Kanagawa) Atoms
+tsukuba,Kanto Tier 2,JAFA,0,筑波大学 (Tsukuba) Excaliburs
+kantogakuin,Kanto Tier 2,JAFA,0,関東学院大学 (Kanto Gakuin) Hurricanes
+nationaldefense,Kanto Tier 2,JAFA,0,防衛大学校 (National Defense Academy) Cadets
+aoyamagakuin,Kanto Tier 2,JAFA,0,青山学院大学 (Aoyama Gakuin) Lightning
+matsuyama,Chushikoku Tier 2,JAFA,0,松山大学 (Matsuyama) Blue Arrows
+prefectural,Chushikoku Tier 2,JAFA,0,立大学 (Prefectural) Knights
+kochi,Chushikoku Tier 2,JAFA,0,高知大学 (Kochi) Marine Corps
+hokkaidohs,Hokkaido Tier 2,JAFA,0,健康科学北海道大学 (Health Sciences Hokkaido) First Molars
+hokkaidotech,Hokkaido Tier 2,JAFA,0,北海道工業大学 (Hokkaidō Institute of Technology) Mad Wolves
+murorantech,Hokkaido Tier 2,JAFA,0,室蘭工業大学 (Muroran Institute of Technology) Black Panthers
+tokyoagriculture,Hokkaido Tier 2,JAFA,0,東京農業大学 (Tokyo Agriculture) Fighting Radish
+kushiro,Hokkaido Tier 2,JAFA,0,釧路公共経済学 (Kushiro Public Economics) Snipers
+kumadai,Kyushu Tier 2,JAFA,0,Kumadai大学 (Kumadai) Outlaws
+kyushutech,Kyushu Tier 2,JAFA,0,九州工業大学 (Kyushu Institute of Technology) Wildgeese
+kyushusangyo,Kyushu Tier 2,JAFA,0,九州産業大学 (Kyushu Sangyo) Red Free Birds
+saga,Kyushu Tier 2,JAFA,0,佐賀大学 (Saga) Tomcats
+miyazaki,Kyushu Tier 2,JAFA,0,宮崎大学 (Miyazaki) Bacchus
+npu,Kyushu Tier 2,JAFA,0,長崎大学 (Nagasaki) Marines
+kagoshima,Kyushu Tier 2,JAFA,0,鹿児島大学 (Kagoshima) Bonito
+kitasatovmas,Tohoku Tier 2,JAFA,0,北里大学のVMA大学 (Kitasato VMAS) Cowboys
+yamagata,Tohoku Tier 2,JAFA,0,山形大学 (Yamagata) Tomcats
+hirosaki,Tohoku Tier 2,JAFA,0,弘前大学 (Hirosaki) Starking
+nihonengineering,Tohoku Tier 2,JAFA,0,日本エンジニアリング大学 (Nihon Engineering) Crow Jackels
+tohokutech,Tohoku Tier 2,JAFA,0,東北工業大学 (Tohoku Institute of Technology) Blue Raiders
+mie,Tokai Tier 2,JAFA,0,三重大学 (Mie) Seaserpents
+shinshu,Tokai Tier 2,JAFA,0,信州大学 (Shinshu) Wildcats
+nagoyaucb,Tokai Tier 2,JAFA,0,名古屋UCB大学 (Nagoya UCB) Wild Fox
+nagoyagakuin,Tokai Tier 2,JAFA,0,名古屋学院大学 (Nagoya Gakuin) Torpedoes
+nagoyatech,Tokai Tier 2,JAFA,0,名古屋工業大学 (Nagoya Institute of Technology) Silverbacks
+yokkaichi,Tokai Tier 2,JAFA,0,四日市大学 (Yokkaichi) Wild Drunkers
+aichigakuin,Tokai Tier 2,JAFA,0,愛知学院大学 (Aichi Gakuin) Bison
+nihonfukushi,Tokai Tier 2,JAFA,0,日本福祉大学 (Nihon Fukushi) Wings
+tokaimarine,Tokai Tier 2,JAFA,0,東海大学海洋科学大学 (Tokai Marine Science) Poseidons
+shizuoka,Tokai Tier 2,JAFA,0,静岡大学 (Shizuoka) Cavaliers
+kyotoforeign,Kansai Tier 3A-C,JAFA,0,京都外国語大学 (Kyoto Foreign Studies) Fightin' Bulldogs
+kyotoeducation,Kansai Tier 3A-C,JAFA,0,京都大学教育学 (Kyoto Education) Grampus
+kyotogakuin,Kansai Tier 3A-C,JAFA,0,京都学院大学 (Kyoto Gakuin) Daredevils
+kyototech,Kansai Tier 3A-C,JAFA,0,京都工芸繊維大学 (Kyoto Institute of Technology) Cougars
+kyotoprefectural,Kansai Tier 3A-C,JAFA,0,京都府立大学 (Kyoto Prefectural) Wyverns
+kyotopharm,Kansai Tier 3A-C,JAFA,0,京都薬科大学 (Kyoto Pharmaceutical) Scarlet Knights
+buddhist,Kansai Tier 3A-C,JAFA,0,仏教の大学 (Buddhist) Hawks
+wakayama,Kansai Tier 3A-C,JAFA,0,和歌山大学 (Wakayama) Blind Sharks
+osakaeconomics,Kansai Tier 3A-C,JAFA,0,大阪大学経済学研究 (Osaka Economics) Bombers
+osakacity,Kansai Tier 3A-C,JAFA,0,大阪市立大学 (Osaka City) Golden Cedars
+osakaarts,Kansai Tier 3A-C,JAFA,0,大阪芸術大学 (Osaka Arts) Vipers
+tenri,Kansai Tier 3A-C,JAFA,0,天理大学 (Tenri) Crushing Orcs
+okayama,Kansai Tier 3A-C,JAFA,0,岡山大学 (Okayama) Badgers
+tezukayama,Kansai Tier 3A-C,JAFA,0,帝塚山大学 (Tezukayama) Bisons
+setsunan,Kansai Tier 3A-C,JAFA,0,摂南大学 (Setsunan) Blue Crush
+ryutsukagaku,Kansai Tier 3A-C,JAFA,0,流通科学大学 (Ryutsu Kagaku) Voyagers
+shiga,Kansai Tier 3A-C,JAFA,0,滋賀大学 (Shiga) Gladiators
+kansaigaidai,Kansai Tier 3A-C,JAFA,0,関西外国語大学 (Kansai Gaidai) Lynx
+kyotoseika,Kansai Tier 3D-F,JAFA,0,京都精華大学 (Kyoto Seika) Gawks
+hyogomedicine,Kansai Tier 3D-F,JAFA,0,兵庫医療大学 (Hyogo Medicine) Siegfried
+kibi,Kansai Tier 3D-F,JAFA,0,吉備大学 (Kibi) Fortifiers
+otani,Kansai Tier 3D-F,JAFA,0,大谷大学 (Otani) Bandits
+osakacommerce,Kansai Tier 3D-F,JAFA,0,大阪商業大学 (Osaka Commerce) Steelers
+osakainternational,Kansai Tier 3D-F,JAFA,0,大阪国際大学 (Osaka International) Mavericks
+osakatech,Kansai Tier 3D-F,JAFA,0,大阪工業大学 (Osaka Institute of Technology) Rowdies
+osakael,Kansai Tier 3D-F,JAFA,0,大阪経済と法大学 (Osaka Economics and Law) Blue Thunder
+osakaec,Kansai Tier 3D-F,JAFA,0,大阪電気通信大学 (Osaka Electro-Communication) Black Angels
+himejidokkyo,Kansai Tier 3D-F,JAFA,0,姫路獨協大学 (Himeji Dokkyo) Wild Boars
+okayamascience,Kansai Tier 3D-F,JAFA,0,岡山科学大学 (Okayama Science) Gators
+tokushima,Kansai Tier 3D-F,JAFA,0,徳島大学 (Tokushima) Pirates
+kobeinternational,Kansai Tier 3D-F,JAFA,0,神戸国際大学 (Kobe International) Crimson Knights
+hannan,Kansai Tier 3D-F,JAFA,0,阪南大学 (Hannan) Fighting Bears
+tottori,Kansai Tier 3D-F,JAFA,0,鳥取大学 (Tottori) Rakers
+asia,Kanto Tier 3,JAFA,0,亜細亜大学 (Asia) Angels
+soka,Kanto Tier 3,JAFA,0,創価大学 (Soka) Blue Lions
+chiba,Kanto Tier 3,JAFA,0,千葉大学 (Chiba) Poseidon
+internationalchristian,Kanto Tier 3,JAFA,0,国際基督教大学 (International Christian) Apostles
+josai,Kanto Tier 3,JAFA,0,城西大学 (Josai) B-Rhinos
+saitama,Kanto Tier 3,JAFA,0,埼玉大学 (Saitama) Primrose
+daitobunka,Kanto Tier 3,JAFA,0,大東文化大学 (Daito Bunka) Wild Boars
+utsunomiya,Kanto Tier 3,JAFA,0,宇都宮大学 (Utsunomiya) Bull Fighters
+bunkyo,Kanto Tier 3,JAFA,0,文教大学 (Bunkyo) Odin
+niigata,Kanto Tier 3,JAFA,0,新潟大学 (Niigata) Tigers
+tokyointernational,Kanto Tier 3,JAFA,0,東京国際大学 (Tokyo International) Dolphins
+tokyoforeign,Kanto Tier 3,JAFA,0,東京外国語大学 (Tokyo Foreign Studies) Phantoms
+tokyokeizai,Kanto Tier 3,JAFA,0,東京経済大学 (Tokyo Keizai) Falcons
+tokyoat,Kanto Tier 3,JAFA,0,東京農工大学 (Tokyo Agriculture and Technology) Blasters
+tokyocity,Kanto Tier 3,JAFA,0,東京都市大学 (Tokyo City) Helios
+tokyomet,Kanto Tier 3,JAFA,0,東京都立大学 (Tokyo Metropolitan) Scrappers
+yokohamacity,Kanto Tier 3,JAFA,0,横浜市立大学 (Yokohama City) Fighting Seagulls
+ryutsukeizai,Kanto Tier 3,JAFA,0,流通経済大学 (Ryutsu Keizai) RKU
+tamagawa,Kanto Tier 3,JAFA,0,玉川大学 (Tamagawa) Stallions
+shibaura,Kanto Tier 3,JAFA,0,芝浦工業大学 (Shibaura Institute of Technology) Fighting Engineers
+ibaraki,Kanto Tier 3,JAFA,0,茨城大学 (Ibaraki) Stargazers
+electrocomm,Kanto Tier 3,JAFA,0,電気通信大学 (University of Electro-Communications) Crashers
+takasaki,Kanto Tier 3,JAFA,0,高崎市立大学 (Takasaki City) Bandits
+jobu,Kanto Area League,JAFA,0,上武大学 (Jobu) Mean Fighting Machine
+chibacommerce,Kanto Area League,JAFA,0,千葉商工大学 (Chiba Commerce) Lycaonpictus
+yamanashi,Kanto Area League,JAFA,0,山梨大学 (Yamanashi) Wyverns
+kogakuin,Kanto Area League,JAFA,0,工学院大学 (Kogakuin) Crash Machines
+teikyoheisei,Kanto Area League,JAFA,0,帝京平成大学 (Teikyo Heisei) Blue Wings
+nippon,Kanto Area League,JAFA,0,日本工業大学 (Nippon Institute of Technology) River Horse
+meisei,Kanto Area League,JAFA,0,明星大学 (Meisei) Silver Knights
+kyorin,Kanto Area League,JAFA,0,杏林大学 (Kyorin) Cavaliers
+tokyotech,Kanto Area League,JAFA,0,東京工科大学 (Tokyo University of Technology) Cerberus
+tokyoscience,Kanto Area League,JAFA,0,東京科学大学 (Tokyo Science) Rascals
+edogawa,Kanto Area League,JAFA,0,江戸川大学 (Edogawa) Hedge Hogs
+dokkyo,Kanto Area League,JAFA,0,獨協大学 (Dokkyo) Green Monsters
+hakuoh,Kanto Area League,JAFA,0,白鴎大学 (Hakuoh) Rascals
+kanagawatech,Kanto Area League,JAFA,0,神奈川工科大学 (Kanagawa Institute of Technology) Pied Pipers
+kanda,Kanto Area League,JAFA,0,神田大学 (Kanda) Stingers
+rissho,Kanto Area League,JAFA,0,立正大学 (Rissho) Bulldogs
+takachiho,Kanto Area League,JAFA,0,高千穂大学 (Takachiho) Eagles
+tianjin,CAFL,CAFL,0,天津大学 (Tianjin) Pirates
+shandong,CAFL,CAFL,0,山东大学 (Shandong) Flames
+wuhan,CAFL,CAFL,0,武汉大学 (Wuhan) Nine-Headed Birds
+shenyang,CAFL,CAFL,0,沈阳大学 (Shenyang) Tigers
+hebei,CAFL,CAFL,0,河北大学 (Hebei) Nirvana
+xian,CAFL,CAFL,0,西安交通大学 (Xi'an) North-West Wolves
+jiaotong,CUAFL,CUAFL,0,上海交通大学 (Jiao Tong) Lions
+shanghai,CUAFL,CUAFL,0,上海大学 (Shanghai) Bombers
+sues,CUAFL,CUAFL,0,上海工程技术大学 (SUES) Sakers
+ecust,CUAFL,CUAFL,0,华东理工大学 (ECUST) Terminators
+tongji,CUAFL,CUAFL,0,同济大学 (Tongji) Strikers
+cumt,NFL China Beijing,NFL China University Flag Football League,0,中国矿业大学 (CUMT)
+bjtu,NFL China Beijing,NFL China University Flag Football League,0,北京交通大学 (Beijing Jiao Tong)
+beijingsport,NFL China Beijing,NFL China University Flag Football League,0,北京体育大学 (Beijing Sport)
+buct,NFL China Beijing,NFL China University Flag Football League,0,北京化工大学 (BUCT)
+bjut,NFL China Beijing,NFL China University Flag Football League,0,北京工业大学 (BJUT)
+beijingnormal,NFL China Beijing,NFL China University Flag Football League,0,北京师范大学 (Beijing Normal)
+bucea,NFL China Beijing,NFL China University Flag Football League,0,北京建筑大学 (BUCEA)
+bfu,NFL China Beijing,NFL China University Flag Football League,0,北京林业大学 (Beijing Forestry)
+bit,NFL China Beijing,NFL China University Flag Football League,0,北京理工大学 (BIT)
+buu,NFL China Beijing,NFL China University Flag Football League,0,北京联合大学 (Beijing Union)
+bupt,NFL China Beijing,NFL China University Flag Football League,0,北京邮电大学 (BUPT)
+uir,NFL China Beijing,NFL China University Flag Football League,0,国际关系学院 (International Relations)
+tsinghua,NFL China Beijing,NFL China University Flag Football League,0,清华大学 (Tsinghua)
+cipe,NFL China Beijing,NFL China University Flag Football League,0,首都体育学院 (CIPE)
+cnu,NFL China Beijing,NFL China University Flag Football League,0,首都师范大学 (Capital Normal)
+cueb,NFL China Beijing,NFL China University Flag Football League,0,首都经济贸易大学 (CUEB)
+scut,NFL China Guangzhou,NFL China University Flag Football League,0,华南理工大学 (South China Tech)
+gdut,NFL China Guangzhou,NFL China University Flag Football League,0,广东工业大学 (Guangdong Tech)
+huali,NFL China Guangzhou,NFL China University Flag Football League,0,广东工业大学华立学院 (Huali)
+gdei,NFL China Guangzhou,NFL China University Flag Football League,0,广东教育学院 (Guangdong Education)
+gdepc,NFL China Guangzhou,NFL China University Flag Football League,0,广东环境保护工程职业学院 (GDEPC)
+gzhtcm,NFL China Guangzhou,NFL China University Flag Football League,0,广州中医药大学 (GZUCM)
+gsu,NFL China Guangzhou,NFL China University Flag Football League,0,广州体育学院 (Guangzhou Sport)
+sise,NFL China Guangzhou,NFL China University Flag Football League,0,广州大学华软软件学院 (SISE)
+nyushanghai,NFL China Shanghai,NFL China University Flag Football League,0,NYU Shanghai
+shcp,NFL China Shanghai,NFL China University Flag Football League,0,上海交通职业技术学院 (SCP)
+sus,NFL China Shanghai,NFL China University Flag Football League,0,上海体育学院 (Shanghai Sport)
+shnu,NFL China Shanghai,NFL China University Flag Football League,0,上海师范大学 (SHNU)
+sit,NFL China Shanghai,NFL China University Flag Football League,0,上海应用技术学院 (Shanghai Tech)
+usst,NFL China Shanghai,NFL China University Flag Football League,0,上海理工大学 (USST)
+ecupsl,NFL China Shanghai,NFL China University Flag Football League,0,华东政法大学 (ECUPSL)
+sumc,Chinese Independent Teams,Chinese Independent Teams,0,四川传媒学院 (SUMC) Shadow Knights
+fudan,Chinese Independent Teams,Chinese Independent Teams,0,复旦大学 (Fudan) Dragoons
+uestc,Chinese Independent Teams,Chinese Independent Teams,0,电子科技大学 (UESTC) Breakers
+swufe,Chinese Independent Teams,Chinese Independent Teams,0,西南财大 (SWUFE) Spartans
+bangalore,EFLI University League Division 1,EFLI,0,Bangalore Garudas
+gndu,EFLI University League Division 1,EFLI,0,GNDU Goldens
+jain,EFLI University League Division 1,EFLI,0,Jain Southern Champs
+lovely,EFLI University League Division 1,EFLI,0,Lovely Professional Tigers
+madras,EFLI University League Division 1,EFLI,0,Madras Stars
+mdrohtak,EFLI University League Division 1,EFLI,0,MD Rohtak Heroes
+osmania,EFLI University League Division 1,EFLI,0,Osmania Nazims
+pup,EFLI University League Division 1,EFLI,0,PUP Royals
+auro,EFLI University League Division 2,EFLI,0,Auro Blues
+brambedkar,EFLI University League Division 2,EFLI,0,BR Ambedkar Chairmen
+chandigarh,EFLI University League Division 2,EFLI,0,Chandigarh Cheetahs
+gujarat,EFLI University League Division 2,EFLI,0,Gujarat Lions
+jaipurnational,EFLI University League Division 2,EFLI,0,Jaipur National Knights
+jecrc,EFLI University League Division 2,EFLI,0,JECRC Cardinals
+kolkata,EFLI University League Division 2,EFLI,0,Kolkata Bosons
+lakshminarain,EFLI University League Division 2,EFLI,0,Lakshmi Narain Tech Champions
+panjab,EFLI University League Division 2,EFLI,0,Panjab Warriors
+poornima,EFLI University League Division 2,EFLI,0,Poornima Panthers
+sathyabama,EFLI University League Division 2,EFLI,0,Sathyabama Kings
+soa,EFLI University League Division 2,EFLI,0,SOA Rajahs
+kyungsung,BAFA,KAFA,0,경성대학교 (Kyungsang) Dragons
+eastwest,BAFA,KAFA,0,동서대학교 (East-West) Blue Dolphins
+donga,BAFA,KAFA,0,동아대학교 (Dong-A) Leopards
+eui,BAFA,KAFA,0,동의대학교 (Eui) Turtle Fighters
+pukyong,BAFA,KAFA,0,부경대학교 (Pukyong) Mad Mobydicks
+pusannational,BAFA,KAFA,0,부산대학교 (Pusan National) Eagles
+pusanforeignstudies,BAFA,KAFA,0,부산외국어대학교 (Pusan Foreign Studies) Tornado
+silla,BAFA,KAFA,0,신라대학교 (Silla) Red Devils
+ulsan,BAFA,KAFA,0,울산대학교 (Ulsan) Unicorns
+koreamaritime,BAFA,KAFA,0,한국해양대학교 (Korea Maritime) Vikings
+koreannavalacademy,BAFA,KAFA,0,해군사관학교 (Korean Naval Academy) Sharks
+kangwonnational,SAFA,KAFA,0,강원대학교 (Kangwon National) Capra
+konkuk,SAFA,KAFA,0,건국대학교 (Konkuk) Raging Bulls
+korea,SAFA,KAFA,0,고려대학교 (Korea) Tigers
+donggukseoul,SAFA,KAFA,0,동국대학교 서울캠퍼스 (Dongguk Seoul) Tuskers
+seoulnational,SAFA,KAFA,0,서울대학교 (Seoul National) Green Terrors
+uos,SAFA,KAFA,0,서울시립대학교 (Seoul) City Hawks
+sungkyunkwan,SAFA,KAFA,0,성균관대학교 (Sungkyunkwan) Royals
+yonsei,SAFA,KAFA,0,연세대학교 (Yonsei) Eagles
+yongin,SAFA,KAFA,0,용인대학교 (Yongin) White Tigers
+inha,SAFA,KAFA,0,인하대학교 (Inha) Wyverns
+chungang,SAFA,KAFA,0,중앙대학교 (Chungang) Blue Dragons
+hufs,SAFA,KAFA,0,한국외국어대학교 (HUFS) Black Knights
+hallym,SAFA,KAFA,0,한림대학교 (Hallym) Phoenix
+hanyang,SAFA,KAFA,0,한양대학교 (Hanyang) Lions
+hongik,SAFA,KAFA,0,홍익대학교 (Honggik) Cowboys
+kyungpooknational,TKAFA,KAFA,0,경북대학교 (Kyungpook National) Orange Fighters
+kyungil,TKAFA,KAFA,0,경일대학교 (Kyungil) Black Bears
+keimyung,TKAFA,KAFA,0,계명대학교 (Keimyung) Super Lions
+kumohtech,TKAFA,KAFA,0,금오공과대학교 (Kumoh Tech) Ravens
+daeguhaany,TKAFA,KAFA,0,대구대학교 (Daegu Haany) Flying Tigers
+daegucatholic,TKAFA,KAFA,0,대구카톨릭대학교 (Daegu Catholic) Scud Angels
+daegu,TKAFA,KAFA,0,대구한의대학교 (Daegu) Rhinos
+dongguk,TKAFA,KAFA,0,동국대학교 (Dongguk) White Elephants
+yeungnam,TKAFA,KAFA,0,영남대학교 (Yeungnam) Pegasus
+uiduk,TKAFA,KAFA,0,위덕대학교 (Uidik) Thunders
+handongglobal,TKAFA,KAFA,0,한동대학교 (Handong Global) Holy Rams
+akdeniz,Süper Lig,Ünilig,0,Akdeniz Heroes
+anadolu,Süper Lig,Ünilig,0,Anadolu Rangers
+atilim,Süper Lig,Ünilig,0,Atilim Rhinos
+bilkent,Süper Lig,Ünilig,0,Bilkent Judges
+bogazici,Süper Lig,Ünilig,0,Boğaziçi Sultans
+gazi,Süper Lig,Ünilig,0,Gazi Warriors
+hacettepe,Süper Lig,Ünilig,0,Hacettepe Red Deers
+isik,Süper Lig,Ünilig,0,Işik Chargers
+istanbulbilgi,Süper Lig,Ünilig,0,İstanbul Bilgi Hunters
+istanbulteknik,Süper Lig,Ünilig,0,İstanbul Teknik Hornets
+izmirekonomi,Süper Lig,Ünilig,0,İzmir Ekonomi Halcyons
+kocaeli,Süper Lig,Ünilig,0,Kocaeli Sharks
+metu,Süper Lig,Ünilig,0,METU Falcons
+suleymandemirel,Süper Lig,Ünilig,0,Süleyman Demirel Spartans
+yeditepe,Süper Lig,Ünilig,0,Yeditepe Eagles
+yildiz,Süper Lig,Ünilig,0,Yildiz Teknik Stallions
+aibu,1. Lig,Ünilig,0,Aibü Bears
+ankara,1. Lig,Ünilig,0,Ankara Cats
+antalya,1. Lig,Ünilig,0,Antalya Vandals
+baskent,1. Lig,Ünilig,0,Başkent Knights
+canakkalegsk,1. Lig,Ünilig,0,Çanakkale GSK Vatanseverler
+dokuzeylul,1. Lig,Ünilig,0,Dokuz Eylül Efeleri
+dumlupinar,1. Lig,Ünilig,0,Dumlupinar Titans
+ege,1. Lig,Ünilig,0,Ege Dolphins
+emu,1. Lig,Ünilig,0,EMU Crows
+gediz,1. Lig,Ünilig,0,Gediz Hawks
+istanbul,1. Lig,Ünilig,0,İstanbul Conquerors
+koc,1. Lig,Ünilig,0,Koç Rams
+kocatepe,1. Lig,Ünilig,0,Kocatepe Victory Walkers
+sakarya,1. Lig,Ünilig,0,Sakarya Tatankaları
+tobbetu,1. Lig,Ünilig,0,Tobb ETU Raiders
+uludag,1. Lig,Ünilig,0,Uludağ Timsahlar
+yasar,1. Lig,Ünilig,0,Yaşar Admirals
+bostonuniversity,D1 Post-1978,Discontinued Teams,0,Boston University Terriers
+canisius,D1 Post-1978,Discontinued Teams,0,Canisius Golden Griffins
+csufullerton,D1 Post-1978,Discontinued Teams,0,CSU Fullerton Titans
+csulongbeach,D1 Post-1978,Discontinued Teams,0,CSU Long Beach 49ers
+csunorthridge,D1 Post-1978,Discontinued Teams,0,CSU Northridge Matadors
+evansville,D1 Post-1978,Discontinued Teams,0,Evansville Purple Aces
+fairfield,D1 Post-1978,Discontinued Teams,0,Fairfield Stags
+hofstra,D1 Post-1978,Discontinued Teams,0,Hofstra Pride
+iona,D1 Post-1978,Discontinued Teams,0,Iona Gaels
+lasalle,D1 Post-1978,Discontinued Teams,0,La Salle Explorers
+northeastern,D1 Post-1978,Discontinued Teams,0,Northeastern Huskies
+pacific,D1 Post-1978,Discontinued Teams,0,Pacific Tigers
+santaclara,D1 Post-1978,Discontinued Teams,0,Santa Clara Broncos
+setonhall,D1 Post-1978,Discontinued Teams,0,Seton Hall Pirates
+siena,D1 Post-1978,Discontinued Teams,0,Siena Saints
+stjohnsny,D1 Post-1978,Discontinued Teams,0,St. John's (NY) Red Storm
+stmarys,D1 Post-1978,Discontinued Teams,0,St. Mary's (CA) Gaels
+stpeters,D1 Post-1978,Discontinued Teams,0,St. Peter's Peacocks
+ucsb,D1 Post-1978,Discontinued Teams,0,UCSB Gauchos
+umes,D1 Post-1978,Discontinued Teams,0,UMES Hawks
+utarlington,D1 Post-1978,Discontinued Teams,0,UT Arlington Mavericks
+wichitastate,D1 Post-1978,Discontinued Teams,0,Wichita State Shockers
+bradley,D1 1950-1977,Discontinued Teams,0,Bradley Braves
+denver,D1 1950-1977,Discontinued Teams,0,Denver Pioneers
+detroitmercy,D1 1950-1977,Discontinued Teams,0,Detroit Titans
+drexel,D1 1950-1977,Discontinued Teams,0,Drexel Dragons
+georgewashington,D1 1950-1977,Discontinued Teams,0,George Washington Colonials
+highpoint,D1 1950-1977,Discontinued Teams,0,High Point Panthers
+ualr,D1 1950-1977,Discontinued Teams,0,Little Rock Trojans
+loyolamarymount,D1 1950-1977,Discontinued Teams,0,Loyola Marymount Lions
+marquette,D1 1950-1977,Discontinued Teams,0,Marquette Golden Eagles
+milwaukee,D1 1950-1977,Discontinued Teams,0,Milwaukee Panthers
+mountstmary,D1 1950-1977,Discontinued Teams,0,Mount St. Mary Blue Knights
+niagara,D1 1950-1977,Discontinued Teams,0,Niagara Purple Eagles
+nyu,D1 1950-1977,Discontinued Teams,0,NYU Violets
+pepperdine,D1 1950-1977,Discontinued Teams,0,Pepperdine Waves
+rider,D1 1950-1977,Discontinued Teams,0,Rider Broncs
+sanfrancisco,D1 1950-1977,Discontinued Teams,0,San Francisco Dons
+stbonaventure,D1 1950-1977,Discontinued Teams,0,St. Bonaventure Bonnies
+texasamcorpuschristi,D1 1950-1977,Discontinued Teams,0,Texas A&M-Corpus Christi Islanders
+texaspanamerican,D1 1950-1977,Discontinued Teams,0,Texas-Pan American Broncs
+ucriverside,D1 1950-1977,Discontinued Teams,0,UC Riverside Highlanders
+uic,D1 1950-1977,Discontinued Teams,0,UIC Flames
+uncasheville,D1 1950-1977,Discontinued Teams,0,UNC Asheville Bulldogs
+vermont,D1 1950-1977,Discontinued Teams,0,Vermont Catamounts
+xavier,D1 1950-1977,Discontinued Teams,0,Xavier Musketeers
+american,D1 Pre-1950,Discontinued Teams,0,American University Eagles
+carlisle,D1 Pre-1950,Discontinued Teams,0,Carlisle Indians
+centenary,D1 Pre-1950,Discontinued Teams,0,Centenary Gents
+collegecharleston,D1 Pre-1950,Discontinued Teams,0,Charleston (SC) Cougars
+creighton,D1 Pre-1950,Discontinued Teams,0,Creighton Bluejays
+depaul,D1 Pre-1950,Discontinued Teams,0,DePaul Blue Demons
+gonzaga,D1 Pre-1950,Discontinued Teams,0,Gonzaga Bulldogs
+longisland,D1 Pre-1950,Discontinued Teams,0,Long Island Blackbirds
+loyolachicago,D1 Pre-1950,Discontinued Teams,0,Loyola Chicago Ramblers
+loyolamaryland,D1 Pre-1950,Discontinued Teams,0,Loyola Maryland Greyhounds
+manhattan,D1 Pre-1950,Discontinued Teams,0,Manhattan Jaspers
+portland,D1 Pre-1950,Discontinued Teams,0,Portland Pilots
+providence,D1 Pre-1950,Discontinued Teams,0,Providence Friars
+saintlouis,D1 Pre-1950,Discontinued Teams,0,Saint Louis Billikens
+stfrancisbrooklyn,D1 Pre-1950,Discontinued Teams,0,St. Francis Brooklyn Terriers
+stjosephspa,D1 Pre-1950,Discontinued Teams,0,St. Joseph's (PA) Hawks
+allen,NCAA Post-2002,Discontinued Teams,0,Allen Yellow Jackets
+barberscotia,NCAA Post-2002,Discontinued Teams,0,Barber-Scotia Sabers
+blackburn,NCAA Post-2002,Discontinued Teams,0,Blackburn Beavers
+coloradocollege,NCAA Post-2002,Discontinued Teams,0,Colorado College Tigers
+georgiasouthwesternstate,NCAA Post-2002,Discontinued Teams,0,Georgia Southwestern State Hurricanes
+haskell,NCAA Post-2002,Discontinued Teams,0,Haskell Indians
+king,NCAA Post-2002,Discontinued Teams,0,King (TN) Tornado
+lambuth,NCAA Post-2002,Discontinued Teams,0,Lambuth Eagles
+menlo,NCAA Post-2002,Discontinued Teams,0,Menlo Oaks
+morrisbrown,NCAA Post-2002,Discontinued Teams,0,Morris Brown Wolverines
+nebraskaomaha,NCAA Post-2002,Discontinued Teams,0,Omaha Mavericks
+paine,NCAA Post-2002,Discontinued Teams,0,Paine Lions
+paulquinn,NCAA Post-2002,Discontinued Teams,0,Paul Quinn Tigers
+principia,NCAA Post-2002,Discontinued Teams,0,Principia Panthers
+sitanka,NCAA Post-2002,Discontinued Teams,0,Si Tanka Eagles
+stpaulsva,NCAA Post-2002,Discontinued Teams,0,St. Paul's (VA) Tigers
+stillman,NCAA Post-2002,Discontinued Teams,0,Stillman Tigers
+westernwashington,NCAA Post-2002,Discontinued Teams,0,Western Washington Vikings
+westvirginiatech,NCAA Post-2002,Discontinued Teams,0,WVU Tech Golden Bears
+brooklyn,NCAA 1990-2002,Discontinued Teams,0,Brooklyn Bulldogs
+cameron,NCAA 1990-2002,Discontinued Teams,0,Cameron Aggies
+chicostate,NCAA 1990-2002,Discontinued Teams,0,Chico State Wildcats
+csueastbay,NCAA 1990-2002,Discontinued Teams,0,CSU East Bay Pioneers
+knoxville,NCAA 1990-2002,Discontinued Teams,0,Knoxville Bulldogs
+leesmcrae,NCAA 1990-2002,Discontinued Teams,0,Lees-McRae Bobcats
+massachusettsboston,NCAA 1990-2002,Discontinued Teams,0,Massachusetts Boston Beacons
+massachusettslowell,NCAA 1990-2002,Discontinued Teams,0,Massachusetts Lowell River Hawks
+mountscenario,NCAA 1990-2002,Discontinued Teams,0,Mount Scenario Fighting Saints
+newjerseycity,NCAA 1990-2002,Discontinued Teams,0,New Jersey City Gothic Knights
+oregontech,NCAA 1990-2002,Discontinued Teams,0,Oregon Institute of Technology Hustlin' Owls
+ramapo,NCAA 1990-2002,Discontinued Teams,0,Ramapo Roadrunners
+sanfranciscostate,NCAA 1990-2002,Discontinued Teams,0,San Francisco State Gators
+sonomastate,NCAA 1990-2002,Discontinued Teams,0,Sonoma State Seawolves
+stmaryoftheplains,NCAA 1990-2002,Discontinued Teams,0,St. Mary of the Plains Cavaliers
+suebennett,NCAA 1990-2002,Discontinued Teams,0,Sue Bennett Dragons
+swarthmore,NCAA 1990-2002,Discontinued Teams,0,Swarthmore Garnet Tide
+tarkio,NCAA 1990-2002,Discontinued Teams,0,Tarkio Owls
+tennesseewesleyan,NCAA 1990-2002,Discontinued Teams,0,Tennessee Wesleyan Bulldogs
+universitydc,NCAA 1990-2002,Discontinued Teams,0,University of the District of Columbia Firebirds
+upsala,NCAA 1990-2002,Discontinued Teams,0,Upsala Vikings
+wisconsinsuperior,NCAA 1990-2002,Discontinued Teams,0,Wisconsin-Superior Yellowjackets
+baptistchristian,NCAA 1976-1989,Discontinued Teams,0,Baptist Christian Indians
+bluefieldstate,NCAA 1976-1989,Discontinued Teams,0,Bluefield State Big Blues
+calpolypomona,NCAA 1976-1989,Discontinued Teams,0,Cal Poly Pomona Broncos
+calwestern,NCAA 1976-1989,Discontinued Teams,0,Cal Western Globe Runners
+caltech,NCAA 1976-1989,Discontinued Teams,0,Caltech Beavers
+csula,NCAA 1976-1989,Discontinued Teams,0,CSU LA Golden Eagles
+fisk,NCAA 1976-1989,Discontinued Teams,0,Fisk Bulldogs
+fortlauderdalecollege,NCAA 1976-1989,Discontinued Teams,0,Fort Lauderdale College Seagulls
+lubbockchristian,NCAA 1976-1989,Discontinued Teams,0,Lubbock Christian Chapparral
+milton,NCAA 1976-1989,Discontinued Teams,0,Milton Wildcats
+montanastatebillings,NCAA 1976-1989,Discontinued Teams,0,Montana State-Billings Yellowjackets
+newyorktech,NCAA 1976-1989,Discontinued Teams,0,New York Institute of Technology Bears
+northeasternillinois,NCAA 1976-1989,Discontinued Teams,0,Northeastern Illinois Golden Eagles
+rit,NCAA 1976-1989,Discontinued Teams,0,RIT Tigers
+rogerwilliams,NCAA 1976-1989,Discontinued Teams,0,Roger Williams Hawks
+saleminternational,NCAA 1976-1989,Discontinued Teams,0,Salem International Tigers
+southdakotaspringfield,NCAA 1976-1989,Discontinued Teams,0,South Dakota-Springfield Pointers
+stleo,NCAA 1976-1989,Discontinued Teams,0,St. Leo Lions
+sunyoswego,NCAA 1976-1989,Discontinued Teams,0,SUNY Oswego Lakers
+sunyplattsburgh,NCAA 1976-1989,Discontinued Teams,0,SUNY Plattsburgh Cardinals
+westminsterut,NCAA 1976-1989,Discontinued Teams,0,Westminster (UT) Griffins
+whitman,NCAA 1976-1989,Discontinued Teams,0,Whitman Missionaries
+yankton,NCAA 1976-1989,Discontinued Teams,0,Yankton Greyhounds
+bridgeport,NCAA 1964-1975,Discontinued Teams,0,Bridgeport Purple Knights
+claflin,NCAA 1964-1975,Discontinued Teams,0,Claflin Panthers
+collegeofemporia,NCAA 1964-1975,Discontinued Teams,0,College of Emporia Fighting Presbies
+collegeoftheozarks,NCAA 1964-1975,Discontinued Teams,0,College of the Ozarks Bobcats
+denmarktech,NCAA 1964-1975,Discontinued Teams,0,Denmark Tech Panthers
+dillard,NCAA 1964-1975,Discontinued Teams,0,Dillard Bleu Devils
+haverford,NCAA 1964-1975,Discontinued Teams,0,Haverford Fords
+hiramscott,NCAA 1964-1975,Discontinued Teams,0,Hiram Scott Scotties
+jarvischristian,NCAA 1964-1975,Discontinued Teams,0,Jarvis Christian Bulldogs
+midwesterncollege,NCAA 1964-1975,Discontinued Teams,0,Midwestern College Packers
+morris,NCAA 1964-1975,Discontinued Teams,0,Morris Hornets
+newengland,NCAA 1964-1975,Discontinued Teams,0,New England Pilgrims
+northlandwi,NCAA 1964-1975,Discontinued Teams,0,Northland (WI) LumberJacks
+northwoodtx,NCAA 1964-1975,Discontinued Teams,0,Northwood (TX) Knights
+parsons,NCAA 1964-1975,Discontinued Teams,0,Parsons Wildcats
+philandersmith,NCAA 1964-1975,Discontinued Teams,0,Philander Smith Panthers
+rust,NCAA 1964-1975,Discontinued Teams,0,Rust Bearcats
+tampa,NCAA 1964-1975,Discontinued Teams,0,Tampa Spartans
+tidewatercc,NCAA 1964-1975,Discontinued Teams,0,Tidewater CC Storm
+ucsd,NCAA 1964-1975,Discontinued Teams,0,UCSD Tritons
+wiley,NCAA 1964-1975,Discontinued Teams,0,Wiley Wildcats
+adelphi,NCAA 1952-1963,Discontinued Teams,0,Adelphi Panthers
+alaskafairbanks,NCAA 1952-1963,Discontinued Teams,0,Alaska Fairbanks Nanooks
+brandeis,NCAA 1952-1963,Discontinued Teams,0,Brandeis Judges
+californiabaptist,NCAA 1952-1963,Discontinued Teams,0,California Baptist Lancers
+cedarville,NCAA 1952-1963,Discontinued Teams,0,Cedarville Yellow Jackets
+champlain,NCAA 1952-1963,Discontinued Teams,0,Champlain Beavers
+clarkson,NCAA 1952-1963,Discontinued Teams,0,Clarkson Golden Knights
+daviselkins,NCAA 1952-1963,Discontinued Teams,0,Davis & Elkins Senators
+erskine,NCAA 1952-1963,Discontinued Teams,0,Erskine Flying Fleet
+floridamemorial,NCAA 1952-1963,Discontinued Teams,0,Florida Memorial Fighting Lions
+leland,NCAA 1952-1963,Discontinued Teams,0,Leland Buffalo
+lewis,NCAA 1952-1963,Discontinued Teams,0,Lewis Flyers
+nebraskacentral,NCAA 1952-1963,Discontinued Teams,0,Nebraska Central Fighting Quakers
+reed,NCAA 1952-1963,Discontinued Teams,0,Reed Griffins
+scranton,NCAA 1952-1963,Discontinued Teams,0,Scranton Royals
+stmarysmn,NCAA 1952-1963,Discontinued Teams,0,St. Mary's (MN) Cardinals
+stmichaelsvt,NCAA 1952-1963,Discontinued Teams,0,St. Michael's (VT) Purple Knights
+tougaloo,NCAA 1952-1963,Discontinued Teams,0,Tougaloo Bulldogs
+uniontn,NCAA 1952-1963,Discontinued Teams,0,Union (TN) Bulldogs
+vanguard,NCAA 1952-1963,Discontinued Teams,0,Vanguard Lions
+williamcarey,NCAA 1952-1963,Discontinued Teams,0,William Carey Crusaders
+xavierlouisiana,NCAA 1952-1963,Discontinued Teams,0,Xavier Louisiana Gold Rush
+yorkne,NCAA 1952-1963,Discontinued Teams,0,York (NE) Panthers
+aquinasmi,NCAA 1950-1951,Discontinued Teams,0,Aquinas (MI) Saints
+barton,NCAA 1950-1951,Discontinued Teams,0,Barton Bulldogs
+canterburyin,NCAA 1950-1951,Discontinued Teams,0,Canterbury (IN) Purple Warriors
+ccny,NCAA 1950-1951,Discontinued Teams,0,CCNY Beavers
+danielbaker,NCAA 1950-1951,Discontinued Teams,0,Daniel Baker Hill Billies
+detroittech,NCAA 1950-1951,Discontinued Teams,0,Detroit Tech Dynamics
+hustontillotson,NCAA 1950-1951,Discontinued Teams,0,Huston-Tillotson Rams
+lakesuperiorstate,NCAA 1950-1951,Discontinued Teams,0,Lake Superior State Lakers
+lemoyneowen,NCAA 1950-1951,Discontinued Teams,0,LeMoyne-Owen Magicians
+lewisclarkstate,NCAA 1950-1951,Discontinued Teams,0,Lewis-Clark State Warriors
+milligan,NCAA 1950-1951,Discontinued Teams,0,Milligan Buffaloes
+oklahomacity,NCAA 1950-1951,Discontinued Teams,0,Oklahoma City Stars
+rollins,NCAA 1950-1951,Discontinued Teams,0,Rollins Tars
+santafeartanddesign,NCAA 1950-1951,Discontinued Teams,0,Santa Fe Art and Design Adobes
+shawcollegeatdetroit,NCAA 1950-1951,Discontinued Teams,0,Shaw College at Detroit Indians
+simmonsky,NCAA 1950-1951,Discontinued Teams,0,Simmons (KY) Panthers
+southernidahoeducation,NCAA 1950-1951,Discontinued Teams,0,Southern Idaho Education Panthers
+stmartins,NCAA 1950-1951,Discontinued Teams,0,St. Martin's Saints
+washingtonmd,NCAA 1950-1951,Discontinued Teams,0,Washington (MD) Shoremen
+alliance,NCAA 1940-1949,Discontinued Teams,0,Alliance Eagles
+athensstate,NCAA 1940-1949,Discontinued Teams,0,Athens State Bears
+belmontabbey,NCAA 1940-1949,Discontinued Teams,0,Belmont Abbey Crusaders
+franciscansteubenville,NCAA 1940-1949,Discontinued Teams,0,Franciscan Steubenville Barons
+huntington,NCAA 1940-1949,Discontinued Teams,0,Huntington Foresters
+normanga,NCAA 1940-1949,Discontinued Teams,0,Norman (GA) Baptists
+oglethorpe,NCAA 1940-1949,Discontinued Teams,0,Oglethorpe Stormy Petrels
+piedmont,NCAA 1940-1949,Discontinued Teams,0,Piedmont Lions
+regis,NCAA 1940-1949,Discontinued Teams,0,Regis Rangers
+riogrande,NCAA 1940-1949,Discontinued Teams,0,Rio Grande RedStorm
+roanoke,NCAA 1940-1949,Discontinued Teams,0,Roanoke Maroons
+selma,NCAA 1940-1949,Discontinued Teams,0,Selma Bulldogs
+southgeorgia,NCAA 1940-1949,Discontinued Teams,0,South Georgia Hawks
+springhill,NCAA 1940-1949,Discontinued Teams,0,Spring Hill Badgers
+stedwards,NCAA 1940-1949,Discontinued Teams,0,St. Edward's Hilltoppers
+stmarystx,NCAA 1940-1949,Discontinued Teams,0,St. Mary's (TX) Rattlers
+talladega,NCAA 1940-1949,Discontinued Teams,0,Talladega Tornadoes
+texaswesleyan,NCAA 1940-1949,Discontinued Teams,0,Texas Wesleyan Rams
+transylvania,NCAA 1940-1949,Discontinued Teams,0,Transylvania Pioneers
+andrews,NCAA Pre-1940,Discontinued Teams,0,Andrews Cardinals
+arcadia,NCAA Pre-1940,Discontinued Teams,0,Arcadia Knights
+atlantic,NCAA Pre-1940,Discontinued Teams,0,Atlantic Sea Dogs
+baltimore,NCAA Pre-1940,Discontinued Teams,0,Baltimore Super Bees
+bard,NCAA Pre-1940,Discontinued Teams,0,Bard Raptors
+christianbrothers,NCAA Pre-1940,Discontinued Teams,0,Christian Brothers Buccaneers
+cooperunion,NCAA Pre-1940,Discontinued Teams,0,Cooper Union Pioneers
+drury,NCAA Pre-1940,Discontinued Teams,0,Drury Panthers
+floridasouthern,NCAA Pre-1940,Discontinued Teams,0,Florida Southern Moccasins
+augusta,NCAA Pre-1940,Discontinued Teams,0,Augusta Jaguars
+keenestate,NCAA Pre-1940,Discontinued Teams,0,Keene State Owls
+lincolnmemorial,NCAA Pre-1940,Discontinued Teams,0,Lincoln Memorial Railsplitters
+loyolaneworleans,NCAA Pre-1940,Discontinued Teams,0,Loyola New Orleans Wolfpack
+northgeorgia,NCAA Pre-1940,Discontinued Teams,0,North Georgia Nighthawks
+philau,NCAA Pre-1940,Discontinued Teams,0,PhilaU Rams
+phillips,NCAA Pre-1940,Discontinued Teams,0,Phillips Haymakers
+stevenstech,NCAA Pre-1940,Discontinued Teams,0,Stevens Institute of Technology Ducks
+sunyfarmingdale,NCAA Pre-1940,Discontinued Teams,0,SUNY Farmingdale Rams
+sunyfredonia,NCAA Pre-1940,Discontinued Teams,0,SUNY Fredonia Blue Devils
+sunygeneseo,NCAA Pre-1940,Discontinued Teams,0,SUNY Geneseo Knights
+sunynewpaltz,NCAA Pre-1940,Discontinued Teams,0,SUNY New Paltz Hawks
+sunypotsdam,NCAA Pre-1940,Discontinued Teams,0,SUNY Potsdam Bears
+webbinstitute,NCAA Pre-1940,Discontinued Teams,0,Webb Institute Webbies
+anokaramsey,Non-NCAA Discontinued 1,Discontinued Teams,0,Anoka-Ramsey CC Rams
+byuidaho,Non-NCAA Discontinued 1,Discontinued Teams,0,BYU-Idaho Vikings
+centralia,Non-NCAA Discontinued 1,Discontinued Teams,0,Centralia Blazers
+centurycollege,Non-NCAA Discontinued 1,Discontinued Teams,0,Century Wood Ducks
+clackamascc,Non-NCAA Discontinued 1,Discontinued Teams,0,Clackamas CC Cougars
+collegemarin,Non-NCAA Discontinued 1,Discontinued Teams,0,Marin Mariners
+columbiabasin,Non-NCAA Discontinued 1,Discontinued Teams,0,Columbia Basin Hawks
+cowleycountycc,Non-NCAA Discontinued 1,Discontinued Teams,0,Cowley County CC Tigers
+dakotactc,Non-NCAA Discontinued 1,Discontinued Teams,0,Dakota CTC Blue Knights
+gccr,Non-NCAA Discontinued 1,Discontinued Teams,0,Grand Rapids CC Raiders
+goldenvalleylutheran,Non-NCAA Discontinued 1,Discontinued Teams,0,Golden Valley Lutheran Royals
+graysharbor,Non-NCAA Discontinued 1,Discontinued Teams,0,Grays Harbor Chokers
+harfordcc,Non-NCAA Discontinued 1,Discontinued Teams,0,Harford CC Fighting Owls
+harper,Non-NCAA Discontinued 1,Discontinued Teams,0,Harper Hawks
+hibbingcc,Non-NCAA Discontinued 1,Discontinued Teams,0,Hibbing CC Cardinals
+illinoisvalleycc,Non-NCAA Discontinued 1,Discontinued Teams,0,Illinois Valley CC Eagles
+indianhillscc,Non-NCAA Discontinued 1,Discontinued Teams,0,Indian Hills CC Warriors
+iowalakescc,Non-NCAA Discontinued 1,Discontinued Teams,0,Iowa Lakes CC Lakers
+jolietjc,Non-NCAA Discontinued 1,Discontinued Teams,0,Joliet JC Wolves
+kempermilitaryjc,Non-NCAA Discontinued 1,Discontinued Teams,0,Kemper Military JC
+kennedyking,Non-NCAA Discontinued 1,Discontinued Teams,0,Kennedy-King Statesmen
+marionmilitary,Non-NCAA Discontinued 1,Discontinued Teams,0,Marion Military Tigers
+marshalltowncc,Non-NCAA Discontinued 1,Discontinued Teams,0,Marshalltown CC Tigers
+midplainscc,Non-NCAA Discontinued 1,Discontinued Teams,0,Mid-Plains CC Indians
+montgomery,Non-NCAA Discontinued 2,Discontinued Teams,0,Montgomery Raptors
+morainevalleycc,Non-NCAA Discontinued 2,Discontinued Teams,0,Moraine Valley CC Cyclones
+morton,Non-NCAA Discontinued 2,Discontinued Teams,0,Morton Panthers
+neworleans,Non-NCAA Discontinued 2,Discontinued Teams,0,New Orleans Privateers
+normandalecc,Non-NCAA Discontinued 2,Discontinued Teams,0,Normandale CC Lions
+northiowaareacc,Non-NCAA Discontinued 2,Discontinued Teams,0,North Iowa Area CC Trojans
+olympicjc,Non-NCAA Discontinued 2,Discontinued Teams,0,Olympic JC Rangers
+potomacstate,Non-NCAA Discontinued 2,Discontinued Teams,0,Potomac State Catamounts
+prattcc,Non-NCAA Discontinued 2,Discontinued Teams,0,Pratt CC Beavers
+rainyrivercc,Non-NCAA Discontinued 2,Discontinued Teams,0,Rainy River CC Voyageurs
+rangerjc,Non-NCAA Discontinued 2,Discontinued Teams,0,Ranger JC Rangers
+riverlandcc,Non-NCAA Discontinued 2,Discontinued Teams,0,Riverland CC Blue Devils
+rockvalley,Non-NCAA Discontinued 2,Discontinued Teams,0,Rock Velley Golden Eagles
+shorelinecc,Non-NCAA Discontinued 2,Discontinued Teams,0,Shoreline CC Dolphins
+solanocc,Non-NCAA Discontinued 2,Discontinued Teams,0,Solano CC Falcons
+southeastcc,Non-NCAA Discontinued 2,Discontinued Teams,0,Southeast CC Storm
+southsuburbancc,Non-NCAA Discontinued 2,Discontinued Teams,0,South Suburban CC Bulldogs
+spokanefallscc,Non-NCAA Discontinued 2,Discontinued Teams,0,Spokane Falls CC Bigfoot
+sunycanton,Non-NCAA Discontinued 2,Discontinued Teams,0,SUNY-Canton Kangaroos
+taft,Non-NCAA Discontinued 2,Discontinued Teams,0,Taft Cougars
+texarkanacollege,Non-NCAA Discontinued 2,Discontinued Teams,0,Texarkana Bulldogs
+treasurevalleycc,Non-NCAA Discontinued 2,Discontinued Teams,0,Treasure Valley CC Chukars
+trinidadstatejc,Non-NCAA Discontinued 2,Discontinued Teams,0,Trinidad State JC Trojans
+tritoncollege,Non-NCAA Discontinued 2,Discontinued Teams,0,Triton Trojans
+usueastern,Non-NCAA Discontinued 2,Discontinued Teams,0,USU Eastern Eagles
+wenatcheevalley,Non-NCAA Discontinued 3,Discontinued Teams,0,Wenatchee Valley Knights
+westvalley,Non-NCAA Discontinued 3,Discontinued Teams,0,West Valley Vikings
+westchestercc,Non-NCAA Discontinued 3,Discontinued Teams,0,Westchester CC Vikings
+whartoncountyjc,Non-NCAA Discontinued 3,Discontinued Teams,0,Wharton County JC Pioneers
+wilburwright,Non-NCAA Discontinued 3,Discontinued Teams,0,Wilbur Wright Rams
+yakimavalleycc,Non-NCAA Discontinued 3,Discontinued Teams,0,Yakima Valley CC Yaks
+capebreton,Canada,Discontinued Teams,0,Cape Breton Capers
+moncton,Canada,Discontinued Teams,0,Moncton Junior Mustangs
+laurentian,Canada,Discontinued Teams,0,Laurentian Voyageurs
+rmc,Canada,Discontinued Teams,0,RMC Paladins
+rmcstjean,Canada,Discontinued Teams,0,RMC Saint-Jean Remparts
+upei,Canada,Discontinued Teams,0,UPEI Panthers
+uqam,Canada,Discontinued Teams,0,UQAM Citadins
+havana,Cuba,Discontinued Teams,0,Havana Caribes
+dcu,Ireland,Discontinued Teams,0,DCU Saints
+esiqieipn,Mexico,Discontinued Teams,0,Pieles Rojas ESIQIE-IPN
+heroicocolegiomilitar,Mexico,Discontinued Teams,0,Heroico Colegio Militar Royal Eagles
+mexicocitycollege,Mexico,Discontinued Teams,0,Mexico City College Green Wave
+unib,Mexico,Discontinued Teams,0,Bengalíes UNIB
+aberdeen,UK,Discontinued Teams,0,Aberdeen Steamroller
+aston,UK,Discontinued Teams,0,Aston Rhinos
+dundee,UK,Discontinued Teams,0,Dundee Bluedevils
+falmouth,UK,Discontinued Teams,0,Falmouth Tridents
+strathclyde,UK,Discontinued Teams,0,Strathclyde Hawks
+wolverhampton,UK,Discontinued Teams,0,Wolverhampton Wildcats

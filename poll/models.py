@@ -18,10 +18,10 @@ class UserSecondaryAffiliations(models.Model):
 
 
 class Team(models.Model):
-    handle = models.CharField(max_length=40)
-    name = models.CharField(max_length=80)
-    conference = models.CharField(max_length=20)
-    division = models.CharField(max_length=6)
+    handle = models.CharField(max_length=60)
+    name = models.CharField(max_length=120)
+    conference = models.CharField(max_length=60)
+    division = models.CharField(max_length=40)
     use_for_ballot = models.BooleanField()
 
     def __str__(self):

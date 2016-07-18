@@ -21,7 +21,7 @@ class Team(models.Model):
     handle = models.CharField(max_length=60)
     name = models.CharField(max_length=120)
     conference = models.CharField(max_length=60)
-    division = models.CharField(max_length=40)
+    division = models.CharField(max_length=50)
     use_for_ballot = models.BooleanField()
 
     def __str__(self):

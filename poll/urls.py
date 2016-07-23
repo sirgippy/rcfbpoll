@@ -3,4 +3,5 @@ from . import views
 
 urlpatterns = [
     url(r'^$', views.home, name='home'),
+    url(r'^ballot/', views.ballot, name='ballot')
 ]

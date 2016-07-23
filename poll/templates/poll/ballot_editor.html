@@ -1,0 +1,210 @@
+{% extends 'poll/base.html' %}
+
+{% load staticfiles %}
+
+{% block content %}
+    <script src="{% static 'javascript/ballot.js' %}"></script>
+
+	<div class="container">
+		<h2>20XX Week X</h2>
+
+		<div class="form-group">
+			<label id="poll-type-label" for="poll-type">Poll Type:</label>
+			<select class="form-control" id="poll-type">
+				<option>(unspecified)</option>
+				<option>human</option>
+				<option>computer</option>
+				<option>hybrid</option>
+			</select>
+		</div>
+
+		<div class="form-group">
+			<label id="overall-rationale-label" for="overall-rationale">Overall Rationale:</label>
+			<button class="btn btn-primary" id="overall-rationale-button" type="button" data-toggle="collapse" data-target="#overall-rationale" aria-expanded="false">Show/Hide</button>
+			<div id="overall-rationale" class="rationale collapse" type="text" contenteditable="true" aria-expanded="false"></div>
+		</div>
+
+		<div class="row">
+			<div class="col-md-6">
+
+				<div id="alert-container"></div>
+
+				<div id="ballot-container">
+					<ol id="ballot"></ol>
+				</div>
+			</div>
+			<div class="col-md-6">
+				<ul class="nav nav-tabs" role="tablist">
+					<li role="presentation" class="active"><a href="#teams" aria-controls="teams" role="tab" data-toggle="tab">Teams</a></li>
+					<li role="presentation"><a href="#submit" aria-controls="submit" role="tab" data-toggle="tab">Validate & Submit</a></li>
+				</ul>
+
+				<div class="tab-content">
+					<div id="teams" class="tab-pane fade in active">
+						<div id="teams-accordion">
+							<h3>ACC</h3>
+							<div>
+								<ul class="teamlist">
+                                    {% for team in teams.acc %}
+                                        <li class="team">
+                                            {% with "images/full60/"|add:team.handle|add:".png" as static_img %}
+                                                <img class="team-logo" src="{% static static_img %}">
+                                            {% endwith %}
+                                            <span class="team-name">{{ team.name }}</span>
+                                        </li>
+                                    {% endfor %}
+                                </ul>
+							</div>
+							<h3>Big Ten</h3>
+							<div>
+								<ul class="teamlist">
+                                    {% for team in teams.bigten %}
+                                        <li class="team">
+                                            {% with "images/full60/"|add:team.handle|add:".png" as static_img %}
+                                                <img class="team-logo" src="{% static static_img %}">
+                                            {% endwith %}
+                                            <span class="team-name">{{ team.name }}</span>
+                                        </li>
+                                    {% endfor %}
+                                </ul>
+							</div>
+							<h3>Big 12</h3>
+							<div>
+								<ul class="teamlist">
+                                    {% for team in teams.big12 %}
+                                        <li class="team">
+                                            {% with "images/full60/"|add:team.handle|add:".png" as static_img %}
+                                                <img class="team-logo" src="{% static static_img %}">
+                                            {% endwith %}
+                                            <span class="team-name">{{ team.name }}</span>
+                                        </li>
+                                    {% endfor %}
+                                </ul>
+							</div>
+							<h3>Pac-12</h3>
+							<div>
+								<ul class="teamlist">
+                                    {% for team in teams.pac12 %}
+                                        <li class="team">
+                                            {% with "images/full60/"|add:team.handle|add:".png" as static_img %}
+                                                <img class="team-logo" src="{% static static_img %}">
+                                            {% endwith %}
+                                            <span class="team-name">{{ team.name }}</span>
+                                        </li>
+                                    {% endfor %}
+                                </ul>
+							</div>
+							<h3>SEC</h3>
+							<div>
+								<ul class="teamlist">
+                                    {% for team in teams.sec %}
+                                        <li class="team">
+                                            {% with "images/full60/"|add:team.handle|add:".png" as static_img %}
+                                                <img class="team-logo" src="{% static static_img %}">
+                                            {% endwith %}
+                                            <span class="team-name">{{ team.name }}</span>
+                                        </li>
+                                    {% endfor %}
+                                </ul>
+							</div>
+                            <h3>FBS Independents</h3>
+                            <div>
+                                <ul class="teamlist">
+                                    {% for team in teams.ind %}
+                                        <li class="team">
+                                            {% with "images/full60/"|add:team.handle|add:".png" as static_img %}
+                                                <img class="team-logo" src="{% static static_img %}">
+                                            {% endwith %}
+                                            <span class="team-name">{{ team.name }}</span>
+                                        </li>
+                                    {% endfor %}
+                                </ul>
+                            </div>
+							<h3>American</h3>
+							<div>
+								<ul class="teamlist">
+                                    {% for team in teams.aac %}
+                                        <li class="team">
+                                            {% with "images/full60/"|add:team.handle|add:".png" as static_img %}
+                                                <img class="team-logo" src="{% static static_img %}">
+                                            {% endwith %}
+                                            <span class="team-name">{{ team.name }}</span>
+                                        </li>
+                                    {% endfor %}
+                                </ul>
+							</div>
+							<h3>Conference USA</h3>
+							<div>
+								<ul class="teamlist">
+                                    {% for team in teams.bigten %}
+                                        <li class="team">
+                                            {% with "images/full60/"|add:team.handle|add:".png" as static_img %}
+                                                <img class="team-logo" src="{% static static_img %}">
+                                            {% endwith %}
+                                            <span class="team-name">{{ team.name }}</span>
+                                        </li>
+                                    {% endfor %}
+                                </ul>
+							</div>
+							<h3>Mid-American</h3>
+							<div>
+								<ul class="teamlist">
+                                    {% for team in teams.mac %}
+                                        <li class="team">
+                                            {% with "images/full60/"|add:team.handle|add:".png" as static_img %}
+                                                <img class="team-logo" src="{% static static_img %}">
+                                            {% endwith %}
+                                            <span class="team-name">{{ team.name }}</span>
+                                        </li>
+                                    {% endfor %}
+                                </ul>
+							</div>
+							<h3>Mountain West</h3>
+							<div>
+								<ul class="teamlist">
+                                    {% for team in teams.mwc %}
+                                        <li class="team">
+                                            {% with "images/full60/"|add:team.handle|add:".png" as static_img %}
+                                                <img class="team-logo" src="{% static static_img %}">
+                                            {% endwith %}
+                                            <span class="team-name">{{ team.name }}</span>
+                                        </li>
+                                    {% endfor %}
+                                </ul>
+							</div>
+							<h3>Sun Belt</h3>
+							<div>
+								<ul class="teamlist">
+                                    {% for team in teams.sunbelt %}
+                                        <li class="team">
+                                            {% with "images/full60/"|add:team.handle|add:".png" as static_img %}
+                                                <img class="team-logo" src="{% static static_img %}">
+                                            {% endwith %}
+                                            <span class="team-name">{{ team.name }}</span>
+                                        </li>
+                                    {% endfor %}
+                                </ul>
+							</div>
+							<h3>Select FCS Teams</h3>
+							<div>
+								<ul class="teamlist">
+                                    {% for team in teams.other %}
+                                        <li class="team">
+                                            {% with "images/full60/"|add:team.handle|add:".png" as static_img %}
+                                                <img class="team-logo" src="{% static static_img %}">
+                                            {% endwith %}
+                                            <span class="team-name">{{ team.name }}</span>
+                                        </li>
+                                    {% endfor %}
+                                </ul>
+							</div>
+						</div>
+					</div>
+					<div id="submit" class="tab-pane fade">
+						<input class="btn btn-primary" type="submit" value="Submit">
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+{% endblock %}

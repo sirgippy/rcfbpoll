@@ -22,7 +22,7 @@ body {
 
 .team-name {
 	text-align: left;
-	margin-left: 10px;
+	margin-left: 5px;
 }
 
 #submit {
@@ -83,4 +83,10 @@ body {
 	vertical-align: middle;
 	margin-top: 5px;
 	margin-right: 5px;
+}
+
+.team-logo {
+    height: 25px;
+    width: auto;
+    margin-left: 10px;
 }

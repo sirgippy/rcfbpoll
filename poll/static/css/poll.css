@@ -1,0 +1,86 @@
+body {
+	padding-top: 70px;
+}
+
+#welcome {
+	text-align: center;
+}
+
+#teams-accordion {
+	padding: 10px;
+}
+
+.team {
+	margin-bottom: 10px;
+	min-height: 25px;
+	line-height: 25px;
+	vertical-align: middle;
+	width: 470px;
+	background-color: #ebebeb;
+	border-radius: 15px;
+}
+
+.team-name {
+	text-align: left;
+	margin-left: 10px;
+}
+
+#submit {
+	padding: 10px;
+}
+
+.rationale {
+	padding: 5px;
+	background-color: white;
+	border: solid 1px gray;
+	height: 150px;
+	max-width: 100%;
+	font-size: small;
+	word-wrap: break-word;
+	overflow: auto;
+	margin: 10px;
+}
+
+#overall-rationale {
+	width: 575px;
+	margin: 10px;
+}
+
+.rationale-button {
+	float: right;
+	margin-right: 50px;
+	margin-top: 1.7px;
+}
+
+.teamlist {
+	padding: 0;
+	list-style-type: none;
+}
+
+#ballot {
+	min-height: 865px;
+}
+
+#ballot-container {
+	margin: 10px 0px;
+	padding: 20px 0px;
+	border-radius: 5px;
+	background-color: LightCyan;
+}
+
+#poll-type {
+	width: 200px;
+}
+
+#poll-type-label, #poll-type {
+	display: inline
+}
+
+.close-button {
+	float: right;
+	height: 15px;
+	width: 15px;
+	vertical-align: middle;
+	margin-top: 5px;
+	margin-right: 5px;
+}

@@ -55,10 +55,10 @@
                                     {% endfor %}
                                 </ul>
 							</div>
-							<h3>Big Ten</h3>
+							<h3>Big 12</h3>
 							<div>
 								<ul class="teamlist">
-                                    {% for team in teams.bigten %}
+                                    {% for team in teams.big12 %}
                                         <li class="team">
                                             {% with "images/full60/"|add:team.handle|add:".png" as static_img %}
                                                 <img class="team-logo" src="{% static static_img %}">
@@ -68,10 +68,10 @@
                                     {% endfor %}
                                 </ul>
 							</div>
-							<h3>Big 12</h3>
+							<h3>Big Ten</h3>
 							<div>
 								<ul class="teamlist">
-                                    {% for team in teams.big12 %}
+                                    {% for team in teams.bigten %}
                                         <li class="team">
                                             {% with "images/full60/"|add:team.handle|add:".png" as static_img %}
                                                 <img class="team-logo" src="{% static static_img %}">
@@ -146,7 +146,7 @@
                                     {% endfor %}
                                 </ul>
 							</div>
-							<h3>Mid-American</h3>
+							<h3>MAC</h3>
 							<div>
 								<ul class="teamlist">
                                     {% for team in teams.mac %}
@@ -175,7 +175,7 @@
 							<h3>Sun Belt</h3>
 							<div>
 								<ul class="teamlist">
-                                    {% for team in teams.sunbelt %}
+                                    {% for team in teams.sbc %}
                                         <li class="team">
                                             {% with "images/full60/"|add:team.handle|add:".png" as static_img %}
                                                 <img class="team-logo" src="{% static static_img %}">

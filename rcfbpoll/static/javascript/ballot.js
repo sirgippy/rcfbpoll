@@ -71,7 +71,22 @@ function ballotSizeExceededWarning() {
 }
 
 function isAlreadyInBallot(item) {
-    current_entries = $("#ballot")
+    var team_name = item.find(".team-name").html();
+
+    var current_entries = $("#ballot").children();
+    var entry;
+
+    var foundSoFar = 0;
+
+    for (i = 0; i < current_entries.length; i++) {
+        entry = $(current_entries[i]);
+        if (entry.find(".team-name").html() == team_name) {
+            foundSoFar++;
+            if (foundSoFar == 2) {
+                return true;
+            }
+        }
+    }
 
 	return false;
 }

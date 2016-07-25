@@ -11,7 +11,6 @@ https://docs.djangoproject.com/en/1.9/ref/settings/
 
 import os
 import dj_database_url
-from config import *
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -89,7 +88,12 @@ SOCIAL_AUTH_PIPELINE = [
     'poll.pipeline.check_for_user',
 ]
 
-AUTH_PROFILE_MODULE = 'poll.UserProfile'
+SOCIAL_AUTH_REDDIT_KEY = os.environ['REDDIT_KEY']
+SOCIAL_AUTH_REDDIT_SECRET = os.environ['REDDIT_SECRET']
+SOCIAL_AUTH_REDDIT_AUTH_EXTRA_ARGUMENTS = {'duration': 'permanent'}
+
+SOCIAL_AUTH_LOGIN_REDIRECT_URL = '/'
+SOCIAL_AUTH_LOGIN_URL = '/'
 
 MIDDLEWARE_CLASSES = [
     'django.middleware.security.SecurityMiddleware',

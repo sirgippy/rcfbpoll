@@ -48,13 +48,17 @@
 				</ul>
 
 				<ul class="nav navbar-nav navbar-right">
-					<p class="navbar-text">username</p>
-					<li role="separator" class="divider"></li>
-					<li><a href="#">My Ballots</a></li>
-					<li role="separator" class="divider"></li>
-					<li><a href="#">Settings</a></li>
-					<li role="separator" class="divider"></li>
-					<li><a href="#">Logout</a></li>
+                    {% if user and not user.is_anonymous %}
+                        <p class="navbar-text">{{user.username}}</p>
+                        <li role="separator" class="divider"></li>
+                        <li><a href="#">My Ballots</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li><a href="#">Settings</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li><a href="/logout">Logout</a></li>
+                    {% else %}
+                        <li><a href="{% url 'social:begin' 'reddit' %}?next={{ request.path }}">Login</a></li>
+                    {% endif %}
 				</ul>
 			</div>
 		</div>

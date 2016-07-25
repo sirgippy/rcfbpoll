@@ -2,6 +2,7 @@ from __future__ import unicode_literals
 
 from django.db import models
 from django.utils import timezone
+from django.utils.encoding import python_2_unicode_compatible
 
 
 class User(models.Model):
@@ -11,12 +12,24 @@ class User(models.Model):
     def __str__(self):
         return self.username
 
+    def is_a_voter(self):
+        return UserRole.objects.filter(user=self, role='voter').exists()
+
+
+class UserRole(models.Model):
+    user = models.ForeignKey('User')
+    role = models.CharField(max_length=20)
+
+    def __str__(self):
+        return str(self.user) + ' ' + self.role
+
 
 class UserSecondaryAffiliations(models.Model):
     user = models.ForeignKey('User')
     team = models.ForeignKey('Team')
 
 
+@python_2_unicode_compatible
 class Team(models.Model):
     handle = models.CharField(max_length=60)
     name = models.CharField(max_length=120)

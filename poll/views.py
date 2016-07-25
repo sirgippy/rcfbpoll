@@ -1,6 +1,7 @@
-from django.shortcuts import render
+from django.shortcuts import render, redirect
 from .models import Team
 from django.db.models import Q
+from django.contrib.auth import logout as auth_logout
 
 
 def home(request):
@@ -23,3 +24,12 @@ def ballot(request):
     teams['sbc'] = all_teams.filter(conference='Sun Belt')
     teams['other'] = all_teams.filter(~Q(division= 'FBS'))
     return render(request, 'poll/ballot_editor.html', {'teams': teams})
+
+
+def logout(request):
+    auth_logout(request)
+    return redirect('/')
+
+
+def not_a_user(request):
+    return render(request, 'poll/coming_soon.html', {})

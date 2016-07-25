@@ -1,5 +1,5 @@
 from django.shortcuts import render, redirect
-from .models import Team
+from .models import Team, Poll, Ballot, User
 from django.db.models import Q
 from django.contrib.auth import logout as auth_logout
 
@@ -33,3 +33,15 @@ def logout(request):
 
 def not_a_user(request):
     return render(request, 'poll/coming_soon.html', {})
+
+
+def my_ballots(request):
+    this_user = User.objects.filter(username=request.user.username)[0]
+
+    if not this_user.is_a_voter():
+        return render(request, 'poll/not_a_voter.html', {})
+
+    polls = Team.objects.all()
+    ballots = Ballot.objects.filter(user=this_user)
+
+    return render(request, 'poll/my_ballots.html', {'polls': polls, 'ballots': ballots})

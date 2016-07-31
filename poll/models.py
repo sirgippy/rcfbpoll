@@ -21,7 +21,7 @@ class UserRole(models.Model):
     role = models.CharField(max_length=20)
 
     def __str__(self):
-        return str(self.user) + ' ' + self.role
+        return str(self.user) + ' ' + str(self.role)
 
 
 class UserSecondaryAffiliations(models.Model):
@@ -48,7 +48,18 @@ class Poll(models.Model):
     close_date = models.DateTimeField()
 
     def __str__(self):
-        return str(self.year) + ' ' + self.week
+        return str(self.year) + ' ' + str(self.week)
+
+    @property
+    def is_open(self):
+        return self.open_date < timezone.now() < self.close_date
+
+    @property
+    def is_closed(self):
+        return self.close_date < timezone.now()
+
+    class Meta:
+        ordering = ('close_date',)
 
 
 class Ballot(models.Model):
@@ -58,14 +69,46 @@ class Ballot(models.Model):
     poll_type = models.CharField(max_length=10,
                                  blank=True,
                                  null=True)
-    overall_rationale = models.TextField()
+    overall_rationale = models.TextField(blank=True, null=True)
 
     def submit(self):
         self.submission_date = timezone.now()
         self.save()
 
+    def retract(self):
+        self.submission_date = None
+        self.save()
+
+    @property
+    def is_submitted(self):
+        return self.submission_date is not None
+
+    @property
+    def year(self):
+        return self.poll.year
+
+    @property
+    def week(self):
+        return self.poll.week
+
+    @property
+    def open_date(self):
+        return self.poll.open_date
+
+    @property
+    def close_date(self):
+        return self.poll.close_date
+
+    @property
+    def is_open(self):
+        return self.poll.is_open
+
+    @property
+    def is_closed(self):
+        return self.poll.is_closed
+
     def __str__(self):
-        return self.poll + ' ' + self.user
+        return str(self.poll) + ' ' + str(self.user)
 
 
 class BallotEntry(models.Model):
@@ -75,4 +118,4 @@ class BallotEntry(models.Model):
     rationale = models.TextField()
 
     def __str__(self):
-        return self.ballot + ' ' + self.rank
+        return str(self.ballot) + ' ' + str(self.rank) + ' ' + str(self.team)

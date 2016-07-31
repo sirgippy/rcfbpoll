@@ -1,0 +1,8 @@
+{% extends 'poll/base.html' %}
+
+
+{% block content %}
+	<div class="container">
+		<p>Log in first: <a href="{% url 'social:begin' 'reddit' %}?next={{ request.path }}">Login</a></p>
+	</div>
+{% endblock %}

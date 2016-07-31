@@ -1,4 +1,4 @@
-var btn_index = 0;
+var btn_index = $('#ballot').children().length;
 
 $(function() {
 	$( "#teams-accordion" ).accordion({
@@ -49,7 +49,7 @@ $(function() {
 		
 		out: function(event,ui) {
 			this.copyHelper.show();
-		}
+		},
 	});
 	
 	$( "#ballot" ).sortable({
@@ -57,9 +57,24 @@ $(function() {
 		cancel: ':input,button,.rationale',
 		receive: function (event,ui) {
 			ui.sender.data('copied',true);
-		}
+		},
 	});
-	
+
+	$('#ballot-save').on('submit', function(event){
+        event.preventDefault();
+        console.log("ballot saved!")
+        save_ballot();
+    });
+
+    $('#ballot-submit').on('submit', function(event){
+        event.preventDefault();
+        console.log("ballot submitted!")
+        submit_ballot();
+    });
+
+    $('.close-button').button().click(function() {
+        $(this).closest('li').remove();
+    });
 });
 
 function ballotSizeExceededWarning() {
@@ -100,7 +115,7 @@ function ballotDuplicateWarning() {
 }
 
 function transformTeamToBallotEntry(item) {
-	item.append('<span class="ui-icon ui-icon-closethick close-button"></button>');
+	item.append('<span class="ui-icon ui-icon-closethick close-button"></span>');
 	
 	item.append('<button class="btn btn-primary btn-xs rationale-button" type="button" data-toggle="collapse" data-target="#rationale' + btn_index + '" aria-expanded="false">Reason</button>');
 	
@@ -111,4 +126,59 @@ function transformTeamToBallotEntry(item) {
 	item.append('<div id="rationale' + btn_index + '" class="rationale collapse" type="text" contenteditable="true" aria-expanded="false"></div>');
 	
 	btn_index++;
+}
+
+function save_ballot() {
+    var entries = [];
+    var poll_type = $("#poll-type option:selected").text();
+    var overall_rationale = $("#overall-rationale").text();
+
+    var teams = $("#ballot").children();
+
+    for (i = 0; i < teams.length; i++) {
+        var entry = [];
+        entry = { rank : i+1,
+                  team : $(teams[i]).find(".team-name").html(),
+                  rationale : $(teams[i]).find(".rationale").text()
+                };
+        entries.push(entry);
+    }
+
+    var post_data = { poll_type : poll_type,
+                      overall_rationale : overall_rationale,
+                      entries : JSON.stringify(entries),
+                    };
+
+    $.ajax({
+        type: "POST",
+        url: "save_ballot/",
+        data: post_data,
+        dataType: 'json',
+        success: function() {
+            ballotSavedNotice();
+        },
+        error: function() {
+            ballotSaveError();
+        },
+    });
+};
+
+function submit_ballot() {
+
+}
+
+function ballotSavedNotice() {
+	var text = "";
+	text += '<div class="alert alert-success alert-dismissible" role="alert">'
+	text += '<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>'
+	text += 'Ballot Saved!</div>'
+	$("#alert-container").html($("#alert-container").html() + text);
+}
+
+function ballotSaveError() {
+	var text = "";
+	text += '<div class="alert alert-danger alert-dismissible" role="alert">'
+	text += '<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>'
+	text += '<strong>Error:</strong> Failed to save ballot to server.</div>'
+	$("#alert-container").html($("#alert-container").html() + text);
 }

@@ -90,3 +90,7 @@ body {
     width: auto;
     margin-left: 10px;
 }
+
+#save-button{
+    margin: 10px;
+}

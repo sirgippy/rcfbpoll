@@ -4,14 +4,15 @@
 {% load staticfiles %}
 
 <head>
-  <title>/r/CFB Poll</title>
-  <meta charset="utf-8">
-  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
-  <script src="//code.jquery.com/ui/1.11.4/jquery-ui.min.js"></script>
-  <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-  <link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
-  <link rel="stylesheet" href="{% static 'css/poll.css' %}">
+    <title>/r/CFB Poll</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+    <script src="//code.jquery.com/ui/1.11.4/jquery-ui.min.js"></script>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <link rel="stylesheet" href="{% static 'css/poll.css' %}">
+	<script src="{% static 'javascript/main.js' %}"></script>
 </head>
 <body>
 
@@ -49,7 +50,7 @@
 
 				<ul class="nav navbar-nav navbar-right">
                     {% if user and not user.is_anonymous %}
-                        <p class="navbar-text">{{user.username}}</p>
+                        <p class="navbar-text">Welcome, {{user.username}}!</p>
                         <li role="separator" class="divider"></li>
                         <li><a href="/my_ballots">My Ballots</a></li>
                         <li role="separator" class="divider"></li>

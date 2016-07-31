@@ -131,15 +131,15 @@ function transformTeamToBallotEntry(item) {
 function save_ballot() {
     var entries = [];
     var poll_type = $("#poll-type option:selected").text();
-    var overall_rationale = $("#overall-rationale").text();
+    var overall_rationale = encodeURIComponent($("#overall-rationale").text());
 
     var teams = $("#ballot").children();
 
     for (i = 0; i < teams.length; i++) {
         var entry = [];
         entry = { rank : i+1,
-                  team : $(teams[i]).find(".team-name").html(),
-                  rationale : $(teams[i]).find(".rationale").text()
+                  team : $(teams[i]).find(".team-handle").val(),
+                  rationale : encodeURIComponent($(teams[i]).find(".rationale").text())
                 };
         entries.push(entry);
     }

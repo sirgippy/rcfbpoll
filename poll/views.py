@@ -5,6 +5,7 @@ from django.contrib.auth import logout as auth_logout
 from django.utils import timezone
 from django.http import HttpResponse
 import json
+from urllib import unquote
 
 
 def home(request):
@@ -89,7 +90,7 @@ def save_ballot(request, pk):
     poll_type = request.POST.get('poll_type')
     if poll_type == '(unspecified)':
         poll_type = ''
-    overall_rationale = request.POST.get('overall_rationale')
+    overall_rationale = unquote(request.POST.get('overall_rationale'))
 
     entries = json.loads(request.POST.get('entries'))
 
@@ -102,13 +103,13 @@ def save_ballot(request, pk):
     for entry in entries:
         if BallotEntry.objects.filter(ballot=ballot, rank=entry['rank']).exists():
             ballot_entry = BallotEntry.objects.get(ballot=ballot, rank=entry['rank'])
-            ballot_entry.team = Team.objects.get(name=entry['team'])
-            ballot_entry.rationale = entry['rationale']
+            ballot_entry.team = Team.objects.get(handle=entry['team'])
+            ballot_entry.rationale = unquote(entry['rationale'])
         else:
             ballot_entry = BallotEntry(ballot=ballot,
                                        rank=entry['rank'],
-                                       team=Team.objects.get(name=entry['team']),
-                                       rationale=entry['rationale'])
+                                       team=Team.objects.get(handle=entry['team']),
+                                       rationale=unquote(entry['rationale']))
         ballot_entry.save()
 
     ballot_entries = BallotEntry.objects.filter(ballot=ballot, rank__gt=len(entries))

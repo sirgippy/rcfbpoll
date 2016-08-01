@@ -9,7 +9,7 @@ $(function() {
 
 $('.nav-tabs a').click(function(){
 	$(this).tab('show');
-})
+});
 
 $(function() {
 	$( ".teamlist" ).sortable({
@@ -74,6 +74,26 @@ $(function() {
 
     $('.close-button').button().click(function() {
         $(this).closest('li').remove();
+    });
+
+    $('#validate-button').button().click(function(){
+        $('#poll-type').prop("disabled", true);
+        $('#ballot').disable();
+        $(this).hide()
+        var is_valid = runValidationCheck();
+        $('#unlock-button').show();
+        if is_valid {
+            $('#submit-button').show();
+        }
+    });
+
+    $('#unlock-button').button().click(function(){
+        $('#poll-type').prop("disabled", false);
+        $('#ballot').enable();
+        $('#validate-button').show();
+        $('#validation-results').html("");
+        $(this).hide();
+        $('#submit-button').hide();
     });
 });
 
@@ -181,4 +201,10 @@ function ballotSaveError() {
 	text += '<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>'
 	text += '<strong>Error:</strong> Failed to save ballot to server.</div>'
 	$("#alert-container").html($("#alert-container").html() + text);
+}
+
+function runValidationCheck() {
+    var is_valid = true;
+
+    
 }

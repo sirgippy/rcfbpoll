@@ -233,8 +233,11 @@
 						</div>
 					</div>
 					<div id="submit" class="tab-pane fade">
+                        <button class="btn btn-primary" id="validate-button" type="button">Lock & Validate</button><br>
+                        <span id="validation-results"></span><br>
+                        <button hidden class="btn btn-primary" id="unlock-button" type="button">Unlock</button><br>
                         <form action="/submit_ballot/" method="POST" id="ballot-submit">
-						    <input class="btn btn-success" type="submit" value="Submit">
+						    <input hidden id="submit-button" class="btn btn-success" type="submit" value="Submit">
                         </form>
 					</div>
 				</div>

@@ -3,7 +3,7 @@ from .models import Team, Poll, Ballot, User, BallotEntry
 from django.db.models import Q
 from django.contrib.auth import logout as auth_logout
 from django.utils import timezone
-from django.http import HttpResponse
+from django.http import HttpResponse, HttpResponseBadRequest
 import json
 from urllib import unquote
 
@@ -87,6 +87,16 @@ def my_ballots(request):
 
 
 def save_ballot(request, pk):
+    save_ballot_data(request, pk)
+
+    time_saved = timezone.now().strftime('%B %d, %Y %I:%M %p')
+    return HttpResponse(
+        json.dumps(time_saved),
+        content_type="application/json"
+    )
+
+
+def save_ballot_data(request, pk):
     poll_type = request.POST.get('poll_type')
     if poll_type == '(unspecified)':
         poll_type = ''
@@ -95,7 +105,6 @@ def save_ballot(request, pk):
     entries = json.loads(request.POST.get('entries'))
 
     ballot = Ballot.objects.get(pk=pk)
-
     ballot.poll_type = poll_type
     ballot.overall_rationale = overall_rationale
     ballot.save()
@@ -116,6 +125,57 @@ def save_ballot(request, pk):
 
     for ballot_entry in ballot_entries:
         ballot_entry.delete()
+
+
+def submit_ballot(request, pk):
+    poll_type = request.POST.get('poll_type')
+    if poll_type == '(unspecified)':
+        return HttpResponseBadRequest()
+
+    overall_rationale = unquote(request.POST.get('overall_rationale'))
+
+    entries = json.loads(request.POST.get('entries'))
+
+    if not len(entries) == 25:
+        return HttpResponseBadRequest()
+
+    teams = []
+    for entry in entries:
+        team = Team.objects.get(handle=entry['team'])
+        if team in teams or not team.use_for_ballot:
+            return HttpResponseBadRequest()
+        else:
+            teams.append(team)
+
+    ballot = Ballot.objects.get(pk=pk)
+
+    user = User.objects.get(username=request.user.username)
+    if ballot.user != user:
+        return HttpResponseBadRequest()
+
+    poll = ballot.poll
+    if poll.is_closed or not poll.is_open:
+        return HttpResponseBadRequest()
+
+    if ballot.is_submitted:
+        return HttpResponseBadRequest()
+
+    ballot.poll_type = poll_type
+    ballot.overall_rationale = overall_rationale
+    ballot.submit()
+    ballot.save()
+
+    for entry in entries:
+        if BallotEntry.objects.filter(ballot=ballot, rank=entry['rank']).exists():
+            ballot_entry = BallotEntry.objects.get(ballot=ballot, rank=entry['rank'])
+            ballot_entry.team = Team.objects.get(handle=entry['team'])
+            ballot_entry.rationale = unquote(entry['rationale'])
+        else:
+            ballot_entry = BallotEntry(ballot=ballot,
+                                       rank=entry['rank'],
+                                       team=Team.objects.get(handle=entry['team']),
+                                       rationale=unquote(entry['rationale']))
+        ballot_entry.save()
 
     time_saved = timezone.now().strftime('%B %d, %Y %I:%M %p')
     return HttpResponse(

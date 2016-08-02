@@ -28,7 +28,7 @@
                     </td>
                     {% if open_ballot and open_ballot.is_submitted %}
                         <td class="success">Submitted</td>
-                        <td><a href="{% url 'edit_ballot' pk=open_ballot.pk">Retract</a></td>
+                        <td><a href="/edit_ballot/{{open_ballot.pk}}/">Edit</a></td>
                     {% elif open_ballot %}
                         <td class="warning">In Progress</td>
                         <td><a href="/edit_ballot/{{open_ballot.pk}}/">Edit</a></td>

@@ -5,6 +5,28 @@
 {% block content %}
     <script src="{% static 'javascript/ballot.js' %}"></script>
 
+    {% if ballot.is_submitted %}
+        <div class="modal fade" tabindex="-1" role="dialog">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h4 class="modal-title">Notice</h4>
+              </div>
+              <div class="modal-body">
+                  <p>You have already submitted a ballot for this poll.</p>
+                  <p>You can still edit your ballot if you would like, but you'll need to retract it first.</p>
+                  <p>If you do choose to retract your ballot, you'll need to re-submit it once you're done making changes. Ballots that have been retracted without being resubmitted will not be counted in the poll and the week will count as a miss.</p>
+                  <p>Are you sure you'd like to retract your ballot?</p>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default">No, I've changed my mind.</button>
+                <button type="button" class="btn btn-primary" data-dismiss="modal">Yes, retract my ballot.</button>
+              </div>
+            </div><!-- /.modal-content -->
+          </div><!-- /.modal-dialog -->
+        </div><!-- /.modal -->
+    {% endif %}
+
 	<div class="container">
 		<h2>
             <span id="ballot-year">{{ballot.year}}</span>
@@ -40,7 +62,7 @@
                                     <img class="team-logo" src="{% static static_img %}">
                                 {% endwith %}
                                 <span class="team-name">{{ entry.team.name }}</span>
-                                <span class="ui-icon ui-icon-closethick close-button"></span>
+                                <button class="ui-icon ui-icon-closethick close-button"></button>
                                 <button class="btn btn-primary btn-xs rationale-button" type="button" data-toggle="collapse" data-target="#rationale-{{ entry.team.handle }}" aria-expanded="false">Reason</button>
                                 <div id="rationale-{{ entry.team.handle }}" class="rationale collapse" type="text" contenteditable="true" aria-expanded="false">{{ entry.rationale }}</div>
                                 <input type="hidden" class="team-handle" value="{{ entry.team.handle }}">
@@ -233,11 +255,11 @@
 						</div>
 					</div>
 					<div id="submit" class="tab-pane fade">
-                        <button class="btn btn-primary" id="validate-button" type="button">Lock & Validate</button><br>
+                        <button class="btn btn-primary" id="validate-button" type="button">Lock & Validate</button>
+                        <button class="btn btn-primary" id="unlock-button" type="button">Unlock</button><br><br>
                         <span id="validation-results"></span><br>
-                        <button hidden class="btn btn-primary" id="unlock-button" type="button">Unlock</button><br>
                         <form action="/submit_ballot/" method="POST" id="ballot-submit">
-						    <input hidden id="submit-button" class="btn btn-success" type="submit" value="Submit">
+						    <input id="submit-button" class="btn btn-success" type="submit" value="Submit">
                         </form>
 					</div>
 				</div>

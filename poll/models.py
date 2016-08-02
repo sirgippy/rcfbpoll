@@ -118,4 +118,4 @@ class BallotEntry(models.Model):
     rationale = models.TextField()
 
     def __str__(self):
-        return str(self.ballot) + ' ' + str(self.rank) + ' ' + str(self.team)
+        return unicode(self.ballot) + ' ' + unicode(self.rank) + ' ' + unicode(self.team)

@@ -62,39 +62,43 @@ $(function() {
 
 	$('#ballot-save').on('submit', function(event){
         event.preventDefault();
-        console.log("ballot saved!")
+        console.log("ballot saved!");
         save_ballot();
     });
 
     $('#ballot-submit').on('submit', function(event){
         event.preventDefault();
-        console.log("ballot submitted!")
+        console.log("ballot submitted!");
         submit_ballot();
-    });
+    }).hide();
 
     $('.close-button').button().click(function() {
         $(this).closest('li').remove();
-    });
+    }).prop("disabled", false);
 
     $('#validate-button').button().click(function(){
         $('#poll-type').prop("disabled", true);
-        $('#ballot').disable();
-        $(this).hide()
+        disableBallot();
         var is_valid = runValidationCheck();
-        $('#unlock-button').show();
-        if is_valid {
-            $('#submit-button').show();
-        }
-    });
+        if (is_valid) {
+            $('#validation-results').html($('#validation-results').html()
+                + 'Validation complete. No errors found.<br>');
+            $('#ballot-submit').show();
+        };
+        $('#unlock-button').prop("disabled", false);
+        $(this).prop("disabled", true);
+    }).prop("disabled", false);
 
     $('#unlock-button').button().click(function(){
         $('#poll-type').prop("disabled", false);
-        $('#ballot').enable();
-        $('#validate-button').show();
+        enableBallot();
         $('#validation-results').html("");
-        $(this).hide();
-        $('#submit-button').hide();
-    });
+        $('#ballot-submit').hide();
+        $(this).prop("disabled", true);
+        $('#validate-button').prop("disabled", false);
+    }).prop("disabled", true);
+
+    $('#poll-type').prop("disabled", false);
 });
 
 function ballotSizeExceededWarning() {
@@ -149,25 +153,7 @@ function transformTeamToBallotEntry(item) {
 }
 
 function save_ballot() {
-    var entries = [];
-    var poll_type = $("#poll-type option:selected").text();
-    var overall_rationale = encodeURIComponent($("#overall-rationale").text());
-
-    var teams = $("#ballot").children();
-
-    for (i = 0; i < teams.length; i++) {
-        var entry = [];
-        entry = { rank : i+1,
-                  team : $(teams[i]).find(".team-handle").val(),
-                  rationale : encodeURIComponent($(teams[i]).find(".rationale").text())
-                };
-        entries.push(entry);
-    }
-
-    var post_data = { poll_type : poll_type,
-                      overall_rationale : overall_rationale,
-                      entries : JSON.stringify(entries),
-                    };
+    post_data = get_ballot_data();
 
     $.ajax({
         type: "POST",
@@ -183,7 +169,43 @@ function save_ballot() {
     });
 };
 
+function get_ballot_data() {
+    var entries = [];
+    var poll_type = $("#poll-type option:selected").text();
+    var overall_rationale = encodeURIComponent($("#overall-rationale").text());
+
+    var teams = $("#ballot").children();
+
+    for (i = 0; i < teams.length; i++) {
+        var entry = [];
+        entry = { rank : i+1,
+                  team : $(teams[i]).find(".team-handle").val(),
+                  rationale : encodeURIComponent($(teams[i]).find(".rationale").text())
+                };
+        entries.push(entry);
+    }
+
+    return { poll_type : poll_type,
+             overall_rationale : overall_rationale,
+             entries : JSON.stringify(entries),
+    };
+}
+
 function submit_ballot() {
+    post_data = get_ballot_data();
+
+    $.ajax({
+        type: "POST",
+        url: "submit_ballot/",
+        data: post_data,
+        dataType: 'json',
+        success: function() {
+            window.location.replace("/my_ballots/")
+        },
+        error: function() {
+            ballotSubmitError();
+        },
+    });
 
 }
 
@@ -203,8 +225,55 @@ function ballotSaveError() {
 	$("#alert-container").html($("#alert-container").html() + text);
 }
 
+function ballotSubmitError() {
+	var text = "";
+	text += '<div class="alert alert-danger alert-dismissible" role="alert">'
+	text += '<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>'
+	text += '<strong>Error:</strong> Failed to submit ballot to server.</div>'
+	$("#alert-container").html($("#alert-container").html() + text);
+}
+
 function runValidationCheck() {
     var is_valid = true;
 
-    
+    if (lessThan25Teams()) {
+        is_valid = false;
+    };
+
+    if (pollTypeNotFilledIn()) {
+        is_valid = false;
+    };
+
+    return is_valid;
+}
+
+function lessThan25Teams() {
+    entries = $('#ballot').children();
+    if (entries.length < 25) {
+        $('#validation-results').html($('#validation-results').html()
+            + '<strong>Error:</strong> Less than 25 teams selected.<br>');
+        return true;
+    } else {
+        return false;
+    }
+}
+
+function pollTypeNotFilledIn() {
+    if ($("#poll-type option:selected").text() == '(unspecified)') {
+        $('#validation-results').html($('#validation-results').html()
+            + '<strong>Error:</strong> Must select poll type.<br>');
+        return true;
+    } else {
+        return false;
+    }
+}
+
+function disableBallot() {
+    $('#ballot').sortable("disable");
+    $('.close-button').prop("disabled", true);
+}
+
+function enableBallot() {
+    $('#ballot').sortable("enable");
+    $('.close-button').prop("disabled", false);
 }

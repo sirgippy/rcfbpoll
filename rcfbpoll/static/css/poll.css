@@ -83,6 +83,8 @@ body {
 	vertical-align: middle;
 	margin-top: 5px;
 	margin-right: 5px;
+	padding: 0;
+	border: none;
 }
 
 .team-logo {
@@ -93,4 +95,13 @@ body {
 
 #save-button{
     margin: 10px;
+}
+
+#validate-button, #unlock-button {
+    margin-right: 5px;
+    display: inline;
+}
+
+#validation-results {
+    padding-top: 5px;
 }

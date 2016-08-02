@@ -182,3 +182,17 @@ def submit_ballot(request, pk):
         json.dumps(time_saved),
         content_type="application/json"
     )
+
+
+def retract_ballot(request, pk):
+    ballot = Ballot.objects.get(pk=pk)
+
+    user = User.objects.get(username=request.user.username)
+
+    if ballot.user != user:
+        return HttpResponseBadRequest()
+
+    ballot.retract()
+    ballot.save()
+
+    return HttpResponse()

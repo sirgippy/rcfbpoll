@@ -99,6 +99,27 @@ $(function() {
     }).prop("disabled", true);
 
     $('#poll-type').prop("disabled", false);
+
+    $('#leave-button').button().click(function(){
+        window.location.replace("/my_ballots/")
+    });
+
+    $('#retract-button').button().click(function(){
+        $.ajax({
+            type: "POST",
+            url: "retract_ballot/",
+            success: function() {
+                $('#ballot-retract-dialog').modal('hide');
+            },
+            error: function() {
+                var text = "";
+                text += '<div class="alert alert-danger alert-dismissible" role="alert">'
+                text += '<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>'
+                text += '<strong>Error:</strong> Failed to retract ballot.</div>'
+                $("#retract-dialog-body").html($("#retract-dialog-body").html() + text);
+            },
+        });
+    });
 });
 
 function ballotSizeExceededWarning() {

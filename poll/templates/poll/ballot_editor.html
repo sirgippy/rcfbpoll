@@ -6,25 +6,35 @@
     <script src="{% static 'javascript/ballot.js' %}"></script>
 
     {% if ballot.is_submitted %}
-        <div class="modal fade" tabindex="-1" role="dialog">
+        <div id="ballot-retract-dialog" class="modal fade" tabindex="-1" role="dialog">
           <div class="modal-dialog" role="document">
             <div class="modal-content">
               <div class="modal-header">
                 <h4 class="modal-title">Notice</h4>
               </div>
-              <div class="modal-body">
+              <div id="retract-dialog-body" class="modal-body">
                   <p>You have already submitted a ballot for this poll.</p>
                   <p>You can still edit your ballot if you would like, but you'll need to retract it first.</p>
                   <p>If you do choose to retract your ballot, you'll need to re-submit it once you're done making changes. Ballots that have been retracted without being resubmitted will not be counted in the poll and the week will count as a miss.</p>
                   <p>Are you sure you'd like to retract your ballot?</p>
               </div>
               <div class="modal-footer">
-                <button type="button" class="btn btn-default">No, I've changed my mind.</button>
-                <button type="button" class="btn btn-primary" data-dismiss="modal">Yes, retract my ballot.</button>
+                <button id="leave-button" type="button" class="btn btn-default">No, I've changed my mind.</button>
+                <button id="retract-button" type="button" class="btn btn-primary">Yes, retract my ballot.</button>
               </div>
             </div><!-- /.modal-content -->
           </div><!-- /.modal-dialog -->
         </div><!-- /.modal -->
+
+        <script type="text/javascript">
+            $(window).load(function(){
+                $('#ballot-retract-dialog').modal({
+                    backdrop: 'static',
+                    keyboard: false,
+                    show: true,
+                });
+            });
+        </script>
     {% endif %}
 
 	<div class="container">

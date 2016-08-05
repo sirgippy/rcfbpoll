@@ -11,4 +11,5 @@ urlpatterns = [
     url(r'^edit_ballot/(?P<pk>\d+)/save_ballot/$', views.save_ballot, name='save_ballot'),
     url(r'^edit_ballot/(?P<pk>\d+)/submit_ballot/$', views.submit_ballot, name='submit_ballot'),
     url(r'^edit_ballot/(?P<pk>\d+)/retract_ballot/$', views.retract_ballot),
+    url(r'^ballot/(?P<pk>\d+)/$', views.view_ballot),
 ]

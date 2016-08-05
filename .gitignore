@@ -6,3 +6,4 @@ __pycache__
 .DS_Store
 db.sqlite3
 /.idea
+/Poll Data.ods

@@ -2,14 +2,13 @@ from __future__ import unicode_literals
 
 from django.db import models
 from django.utils import timezone
-from django.utils.encoding import python_2_unicode_compatible
 
 
 class User(models.Model):
     username = models.CharField(max_length=32)
     primary_affiliation = models.ForeignKey('Team', blank=True, null=True)
 
-    def __str__(self):
+    def __unicode__(self):
         return self.username
 
     def is_a_voter(self):
@@ -20,8 +19,8 @@ class UserRole(models.Model):
     user = models.ForeignKey('User')
     role = models.CharField(max_length=20)
 
-    def __str__(self):
-        return str(self.user) + ' ' + str(self.role)
+    def __unicode__(self):
+        return unicode(self.user) + ' ' + unicode(self.role)
 
 
 class UserSecondaryAffiliations(models.Model):
@@ -29,7 +28,6 @@ class UserSecondaryAffiliations(models.Model):
     team = models.ForeignKey('Team')
 
 
-@python_2_unicode_compatible
 class Team(models.Model):
     handle = models.CharField(max_length=60)
     name = models.CharField(max_length=120)
@@ -37,8 +35,8 @@ class Team(models.Model):
     division = models.CharField(max_length=50)
     use_for_ballot = models.BooleanField()
 
-    def __str__(self):
-        return self.name
+    def __unicode__(self):
+        return unicode(self.name)
 
 
 class Poll(models.Model):
@@ -47,8 +45,8 @@ class Poll(models.Model):
     open_date = models.DateTimeField()
     close_date = models.DateTimeField()
 
-    def __str__(self):
-        return str(self.year) + ' ' + str(self.week)
+    def __unicode__(self):
+        return unicode(self.year) + ' ' + unicode(self.week)
 
     @property
     def is_open(self):
@@ -107,15 +105,15 @@ class Ballot(models.Model):
     def is_closed(self):
         return self.poll.is_closed
 
-    def __str__(self):
-        return str(self.poll) + ' ' + str(self.user)
+    def __unicode__(self):
+        return unicode(self.poll) + ' ' + unicode(self.user)
 
 
 class BallotEntry(models.Model):
     rank = models.IntegerField()
     ballot = models.ForeignKey('Ballot')
     team = models.ForeignKey('Team')
-    rationale = models.TextField()
+    rationale = models.TextField(blank=True, null=True)
 
-    def __str__(self):
+    def __unicode__(self):
         return unicode(self.ballot) + ' ' + unicode(self.rank) + ' ' + unicode(self.team)

@@ -1,0 +1,46 @@
+{% extends 'poll/base.html' %}
+
+{% load staticfiles %}
+
+{% block content %}
+    <div class="container">
+        <h1>{{ ballot.user.username }} {{ ballot.year }} {{ ballot.week }} Ballot Detail</h1>
+        <p>
+            <strong>Poll Type:</strong> {{ ballot.poll_type }}
+        </p>
+        {% if not ballot.overall_rationale == None %}
+            <p>
+                <strong>Overall Rationale:</strong><br>
+                {{ ballot.overall_rationale }}
+            </p>
+        {% endif %}
+        <table class="table table-striped" style="width: auto;">
+            <tr>
+                <th>Rank</th>
+                <th>Team</th>
+                <th>Reason</th>
+            </tr>
+            {% for entry in entries %}
+                <tr>
+                    <td>{{ entry.rank }}</td>
+                    <td>
+                        {% with "images/full60/"|add:entry.team.handle|add:".png" as static_img %}
+                            <img class="team-logo" src="{% static static_img %}">
+                        {% endwith %}
+                        {{ entry.team.name }}
+                    </td>
+                    <td>
+                        {% if not entry.rationale == None %}
+                            {{ entry.rationale }}
+                        {% endif %}
+                    </td>
+                </tr>
+            {% endfor %}
+        </table>
+        <p>
+            <strong>Submitted:</strong>
+            {{ ballot.submission_date|date:"D d M Y" }}
+            {{ ballot.submission_date|time:"H:i" }}
+        </p>
+	</div>
+{% endblock %}

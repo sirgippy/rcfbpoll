@@ -196,3 +196,17 @@ def retract_ballot(request, pk):
     ballot.save()
 
     return HttpResponse()
+
+
+def view_ballot(request, pk):
+    ballot = Ballot.objects.get(pk=pk)
+
+    this_user = User.objects.get(username=request.user.username)
+
+    if not ballot.is_closed and ballot.user != this_user:
+        return HttpResponse(status=403)
+
+    entries = ballot.ballotentry_set.all().order_by('rank')
+
+    return render(request, 'poll/ballot_viewer.html', {'ballot': ballot,
+                                                       'entries': entries})

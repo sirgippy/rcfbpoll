@@ -1,5 +1,5 @@
 from django.shortcuts import render, redirect
-from .models import Team, Poll, Ballot, User, BallotEntry
+from .models import Team, Poll, Ballot, User, BallotEntry, PollCompare
 from django.db.models import Q
 from django.contrib.auth import logout as auth_logout
 from django.utils import timezone
@@ -9,7 +9,20 @@ from urllib import unquote
 
 
 def home(request):
-    return render(request, 'poll/home.html', {})
+    polls = Poll.objects.filter(close_date__lt=timezone.now()).order_by('-close_date')
+    most_recent_poll = polls[0]
+
+    ranks = PollCompare.objects.filter(poll=most_recent_poll).order_by('rank')
+    top25 = ranks[0:25]
+    others = ranks[25:]
+    up_movers = ranks.order_by('-ppv_diff')[0:5]
+    down_movers = ranks.order_by('ppv_diff')[0:5]
+
+    return render(request, 'poll/home.html', {'poll': most_recent_poll,
+                                              'top25': top25,
+                                              'others': others,
+                                              'up_movers': up_movers,
+                                              'down_movers': down_movers})
 
 
 def edit_ballot(request, pk):

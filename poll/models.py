@@ -44,6 +44,7 @@ class Poll(models.Model):
     week = models.CharField(max_length=20)
     open_date = models.DateTimeField()
     close_date = models.DateTimeField()
+    last_week = models.ForeignKey('Poll', blank=True, null=True)
 
     def __unicode__(self):
         return unicode(self.year) + ' ' + unicode(self.week)
@@ -117,3 +118,29 @@ class BallotEntry(models.Model):
 
     def __unicode__(self):
         return unicode(self.ballot) + ' ' + unicode(self.rank) + ' ' + unicode(self.team)
+
+
+class PollPoints(models.Model):
+    id = models.BigIntegerField(primary_key=True)
+    poll = models.ForeignKey(Poll, on_delete=models.DO_NOTHING)
+    team = models.ForeignKey(Team, on_delete=models.DO_NOTHING)
+    points = models.IntegerField()
+
+    class Meta:
+        managed = False
+        db_table = 'poll_pollpoints'
+
+
+class PollCompare(models.Model):
+    id = models.BigIntegerField(primary_key=True)
+    poll = models.ForeignKey(Poll, on_delete=models.DO_NOTHING)
+    team = models.ForeignKey(Team, on_delete=models.DO_NOTHING)
+    rank = models.IntegerField()
+    points = models.IntegerField()
+    ppv = models.FloatField()
+    rank_diff = models.IntegerField(blank=True, null=True)
+    ppv_diff = models.FloatField(blank=True, null=True)
+
+    class Meta:
+        managed = False
+        db_table = 'poll_pollcompare'

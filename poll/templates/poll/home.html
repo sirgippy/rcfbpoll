@@ -1,6 +1,5 @@
 {% extends 'poll/base.html' %}
-
-
+{% load staticfiles %}
 {% block content %}
 	<div class="jumbotron">
 		<div class="container" id="welcome">
@@ -19,11 +18,79 @@
 		<div class="row">
 			<div class="col-xs-12 col-md-6">
 				<h2>Current Top 25</h2>
-				<p>...</p>
+				<h3>{{ poll.year }} {{ poll.week }}</h3>
+                <table class="table table-striped" style="width: auto;">
+                    <tr>
+                        <th>Rank</th>
+                        <th>Change</th>
+                        <th>Team</th>
+                        <th>Points</th>
+                    </tr>
+                    {% for rank in top25 %}
+                        <tr>
+                            <td>{{ rank.rank }}</td>
+                            {% if rank.rank_diff == None or rank.rank|add:rank.rank_diff > 25 %}
+                                <td><strong>NEW</strong></td>
+                            {% elif rank.rank_diff > 0 %}
+                                <td style="color: green;">+{{ rank.rank_diff }}</td>
+                            {% else %}
+                                <td style="color: red;">{{ rank.rank_diff }}</td>
+                            {% endif %}
+                            <td>
+                                {% with "images/full60/"|add:rank.team.handle|add:".png" as static_img %}
+                                <img class="team-logo" src="{% static static_img %}">
+                                {% endwith %}
+                                {{ rank.team.name }}
+                            </td>
+                            <td>{{ rank.points }}</td>
+                        </tr>
+                    {% endfor %}
+                </table>
+                <p>
+                    <strong>Others Receiving Votes:</strong>
+                    {% for rank in others %}
+                        {{ rank.team.name }} {{ rank.points }}{% if not forloop.last %},{% endif %}
+                    {% endfor %}
+                </p>
 			</div>
 			<div class="col-xs-12 col-md-6">
-				<h2>Something else idk lol</h2>
-				<p>...</p>
+				<h2>Biggest Movers</h2>
+				<h3>Moving Up</h3>
+                <table class="table table-striped" style="width: auto;">
+                    <tr>
+                        <th>Team</th>
+                        <th>Points Per Voter</th>
+                    </tr>
+                    {% for rank in up_movers %}
+                        <tr>
+                            <td>
+                                {% with "images/full60/"|add:rank.team.handle|add:".png" as static_img %}
+                                <img class="team-logo" src="{% static static_img %}">
+                                {% endwith %}
+                                {{ rank.team.name }}
+                            </td>
+                            <td style="color: green;">+{{ rank.ppv_diff|floatformat:2 }}</td>
+                        </tr>
+                    {% endfor %}
+                </table>
+                <h3>Falling Down</h3>
+                <table class="table table-striped" style="width: auto;">
+                    <tr>
+                        <th>Team</th>
+                        <th>Points Per Voter</th>
+                    </tr>
+                    {% for rank in down_movers %}
+                        <tr>
+                            <td>
+                                {% with "images/full60/"|add:rank.team.handle|add:".png" as static_img %}
+                                <img class="team-logo" src="{% static static_img %}">
+                                {% endwith %}
+                                {{ rank.team.name }}
+                            </td>
+                            <td style="color: red;">{{ rank.ppv_diff|floatformat:2 }}</td>
+                        </tr>
+                    {% endfor %}
+                </table>
 			</div>
 		</div>
 	</div>

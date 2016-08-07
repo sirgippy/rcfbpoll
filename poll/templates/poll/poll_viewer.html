@@ -29,6 +29,7 @@
                         <th>Change</th>
                         <th>Team</th>
                         <th>Points</th>
+                        <th id="ppv" data-toggle="tooltip" data-placement="top" title="Points Per Voter">PPV</th>
                     </tr>
                     {% for rank in top25 %}
                         <tr>
@@ -49,6 +50,7 @@
                                 {{ rank.team.name }}
                             </td>
                             <td>{{ rank.points }}</td>
+                            <td>{{ rank.ppv|floatformat:2 }}</td>
                         </tr>
                     {% endfor %}
                 </table>

@@ -12,4 +12,8 @@ $(function() {
 		},
 		width: 150,
 	});
+
+	$( "#ppv" ).tooltip({
+	    container: 'body'
+	})
 });

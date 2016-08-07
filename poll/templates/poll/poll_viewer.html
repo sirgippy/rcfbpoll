@@ -1,24 +1,28 @@
 {% extends 'poll/base.html' %}
 {% load staticfiles %}
 {% block content %}
-	<div class="jumbotron">
-		<div class="container" id="welcome">
-			<div class="row">
-				<div class="col-md-2 col-xs-12"></div>
-				<div class="col-md-8 col-xs-12">
-					<h1>The /r/CFB Poll</h1>
-					<p>Welcome to the /r/CFB poll, the weekly top 25 poll voted on and published by members of /r/CFB, the home of college football on Reddit.</p>
-					<p><a class="btn btn-primary btn-lg" href="#" role="button">About the poll &raquo;</a></p>
-				</div>
-			</div>
-		</div>
-	</div>
+    <script src="{% static 'javascript/poll_viewer.js' %}"></script>
 
 	<div class="container">
+        <h2>Poll Detail</h2>
+        <div>
+            <form id="poll-selector" action="/poll/" method="get">
+                <select id="year-selector" name="year" form="poll-selector">
+                    {% for year in years %}
+                        <option {% if year == poll.year %}selected{% endif %}>{{ year }}</option>
+                    {% endfor %}
+                </select>
+                <select id="week-selector" name="week" form="poll-selector">
+                    {% for week in weeks %}
+                        <option {% if week == poll.week %}selected{% endif %}>{{ week }}</option>
+                    {% endfor %}
+                </select>
+            </form>
+        </div>
+        <br>
 		<div class="row">
 			<div class="col-xs-12 col-md-6">
-				<h2>Current Top 25</h2>
-				<h3>{{ poll.year }} {{ poll.week }}</h3>
+
                 <table class="table table-striped" style="width: auto;">
                     <tr>
                         <th>Rank</th>

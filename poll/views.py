@@ -223,3 +223,39 @@ def view_ballot(request, pk):
 
     return render(request, 'poll/ballot_viewer.html', {'ballot': ballot,
                                                        'entries': entries})
+
+
+def view_current_poll(request):
+    if request.GET.get('year'):
+        if Poll.objects.filter(year=request.GET.get('year'), week=request.GET.get('week')).exists():
+            poll = Poll.objects.get(year=request.GET.get('year'), week=request.GET.get('week'))
+        else:
+            poll = Poll.objects.filter(year=request.GET.get('year'),
+                                       close_date__lt=timezone.now()).order_by('-close_date')[0]
+        return redirect('/poll/' + str(poll.pk) + '/')
+    else:
+        polls = Poll.objects.filter(close_date__lt=timezone.now()).order_by('-close_date')
+        most_recent_poll = polls[0]
+
+        return redirect('/poll/' + str(most_recent_poll.pk) + '/')
+
+
+def view_poll(request, pk):
+    poll = Poll.objects.get(pk=pk)
+
+    ranks = PollCompare.objects.filter(poll=poll).order_by('rank')
+    top25 = ranks[0:25]
+    others = ranks[25:]
+    up_movers = ranks.order_by('-ppv_diff')[0:5]
+    down_movers = ranks.order_by('ppv_diff')[0:5]
+
+    years = Poll.objects.filter(close_date__lt=timezone.now()).values_list('year', flat=True).distinct().order_by('-year')
+    weeks = Poll.objects.filter(year=poll.year).values_list('week', flat=True).order_by('-close_date')
+
+    return render(request, 'poll/poll_viewer.html', {'poll': poll,
+                                                     'top25': top25,
+                                                     'others': others,
+                                                     'up_movers': up_movers,
+                                                     'down_movers': down_movers,
+                                                     'years': years,
+                                                     'weeks': weeks})

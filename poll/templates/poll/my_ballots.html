@@ -1,0 +1,82 @@
+{% extends 'poll/base.html' %}
+
+
+{% block content %}
+    <div class="container">
+		<h1>My Ballots</h1>
+        <h3>Open Ballots</h3>
+        {% if open_poll %}
+            <table class="table table-striped">
+                <tr>
+                    <th>Year</th>
+                    <th>Week</th>
+                    <th>Open</th>
+                    <th>Close</th>
+                    <th>Status</th>
+                    <th>Link</th>
+                </tr>
+                <tr>
+                    <td>{{ open_poll.year }}</td>
+                    <td>{{ open_poll.week }}</td>
+                    <td>
+                        {{ open_poll.open_date|date:"D d M Y" }}
+                        {{ open_poll.open_date|time:"H:i" }}
+                    </td>
+                    <td>
+                        {{ open_poll.close_date|date:"D d M Y" }}
+                        {{ open_poll.close_date|time:"H:i" }}
+                    </td>
+                    {% if open_ballot and open_ballot.is_submitted %}
+                        <td class="success">Submitted</td>
+                        <td>
+                            <a href="/edit_ballot/{{open_ballot.pk}}/">Edit</a>
+                            <a href="/ballot/{{open_ballot.pk}}/">View</a>
+                        </td>
+                    {% elif open_ballot %}
+                        <td class="warning">In Progress</td>
+                        <td><a href="/edit_ballot/{{open_ballot.pk}}/">Edit</a></td>
+                    {% else %}
+                        <td class="warning">Not Started</td>
+                        <td><a href="/create_ballot/{{open_poll.pk}}/">Create</a></td>
+                    {% endif %}
+                </tr>
+            </table>
+        {% else %}
+            <p><em>No currently open polls.</em></p>
+        {% endif %}
+
+        <h3>Closed Ballots</h3>
+        <table class="table table-striped">
+            <tr>
+                <th>Year</th>
+                <th>Week</th>
+                <th>Open</th>
+                <th>Close</th>
+                <th>Submitted</th>
+                <th>Link</th>
+            </tr>
+
+            {% for ballot in ballots %}
+                {% if ballot.is_closed and ballot.is_submitted %}
+                    <tr>
+                        <td>{{ ballot.year }}</td>
+                        <td>{{ ballot.week }}</td>
+                        <td>
+                            {{ ballot.open_date|date:"D d M Y" }}
+                            {{ ballot.open_date|time:"H:i" }}
+                        </td>
+                        <td>
+                            {{ ballot.close_date|date:"D d M Y" }}
+                            {{ ballot.close_date|time:"H:i" }}
+                        </td>
+                        <td>
+                            {{ ballot.submission_date|date:"D d M Y" }}
+                            {{ ballot.submission_date|time:"H:i" }}
+                        </td>
+                        <td><a href="/ballot/{{ballot.pk}}/">View</a></td>
+                    </tr>
+                {% endif %}
+            {% endfor %}
+        </table>
+	</div>
+{% endblock %}

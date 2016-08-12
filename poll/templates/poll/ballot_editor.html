@@ -5,23 +5,59 @@
 {% block content %}
     <script src="{% static 'javascript/ballot.js' %}"></script>
 
+    {% if ballot.is_submitted %}
+        <div id="ballot-retract-dialog" class="modal fade" tabindex="-1" role="dialog">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h4 class="modal-title">Notice</h4>
+              </div>
+              <div id="retract-dialog-body" class="modal-body">
+                  <p>You have already submitted a ballot for this poll.</p>
+                  <p>You can still edit your ballot if you would like, but you'll need to retract it first.</p>
+                  <p>If you do choose to retract your ballot, you'll need to re-submit it once you're done making changes. Ballots that have been retracted without being resubmitted will not be counted in the poll and the week will count as a miss.</p>
+                  <p>Are you sure you'd like to retract your ballot?</p>
+              </div>
+              <div class="modal-footer">
+                <a class="btn btn-default" href="/ballot/{{ballot.pk}}">I just want to view it.</a>
+                <button id="leave-button" type="button" class="btn btn-default">Never mind.</button>
+                <button id="retract-button" type="button" class="btn btn-primary">Yes, retract my ballot.</button>
+              </div>
+            </div><!-- /.modal-content -->
+          </div><!-- /.modal-dialog -->
+        </div><!-- /.modal -->
+
+        <script type="text/javascript">
+            $(window).load(function(){
+                $('#ballot-retract-dialog').modal({
+                    backdrop: 'static',
+                    keyboard: false,
+                    show: true,
+                });
+            });
+        </script>
+    {% endif %}
+
 	<div class="container">
-		<h2>20XX Week X</h2>
+		<h2>
+            <span id="ballot-year">{{ballot.year}}</span>
+            <span id="ballot-week">{{ballot.week}}</span>
+        </h2>
 
 		<div class="form-group">
 			<label id="poll-type-label" for="poll-type">Poll Type:</label>
 			<select class="form-control" id="poll-type">
-				<option>(unspecified)</option>
-				<option>human</option>
-				<option>computer</option>
-				<option>hybrid</option>
+				<option {% if ballot.poll_type == '' %}selected{% endif %}>(unspecified)</option>
+				<option {% if ballot.poll_type == 'human' %}selected{% endif %}>human</option>
+				<option {% if ballot.poll_type == 'computer' %}selected{% endif %}>computer</option>
+				<option {% if ballot.poll_type == 'hybrid' %}selected{% endif %}>hybrid</option>
 			</select>
 		</div>
 
 		<div class="form-group">
 			<label id="overall-rationale-label" for="overall-rationale">Overall Rationale:</label>
 			<button class="btn btn-primary" id="overall-rationale-button" type="button" data-toggle="collapse" data-target="#overall-rationale" aria-expanded="false">Show/Hide</button>
-			<div id="overall-rationale" class="rationale collapse" type="text" contenteditable="true" aria-expanded="false"></div>
+			<div id="overall-rationale" class="rationale collapse" type="text" contenteditable="true" aria-expanded="false">{{ ballot.overall_rationale }}</div>
 		</div>
 
 		<div class="row">
@@ -30,8 +66,25 @@
 				<div id="alert-container"></div>
 
 				<div id="ballot-container">
-					<ol id="ballot"></ol>
+					<ol id="ballot">
+                        {% for entry in entries %}
+                            <li class="team">
+                                {% with "images/full60/"|add:entry.team.handle|add:".png" as static_img %}
+                                    <img class="team-logo" src="{% static static_img %}">
+                                {% endwith %}
+                                <span class="team-name">{{ entry.team.name }}</span>
+                                <button class="ui-icon ui-icon-closethick close-button"></button>
+                                <button class="btn btn-primary btn-xs rationale-button" type="button" data-toggle="collapse" data-target="#rationale-{{ entry.team.handle }}" aria-expanded="false">Reason</button>
+                                <div id="rationale-{{ entry.team.handle }}" class="rationale collapse" type="text" contenteditable="true" aria-expanded="false">{{ entry.rationale }}</div>
+                                <input type="hidden" class="team-handle" value="{{ entry.team.handle }}">
+                            </li>
+                        {% endfor %}
+                    </ol>
 				</div>
+
+                <form action="/save_ballot/" method="POST" id="ballot-save">
+                    <input class="btn btn-primary" type="submit" value="Save" id="save-button">
+                </form>
 			</div>
 			<div class="col-md-6">
 				<ul class="nav nav-tabs" role="tablist">
@@ -51,6 +104,7 @@
                                                 <img class="team-logo" src="{% static static_img %}">
                                             {% endwith %}
                                             <span class="team-name">{{ team.name }}</span>
+                                            <input type="hidden" class="team-handle" value="{{ team.handle }}">
                                         </li>
                                     {% endfor %}
                                 </ul>
@@ -64,6 +118,7 @@
                                                 <img class="team-logo" src="{% static static_img %}">
                                             {% endwith %}
                                             <span class="team-name">{{ team.name }}</span>
+                                            <input type="hidden" class="team-handle" value="{{ team.handle }}">
                                         </li>
                                     {% endfor %}
                                 </ul>
@@ -77,6 +132,7 @@
                                                 <img class="team-logo" src="{% static static_img %}">
                                             {% endwith %}
                                             <span class="team-name">{{ team.name }}</span>
+                                            <input type="hidden" class="team-handle" value="{{ team.handle }}">
                                         </li>
                                     {% endfor %}
                                 </ul>
@@ -90,6 +146,7 @@
                                                 <img class="team-logo" src="{% static static_img %}">
                                             {% endwith %}
                                             <span class="team-name">{{ team.name }}</span>
+                                            <input type="hidden" class="team-handle" value="{{ team.handle }}">
                                         </li>
                                     {% endfor %}
                                 </ul>
@@ -103,6 +160,7 @@
                                                 <img class="team-logo" src="{% static static_img %}">
                                             {% endwith %}
                                             <span class="team-name">{{ team.name }}</span>
+                                            <input type="hidden" class="team-handle" value="{{ team.handle }}">
                                         </li>
                                     {% endfor %}
                                 </ul>
@@ -116,6 +174,7 @@
                                                 <img class="team-logo" src="{% static static_img %}">
                                             {% endwith %}
                                             <span class="team-name">{{ team.name }}</span>
+                                            <input type="hidden" class="team-handle" value="{{ team.handle }}">
                                         </li>
                                     {% endfor %}
                                 </ul>
@@ -129,6 +188,7 @@
                                                 <img class="team-logo" src="{% static static_img %}">
                                             {% endwith %}
                                             <span class="team-name">{{ team.name }}</span>
+                                            <input type="hidden" class="team-handle" value="{{ team.handle }}">
                                         </li>
                                     {% endfor %}
                                 </ul>
@@ -136,12 +196,13 @@
 							<h3>Conference USA</h3>
 							<div>
 								<ul class="teamlist">
-                                    {% for team in teams.bigten %}
+                                    {% for team in teams.cusa %}
                                         <li class="team">
                                             {% with "images/full60/"|add:team.handle|add:".png" as static_img %}
                                                 <img class="team-logo" src="{% static static_img %}">
                                             {% endwith %}
                                             <span class="team-name">{{ team.name }}</span>
+                                            <input type="hidden" class="team-handle" value="{{ team.handle }}">
                                         </li>
                                     {% endfor %}
                                 </ul>
@@ -155,6 +216,7 @@
                                                 <img class="team-logo" src="{% static static_img %}">
                                             {% endwith %}
                                             <span class="team-name">{{ team.name }}</span>
+                                            <input type="hidden" class="team-handle" value="{{ team.handle }}">
                                         </li>
                                     {% endfor %}
                                 </ul>
@@ -168,6 +230,7 @@
                                                 <img class="team-logo" src="{% static static_img %}">
                                             {% endwith %}
                                             <span class="team-name">{{ team.name }}</span>
+                                            <input type="hidden" class="team-handle" value="{{ team.handle }}">
                                         </li>
                                     {% endfor %}
                                 </ul>
@@ -181,6 +244,7 @@
                                                 <img class="team-logo" src="{% static static_img %}">
                                             {% endwith %}
                                             <span class="team-name">{{ team.name }}</span>
+                                            <input type="hidden" class="team-handle" value="{{ team.handle }}">
                                         </li>
                                     {% endfor %}
                                 </ul>
@@ -194,6 +258,7 @@
                                                 <img class="team-logo" src="{% static static_img %}">
                                             {% endwith %}
                                             <span class="team-name">{{ team.name }}</span>
+                                            <input type="hidden" class="team-handle" value="{{ team.handle }}">
                                         </li>
                                     {% endfor %}
                                 </ul>
@@ -201,7 +266,12 @@
 						</div>
 					</div>
 					<div id="submit" class="tab-pane fade">
-						<input class="btn btn-primary" type="submit" value="Submit">
+                        <button class="btn btn-primary" id="validate-button" type="button">Lock & Validate</button>
+                        <button class="btn btn-primary" id="unlock-button" type="button">Unlock</button><br><br>
+                        <span id="validation-results"></span><br>
+                        <form action="/submit_ballot/" method="POST" id="ballot-submit">
+						    <input id="submit-button" class="btn btn-success" type="submit" value="Submit">
+                        </form>
 					</div>
 				</div>
 			</div>

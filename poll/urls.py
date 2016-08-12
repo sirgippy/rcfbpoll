@@ -4,6 +4,14 @@ from . import views
 urlpatterns = [
     url(r'^$', views.home, name='home'),
     url('', include('social.apps.django_app.urls', namespace='social')),
-    url(r'^ballot/', views.ballot, name='ballot'),
+    url(r'^edit_ballot/(?P<pk>\d+)/$', views.edit_ballot, name='edit_ballot'),
     url(r'^logout/$', views.logout),
+    url(r'^my_ballots/$', views.my_ballots),
+    url(r'^create_ballot/(?P<pk>\d+)/$', views.create_ballot, name='create_ballot'),
+    url(r'^edit_ballot/(?P<pk>\d+)/save_ballot/$', views.save_ballot, name='save_ballot'),
+    url(r'^edit_ballot/(?P<pk>\d+)/submit_ballot/$', views.submit_ballot, name='submit_ballot'),
+    url(r'^edit_ballot/(?P<pk>\d+)/retract_ballot/$', views.retract_ballot),
+    url(r'^ballot/(?P<pk>\d+)/$', views.view_ballot),
+    url(r'^poll/(?P<pk>\d+)/$', views.view_poll),
+    url(r'^poll/$', views.view_current_poll),
 ]

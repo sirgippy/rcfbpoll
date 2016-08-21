@@ -273,6 +273,6 @@ def send_message(request):
 
 
 def acme(request, challenge):
-    responses = os.environ.get('ACME-PAIRS').split(',')
+    responses = os.environ.get('ACME_PAIRS').split(',')
     challenges_and_responses = { x[:43]: x for x in responses }
     return HttpResponse(challenges_and_responses.get(challenge, "Not found!"))

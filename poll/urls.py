@@ -16,5 +16,5 @@ urlpatterns = [
     url(r'^poll/$', views.view_current_poll),
     url(r'^messenger/$', views.messenger),
     url(r'^messenger/send_message/$', views.send_message),
-    url(r'^.well-known/acme-challenge/(?P<challenge>[\w_\-]{43})$', views.acme, name='acme'),
+    url(r'^.well-known/acme-challenge/(?P<challenge>[\w_\-]{43}):$', views.acme, name='acme'),
 ]

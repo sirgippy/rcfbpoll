@@ -5,6 +5,7 @@ from django.contrib.auth import logout as auth_logout
 from django.utils import timezone
 from django.http import HttpResponse, HttpResponseBadRequest
 import json
+import os
 from urllib import unquote
 
 
@@ -259,3 +260,19 @@ def view_poll(request, pk):
                                                      'down_movers': down_movers,
                                                      'years': years,
                                                      'weeks': weeks})
+
+
+def messenger(request):
+    if not request.user.is_staff:
+        return HttpResponse('Unauthorized', status=401)
+    return render(request, 'poll/messenger.html')
+
+
+def send_message(request):
+    return redirect('/')
+
+
+def acme(request, challenge):
+    responses = os.environ.get('ACME-PAIRS').split(',')
+    challenges_and_responses = { x[:43]: x for x in responses }
+    return HttpResponse(challenges_and_responses.get(challenge, "Not found!"))

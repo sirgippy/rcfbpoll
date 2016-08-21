@@ -1,0 +1,27 @@
+{% extends 'poll/base.html' %}
+
+{% block content %}
+    <div class="container">
+		<h2>Messenger</h2>
+        <form action="send_message/" method="post">
+            <div class="form-group">
+                <label id="recipient-label">To:</label>
+                <select class="form-control" id="recipient">
+                    <option>Voters</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label id="title-label">Title:</label>
+                <input type="text" class="form-control" id="title">
+            </div>
+
+            <div class="form-group">
+                <label id="body-label">Message:</label>
+                <textarea class="form-control" id="message-body" rows="10"></textarea>
+            </div>
+            <button type="submit" class="btn btn-default">Send</button>
+        </form>
+        <span id="messenger-results"></span>
+	</div>
+{% endblock %}

@@ -51,6 +51,14 @@
 				<ul class="nav navbar-nav navbar-right">
                     {% if user and not user.is_anonymous %}
                         <p class="navbar-text">Welcome, {{user.username}}!</p>
+						{% if user.is_staff %}
+							<li class="dropdown">
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Admin<span class="caret"></span></a>
+								<ul class="dropdown-menu">
+									<li><a href="/messenger">Messenger</a></li>
+								</ul>
+							</li>
+						{% endif %}
                         <li role="separator" class="divider"></li>
                         <li><a href="/my_ballots">My Ballots</a></li>
                         <li role="separator" class="divider"></li>

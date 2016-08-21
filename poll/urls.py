@@ -14,4 +14,7 @@ urlpatterns = [
     url(r'^ballot/(?P<pk>\d+)/$', views.view_ballot),
     url(r'^poll/(?P<pk>\d+)/$', views.view_poll),
     url(r'^poll/$', views.view_current_poll),
+    url(r'^messenger/$', views.messenger),
+    url(r'^messenger/send_message/$', views.send_message),
+    url(r'^.well-known/acme-challenge/(?P<challenge>[\w_\-]{43})$', views.acme, name='acme'),
 ]

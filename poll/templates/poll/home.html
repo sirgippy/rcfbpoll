@@ -19,7 +19,7 @@
 			<div class="col-xs-12 col-md-6">
 				<h2>Current Top 25</h2>
 				<h3>{{ poll.year }} {{ poll.week }}</h3>
-                <table class="table table-striped" style="width: auto;">
+                <table class="table table-striped" style="width: auto;" id="current-results">
                     <tr>
                         <th>Rank</th>
                         <th>Change</th>
@@ -28,7 +28,7 @@
                     </tr>
                     {% for rank in top25 %}
                         <tr>
-                            <td>{{ rank.rank }}</td>
+                            <td id="team-rank">{{ rank.rank }}</td>
                             {% if rank.rank_diff == None or rank.rank|add:rank.rank_diff > 25 %}
                                 <td><strong>NEW</strong></td>
                             {% elif rank.rank_diff > 0 %}
@@ -38,13 +38,13 @@
                             {% else %}
                                 <td>--</td>
                             {% endif %}
-                            <td>
+                            <td id="team-name">
                                 {% with "images/full60/"|add:rank.team.handle|add:".png" as static_img %}
                                 <img class="team-logo" src="{% static static_img %}">
                                 {% endwith %}
                                 {{ rank.team.name }}
                             </td>
-                            <td>{{ rank.points }}</td>
+                            <td id="team-points">{{ rank.points }}</td>
                         </tr>
                     {% endfor %}
                 </table>

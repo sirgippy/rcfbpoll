@@ -4,3 +4,4 @@ gunicorn==19.4.5
 psycopg2==2.6.1
 whitenoise==3.2
 python-social-auth==0.2.19
+praw==3.5.0

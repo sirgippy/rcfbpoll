@@ -3,10 +3,11 @@ from .models import Team, Poll, Ballot, User, BallotEntry, PollCompare
 from django.db.models import Q
 from django.contrib.auth import logout as auth_logout
 from django.utils import timezone
-from django.http import HttpResponse, HttpResponseBadRequest
+from django.http import HttpResponse, HttpResponseBadRequest, HttpResponseForbidden
 import json
 import os
 from urllib import unquote
+from reddit import message_voters
 
 
 def home(request):
@@ -27,6 +28,9 @@ def home(request):
 
 
 def edit_ballot(request, pk):
+    if not request.user.is_authenticated():
+        return render(request, 'poll/login.html')
+
     ballot = Ballot.objects.get(pk=pk)
 
     ballot_user = ballot.user
@@ -244,6 +248,9 @@ def view_current_poll(request):
 def view_poll(request, pk):
     poll = Poll.objects.get(pk=pk)
 
+    if not poll.is_closed and not request.user.is_staff:
+        return HttpResponseForbidden()
+
     ranks = PollCompare.objects.filter(poll=poll).order_by('rank')
     top25 = ranks[0:25]
     others = ranks[25:]
@@ -264,12 +271,19 @@ def view_poll(request, pk):
 
 def messenger(request):
     if not request.user.is_staff:
-        return HttpResponse('Unauthorized', status=401)
+        return HttpResponseForbidden()
     return render(request, 'poll/messenger.html')
 
 
 def send_message(request):
-    return redirect('/')
+    username = request.user.username
+    social = request.user.social_auth.get(provider='reddit')
+    access_token = social.extra_data['access_token']
+    title = request.POST.get('title')
+    body = request.POST.get('message_body')
+    if request.POST.get('recipient') == 'Voters':
+        message_voters(username, access_token, title, body)
+    return HttpResponse()
 
 
 def acme(request, challenge):

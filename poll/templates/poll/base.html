@@ -56,17 +56,17 @@
 							<li class="dropdown">
 								<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Admin<span class="caret"></span></a>
 								<ul class="dropdown-menu">
-                                    <li><a href="/admin">Admin Console</a></li>
-									<li><a href="/messenger">Messenger</a></li>
+                                    <li><a href="/admin/">Admin Console</a></li>
+									<li><a href="/messenger/">Messenger</a></li>
 								</ul>
 							</li>
 						{% endif %}
                         <li role="separator" class="divider"></li>
-                        <li><a href="/my_ballots">My Ballots</a></li>
+                        <li><a href="/my_ballots/">My Ballots</a></li>
                         <li role="separator" class="divider"></li>
                         <li><a href="#">Settings</a></li>
                         <li role="separator" class="divider"></li>
-                        <li><a href="/logout">Logout</a></li>
+                        <li><a href="/logout/">Logout</a></li>
                     {% else %}
                         <li><a href="{% url 'social:begin' 'reddit' %}?next={{ request.path }}">Login</a></li>
                     {% endif %}

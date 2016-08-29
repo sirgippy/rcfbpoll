@@ -222,12 +222,34 @@ def view_ballot(request, pk):
     this_user = User.objects.get(username=request.user.username)
 
     if not ballot.is_closed and ballot.user != this_user:
-        return HttpResponse(status=403)
+        return HttpResponseForbidden()
 
     entries = ballot.ballotentry_set.all().order_by('rank')
 
+    user_ballots = Ballot.objects.filter(user=ballot.user, submission_date__isnull=False)
+    if ballot.user != this_user:
+        user_ballots = user_ballots.filter(poll__close_date__lt=timezone.now())
+    years = user_ballots.values_list('poll__year', flat=True).distinct().order_by('-poll__year')
+    weeks = user_ballots.filter(poll__year=ballot.year).values_list('poll__week', flat=True).order_by('-poll')
+
+    if ballot.is_closed:
+        users = Ballot.objects.filter(poll__year=ballot.year, poll__week=ballot.week).values_list('user__username', flat=True).order_by('user')
+    else:
+        users = [ballot.user.username]
+
     return render(request, 'poll/ballot_viewer.html', {'ballot': ballot,
-                                                       'entries': entries})
+                                                       'entries': entries,
+                                                       'years': years,
+                                                       'weeks': weeks,
+                                                       'users': users})
+
+
+def show_ballot(request):
+    username = request.GET.get('username')
+    year = request.GET.get('year')
+    week = request.GET.get('week')
+    ballot = Ballot.objects.get(user__username=username, poll__year=year, poll__week=week)
+    return redirect('/ballot/' + str(ballot.pk) + '/')
 
 
 def view_current_poll(request):

@@ -14,6 +14,9 @@ class User(models.Model):
     def is_a_voter(self):
         return UserRole.objects.filter(user=self, role='voter').exists()
 
+    class Meta:
+        ordering = ('username',)
+
 
 class UserRole(models.Model):
     user = models.ForeignKey('User')

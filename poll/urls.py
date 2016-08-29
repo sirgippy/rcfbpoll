@@ -12,6 +12,7 @@ urlpatterns = [
     url(r'^edit_ballot/(?P<pk>\d+)/submit_ballot/$', views.submit_ballot, name='submit_ballot'),
     url(r'^edit_ballot/(?P<pk>\d+)/retract_ballot/$', views.retract_ballot),
     url(r'^ballot/(?P<pk>\d+)/$', views.view_ballot),
+    url(r'^show_ballot/$', views.show_ballot),
     url(r'^poll/(?P<pk>\d+)/$', views.view_poll),
     url(r'^poll/$', views.view_current_poll),
     url(r'^messenger/$', views.messenger),

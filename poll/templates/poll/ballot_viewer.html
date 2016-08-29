@@ -3,10 +3,35 @@
 {% load staticfiles %}
 
 {% block content %}
+    <script src="{% static 'javascript/ballot_viewer.js' %}"></script>
     <div class="container">
-        <h1>{{ ballot.user.username }} {{ ballot.year }} {{ ballot.week }} Ballot Detail</h1>
+        <h2>Ballot Detail</h2>
+
+        <form id="ballot-selector" action="/show_ballot/" method="get">
+            <div class="form-group">
+                <label id="username-label" for="username-selector">Username:</label>
+                <select class="form-control" id="username-selector" name="username" form="ballot-selector" style="width: 200px">
+                    {% for user in users %}
+                        <option {% if user == ballot.user.username %}selected{% endif %}>{{ user }}</option>
+                    {% endfor %}
+                </select>
+            </div>
+            <label id="poll-selector-label" for="year-selector">Poll:</label>
+            <div class="form-group form-inline">
+                <select class="form-control" id="year-selector" name="year" form="ballot-selector" style="width: 100px">
+                    {% for year in years %}
+                        <option {% if year == ballot.year %}selected{% endif %}>{{ year }}</option>
+                    {% endfor %}
+                </select>
+                <select class="form-control" id="week-selector" name="week" form="ballot-selector" style="width: 150px">
+                    {% for week in weeks %}
+                        <option {% if week == ballot.week %}selected{% endif %}>{{ week }}</option>
+                    {% endfor %}
+                </select>
+            </div>
+        </form>
         <p>
-            <strong>Poll Type:</strong> {{ ballot.poll_type }}
+            <strong>Ballot Type:</strong> {{ ballot.poll_type }}
         </p>
         {% if not ballot.overall_rationale == None %}
             <p>
@@ -17,13 +42,13 @@
         <table class="table table-striped" style="width: auto;">
             <tr>
                 <th>Rank</th>
-                <th>Team</th>
+                <th style="width: 300px">Team</th>
                 <th>Reason</th>
             </tr>
             {% for entry in entries %}
                 <tr>
                     <td>{{ entry.rank }}</td>
-                    <td>
+                    <td style="width: 300px">
                         {% with "images/full60/"|add:entry.team.handle|add:".png" as static_img %}
                             <img class="team-logo" src="{% static static_img %}">
                         {% endwith %}

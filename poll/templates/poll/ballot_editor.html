@@ -45,7 +45,7 @@
         </h2>
 
 		<div class="form-group">
-			<label id="poll-type-label" for="poll-type">Poll Type:</label>
+			<label id="poll-type-label" for="poll-type">Ballot Type:</label>
 			<select class="form-control" id="poll-type">
 				<option {% if ballot.poll_type == '' %}selected{% endif %}>(unspecified)</option>
 				<option {% if ballot.poll_type == 'human' %}selected{% endif %}>human</option>

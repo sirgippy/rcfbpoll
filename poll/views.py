@@ -8,6 +8,8 @@ import json
 import os
 from urllib import unquote
 from reddit import message_voters
+from collections import defaultdict
+from math import ceil
 
 
 def home(request):
@@ -221,7 +223,7 @@ def view_ballot(request, pk):
 
     this_user = User.objects.get(username=request.user.username)
 
-    if not ballot.is_closed and ballot.user != this_user:
+    if not ballot.is_closed and ballot.user != this_user and not request.user.is_staff:
         return HttpResponseForbidden()
 
     entries = ballot.ballotentry_set.all().order_by('rank')
@@ -312,3 +314,108 @@ def acme(request, challenge):
     responses = os.environ.get('ACME_PAIRS').split(',')
     challenges_and_responses = { x[:43]: x for x in responses }
     return HttpResponse(challenges_and_responses.get(challenge, "Not found!"))
+
+
+def view_poll_ballots(request, pk, page=1):
+    poll = Poll.objects.get(pk=pk)
+
+    if not poll.is_closed and not request.user.is_staff:
+        return HttpResponseForbidden()
+
+    page = int(page)
+
+    ballot_ids = poll.ballot_set.filter(submission_date__isnull=False).values_list('pk', flat=True).order_by('user')
+    num_ballots = ballot_ids.count()
+
+    if page*5 < num_ballots:
+        this_page_ballots = ballot_ids[(page-1)*5:page*5]
+    else:
+        this_page_ballots = ballot_ids[(page-1)*5:num_ballots]
+
+    ballot_entries = BallotEntry.objects.filter(ballot__pk__in=this_page_ballots).values_list(
+        'ballot__pk', 'team__handle', 'team__short_name', 'rank'
+    )
+
+    ballot_dict = dict([(ballot_id, i) for i, ballot_id in enumerate(this_page_ballots)])
+
+    rank_dict = defaultdict(lambda: [""]*len(this_page_ballots))
+
+    for (ballot_id, handle, short_name, rank) in ballot_entries:
+        rank_dict[rank][ballot_dict[ballot_id]] = [handle, short_name]
+
+    rank_list = list(rank_dict.items())
+
+    ballots = Ballot.objects.filter(pk__in=this_page_ballots).order_by('user')
+
+    years = Poll.objects.filter(close_date__lt=timezone.now()).values_list('year', flat=True).distinct().order_by(
+        '-year')
+    weeks = Poll.objects.filter(year=poll.year).values_list('week', flat=True).order_by('-close_date')
+
+    num_pages = int(ceil(num_ballots/5.0))
+
+    pages = []
+    if page < 5:
+        for i in range(1, page):
+            pages.append(i)
+        if page >= num_pages - 4:
+            for i in range(page, num_pages+1):
+                pages.append(i)
+        else:
+            pages.append(page)
+            pages.append(page+1)
+            pages.append(page+2)
+            pages.append('...')
+            pages.append(num_pages)
+    elif page >= num_pages - 4:
+        pages = [1, '...', page-2, page-1]
+        for i in range(page, num_pages+1):
+            pages.append(i)
+    else:
+        pages = [1, '...', page-2, page-1, page, page+1, page+2, '...', num_pages]
+
+    return render(request, 'poll/poll_ballots.html', {'poll': poll,
+                                                      'page': page,
+                                                      'ballots': ballots,
+                                                      'rank_list': rank_list,
+                                                      'years': years,
+                                                      'weeks': weeks,
+                                                      'pages': pages,
+                                                      'num_pages': num_pages})
+
+
+def view_poll_voters(request, pk):
+    poll = Poll.objects.get(pk=pk)
+    ballots = poll.ballot_set.filter(submission_date__isnull=False).order_by('user__username')
+
+    years = Poll.objects.filter(close_date__lt=timezone.now()).values_list('year', flat=True).distinct().order_by(
+        '-year')
+    weeks = Poll.objects.filter(year=poll.year).values_list('week', flat=True).order_by('-close_date')
+
+    return render(request, 'poll/poll_voter_view.html', {'ballots': ballots,
+                                                         'years': years,
+                                                         'weeks': weeks,
+                                                         'poll': poll})
+
+
+def show_voters(request):
+    if request.GET.get('year'):
+        year = request.GET.get('year')
+        week = request.GET.get('week')
+        poll = Poll.objects.get(year=year, week=week)
+    else:
+        poll = Poll.objects.filter(close_date__lt=timezone.now()).order_by('-close_date')[0]
+    return redirect('/poll/' + str(poll.pk) + '/voters/')
+
+
+def show_ballots(request):
+    if request.GET.get('year'):
+        year = request.GET.get('year')
+        week = request.GET.get('week')
+        poll = Poll.objects.get(year=year, week=week)
+    else:
+        poll = Poll.objects.filter(close_date__lt=timezone.now()).order_by('-close_date')[0]
+    return redirect('/poll/' + str(poll.pk) + '/ballots/')
+
+
+def export_ballots(request, pk):
+    pass

@@ -37,6 +37,7 @@ class Team(models.Model):
     conference = models.CharField(max_length=60)
     division = models.CharField(max_length=50)
     use_for_ballot = models.BooleanField()
+    short_name = models.CharField(max_length=60)
 
     def __unicode__(self):
         return unicode(self.name)

@@ -57,7 +57,7 @@
                 <p>
                     <strong>Others Receiving Votes:</strong>
                     {% for rank in others %}
-                        {{ rank.team.name }} {{ rank.points }}{% if not forloop.last %},{% endif %}
+                        {{ rank.team.short_name }} {{ rank.points }}{% if not forloop.last %},{% endif %}
                     {% endfor %}
                 </p>
 			</div>
@@ -99,6 +99,14 @@
                         </tr>
                     {% endfor %}
                 </table>
+                <div>
+                    <h3>
+                        <a href="/poll/{{ poll.pk }}/ballots/">View Ballots >></a>
+                    </h3>
+                    <h3>
+                        <a href="/poll/{{ poll.pk }}/voters/">View Voter List >></a>
+                    </h3>
+                </div>
 			</div>
 		</div>
 	</div>

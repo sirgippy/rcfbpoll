@@ -1,0 +1,118 @@
+{% extends 'poll/base.html' %}
+{% load staticfiles %}
+{% block content %}
+    <div class="container">
+        <h2>{{ poll.year }} {{ poll.week }} Ballots</h2>
+
+        <form id="poll-selector" action="/show_ballots/" method="get">
+            <div class="form-group form-inline">
+                <select class="form-control" id="year-selector" name="year" form="poll-selector" style="width: 100px">
+                    {% for year in years %}
+                        <option {% if year == ballot.year %}selected{% endif %}>{{ year }}</option>
+                    {% endfor %}
+                </select>
+                <select class="form-control" id="week-selector" name="week" form="poll-selector" style="width: 150px">
+                    {% for week in weeks %}
+                        <option {% if week == ballot.week %}selected{% endif %}>{{ week }}</option>
+                    {% endfor %}
+                </select>
+            </div>
+        </form>
+
+		<table class="table table-striped">
+            <tr>
+                <th>User</th>
+                {% for ballot in ballots %}
+                    <th><a href="/ballot/{{ballot.pk}}">{{ ballot.user.username }}</a></th>
+                {% endfor %}
+            </tr>
+            <tr>
+                <th>Type</th>
+                {% for ballot in ballots %}
+                    <td>{{ ballot.poll_type }}</td>
+                {% endfor %}
+            </tr>
+            {% for rank_row in rank_list %}
+                <tr>
+                    <th>{{ rank_row.0 }}</th>
+                    {% for handle, short_name in rank_row.1 %}
+                        <td>
+                            {% with "images/full60/"|add:handle|add:".png" as static_img %}
+                                <img class="team-logo" src="{% static static_img %}">
+                            {% endwith %}
+                            {{ short_name }}
+                        </td>
+                    {% endfor %}
+                </tr>
+            {% endfor %}
+        </table>
+
+        <nav aria-label="Page navigation">
+            <ul class="pagination">
+                {% if page == 1 %}
+                    <li class="disabled">
+                        <a href="#" aria-label="Previous">
+                            <span aria-hidden="true">&laquo;</span>
+                        </a>
+                    </li>
+                {% else %}
+                    <li>
+                        <a href='/poll/{{poll.pk}}/ballots/{{page|add:"-1"}}/' aria-label="Previous">
+                            <span aria-hidden="true">&laquo;</span>
+                        </a>
+                    </li>
+                {% endif %}
+                {% for page_label in pages %}
+                    {% if page_label == page %}
+                        <li class="active">
+                            <span>{{ page_label }}<span class="sr-only">(current)</span></span>
+                        </li>
+                    {% elif page_label == '...' %}
+                        <li>
+                            <span>{{ page_label }}<span class="sr-only"></span></span>
+                        </li>
+                    {% else %}
+                        <li>
+                            <a href="/poll/{{poll.pk}}/ballots/{{page_label}}/">
+                                {{ page_label }}
+                            </a>
+                        </li>
+                    {% endif %}
+                {% endfor %}
+                {% if page == num_pages %}
+                    <li class="disabled">
+                        <a href="#" aria-label="Next">
+                            <span aria-hidden="true">&raquo;</span>
+                        </a>
+                    </li>
+                {% else %}
+                    <li>
+                        <a href='/poll/{{poll.pk}}/ballots/{{page|add:1}}/' aria-label="Previous">
+                            <span aria-hidden="true">&raquo;</span>
+                        </a>
+                    </li>
+                {% endif %}
+            </ul>
+        </nav>
+
+        <strong><a href="/poll/{{poll.pk}}/export_ballots/">Export All Ballots >></a></strong>
+        <br>
+        <h3>
+            <a href="/poll/{{ poll.pk }}/">Back to results >></a>
+        </h3>
+	</div>
+
+    <script>
+        $( function() {
+            $( "#year-selector" ).change(function() {
+                $("#poll-selector").submit()
+            });
+
+            $( "#week-selector" ).change(function() {
+                $("#poll-selector").submit()
+            });
+        });
+    </script>
+
+
+{% endblock %}

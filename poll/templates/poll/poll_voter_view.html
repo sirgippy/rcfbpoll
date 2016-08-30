@@ -1,0 +1,52 @@
+{% extends 'poll/base.html' %}
+{% load staticfiles %}
+{% block content %}
+    <script src="{% static 'javascript/jquery.columnizer.js' %}"></script>
+
+	<div class="container">
+        <h2>{{ poll.year }} {{ poll.week }} Voters</h2>
+
+        <form id="poll-selector" action="/show_voters/" method="get">
+            <div class="form-group form-inline">
+                <select class="form-control" id="year-selector" name="year" form="poll-selector" style="width: 100px">
+                    {% for year in years %}
+                        <option {% if year == ballot.year %}selected{% endif %}>{{ year }}</option>
+                    {% endfor %}
+                </select>
+                <select class="form-control" id="week-selector" name="week" form="poll-selector" style="width: 150px">
+                    {% for week in weeks %}
+                        <option {% if week == ballot.week %}selected{% endif %}>{{ week }}</option>
+                    {% endfor %}
+                </select>
+            </div>
+        </form>
+
+		<div id="voters">
+            {% for ballot in ballots %}
+                <div>
+                    <a href="/ballot/{{ ballot.pk }}/">{{ ballot.user.username }}</a>
+                </div>
+            {% endfor %}
+        </div>
+        <br>
+        <h3>
+            <a href="/poll/{{ poll.pk }}/">Back to results >></a>
+        </h3>
+	</div>
+
+    <script>
+        $( function() {
+            $( "#year-selector" ).change(function() {
+                $("#poll-selector").submit()
+            });
+
+            $( "#week-selector" ).change(function() {
+                $("#poll-selector").submit()
+            });
+
+            $('#voters').columnize({ columns: 5 });
+        });
+    </script>
+
+
+{% endblock %}

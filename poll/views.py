@@ -354,7 +354,7 @@ def view_poll_ballots(request, pk, page=1):
 
     years = Poll.objects.filter(close_date__lt=timezone.now()).values_list('year', flat=True).distinct().order_by(
         '-year')
-    weeks = Poll.objects.filter(year=poll.year).values_list('week', flat=True).order_by('-close_date')
+    weeks = Poll.objects.filter(year=poll.year, close_date__lt=timezone.now()).values_list('week', flat=True).order_by('-close_date')
 
     num_pages = int(ceil(num_ballots/5.0))
 
@@ -406,7 +406,10 @@ def show_voters(request):
     if request.GET.get('year'):
         year = request.GET.get('year')
         week = request.GET.get('week')
-        poll = Poll.objects.get(year=year, week=week)
+        if Poll.objects.filter(year=year, week=week, close_date__lt=timezone.now()).exists():
+            poll = Poll.objects.get(year=year, week=week)
+        else:
+            poll = Poll.objects.filter(year=year, close_date__lt=timezone.now()).order_by('-close_date')[0]
     else:
         poll = Poll.objects.filter(close_date__lt=timezone.now()).order_by('-close_date')[0]
     return redirect('/poll/' + str(poll.pk) + '/voters/')
@@ -416,7 +419,10 @@ def show_ballots(request):
     if request.GET.get('year'):
         year = request.GET.get('year')
         week = request.GET.get('week')
-        poll = Poll.objects.get(year=year, week=week)
+        if Poll.objects.filter(year=year, week=week, close_date__lt=timezone.now()).exists():
+            poll = Poll.objects.get(year=year, week=week)
+        else:
+            poll = Poll.objects.filter(year=year, close_date__lt=timezone.now()).order_by('-close_date')[0]
     else:
         poll = Poll.objects.filter(close_date__lt=timezone.now()).order_by('-close_date')[0]
     return redirect('/poll/' + str(poll.pk) + '/ballots/')

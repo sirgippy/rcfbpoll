@@ -8,12 +8,12 @@
             <div class="form-group form-inline">
                 <select class="form-control" id="year-selector" name="year" form="poll-selector" style="width: 100px">
                     {% for year in years %}
-                        <option {% if year == ballot.year %}selected{% endif %}>{{ year }}</option>
+                        <option {% if year == poll.year %}selected{% endif %}>{{ year }}</option>
                     {% endfor %}
                 </select>
                 <select class="form-control" id="week-selector" name="week" form="poll-selector" style="width: 150px">
                     {% for week in weeks %}
-                        <option {% if week == ballot.week %}selected{% endif %}>{{ week }}</option>
+                        <option {% if week == poll.week %}selected{% endif %}>{{ week }}</option>
                     {% endfor %}
                 </select>
             </div>

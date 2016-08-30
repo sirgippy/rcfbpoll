@@ -23,5 +23,6 @@ urlpatterns = [
     url(r'^show_ballots/$', views.show_ballots),
     url(r'^messenger/$', views.messenger),
     url(r'^messenger/send_message/$', views.send_message),
+    url(r'^about/$', views.about),
     url(r'^.well-known/acme-challenge/(?P<challenge>[\w_\-]{43})$', views.acme, name='acme'),
 ]

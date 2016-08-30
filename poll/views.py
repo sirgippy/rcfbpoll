@@ -236,7 +236,8 @@ def view_ballot(request, pk):
     weeks = user_ballots.filter(poll__year=ballot.year).values_list('poll__week', flat=True).order_by('-poll')
 
     if ballot.is_closed:
-        users = Ballot.objects.filter(poll__year=ballot.year, poll__week=ballot.week).values_list('user__username', flat=True).order_by('user')
+        users = Ballot.objects.filter(poll__year=ballot.year, poll__week=ballot.week).values_list(
+            'user__username', flat=True).order_by('user')
     else:
         users = [ballot.user.username]
 
@@ -282,8 +283,10 @@ def view_poll(request, pk):
     up_movers = ranks.order_by('-ppv_diff')[0:5]
     down_movers = ranks.order_by('ppv_diff')[0:5]
 
-    years = Poll.objects.filter(close_date__lt=timezone.now()).values_list('year', flat=True).distinct().order_by('-year')
-    weeks = Poll.objects.filter(year=poll.year).values_list('week', flat=True).order_by('-close_date')
+    years = Poll.objects.filter(close_date__lt=timezone.now()).values_list(
+        'year', flat=True).distinct().order_by('-year')
+    weeks = Poll.objects.filter(year=poll.year).values_list(
+        'week', flat=True).order_by('-close_date')
 
     return render(request, 'poll/poll_viewer.html', {'poll': poll,
                                                      'top25': top25,
@@ -313,7 +316,7 @@ def send_message(request):
 
 def acme(request, challenge):
     responses = os.environ.get('ACME_PAIRS').split(',')
-    challenges_and_responses = { x[:43]: x for x in responses }
+    challenges_and_responses = {x[:43]: x for x in responses}
     return HttpResponse(challenges_and_responses.get(challenge, "Not found!"))
 
 
@@ -325,7 +328,8 @@ def view_poll_ballots(request, pk, page=1):
 
     page = int(page)
 
-    ballot_ids = poll.ballot_set.filter(submission_date__isnull=False).values_list('pk', flat=True).order_by('user')
+    ballot_ids = poll.ballot_set.filter(submission_date__isnull=False).values_list(
+        'pk', flat=True).order_by('user')
     num_ballots = ballot_ids.count()
 
     if page*5 < num_ballots:
@@ -453,3 +457,7 @@ def export_ballots(request, pk):
         writer.writerow([unicode(s).encode('utf-8') for s in rank])
 
     return response
+
+
+def about(request):
+    return render(request, 'poll/about.html')

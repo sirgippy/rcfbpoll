@@ -10,6 +10,7 @@ from urllib import unquote
 from reddit import message_voters
 from collections import defaultdict
 from math import ceil
+import csv
 
 
 def home(request):
@@ -418,4 +419,37 @@ def show_ballots(request):
 
 
 def export_ballots(request, pk):
-    pass
+    poll = Poll.objects.get(pk=pk)
+
+    if not poll.is_closed and not request.user.is_staff:
+        return HttpResponseForbidden()
+
+    ballot_ids = poll.ballot_set.filter(submission_date__isnull=False).values_list('pk', flat=True).order_by('user')
+
+    ballot_entries = BallotEntry.objects.filter(ballot__pk__in=ballot_ids).values_list(
+        'ballot__pk', 'team__short_name', 'rank'
+    )
+
+    ballot_dict = dict([(ballot_id, i) for i, ballot_id in enumerate(ballot_ids)])
+
+    rank_dict = defaultdict(lambda: [""] * len(ballot_ids))
+
+    for (ballot_id, short_name, rank) in ballot_entries:
+        rank_dict[rank][ballot_dict[ballot_id]] = short_name
+
+    rank_list = list(rank_dict.items())
+    rank_list[:] = [[rank[0]] + rank[1] for rank in rank_list]
+
+    usernames = Ballot.objects.filter(pk__in=ballot_ids).values_list('user__username', flat=True).order_by('user')
+    types = Ballot.objects.filter(pk__in=ballot_ids).values_list('poll_type', flat=True).order_by('user')
+
+    response = HttpResponse(content_type='text/csv')
+    response['Content-Disposition'] = 'attachment; filename="ballots.csv"'
+
+    writer = csv.writer(response)
+    writer.writerow(['User'] + [username for username in usernames])
+    writer.writerow(['Type'] + [poll_type for poll_type in types])
+    for rank in rank_list:
+        writer.writerow([unicode(s).encode('utf-8') for s in rank])
+
+    return response

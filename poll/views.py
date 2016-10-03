@@ -1,5 +1,5 @@
 from django.shortcuts import render, redirect
-from .models import Team, Poll, Ballot, User, BallotEntry, PollCompare
+from .models import Team, Poll, Ballot, User, BallotEntry, PollCompare, PollPoints
 from django.db.models import Q
 from django.contrib.auth import logout as auth_logout
 from django.utils import timezone
@@ -66,6 +66,11 @@ def edit_ballot(request, pk):
 def create_ballot(request, pk):
     poll = Poll.objects.get(pk=pk)
     user = User.objects.get(username=request.user.username)
+
+    if Ballot.objects.filter(user=user, poll=poll).exists():
+        ballot = Ballot.objects.get(user=user, poll=poll)
+        return redirect('/edit_ballot/' + str(ballot.pk))
+
     new_ballot = Ballot(user=user, poll=poll)
     new_ballot.save()
     return redirect('/edit_ballot/' + str(new_ballot.pk))
@@ -472,3 +477,20 @@ def export_ballots(request, pk):
 
 def about(request):
     return render(request, 'poll/about.html')
+
+
+def view_team_reasons(request, poll_pk, team_pk):
+    poll = Poll.objects.get(pk=poll_pk)
+    team = Team.objects.get(pk=team_pk)
+
+    if not poll.is_closed and not request.user.is_staff:
+        return HttpResponseForbidden()
+
+    ballot_entries = BallotEntry.objects.filter(ballot__poll=poll,
+                                                ballot__submission_date__isnull=False,
+                                                team=team).order_by('rank', 'ballot__user__username')
+
+    return render(request, 'poll/team_reasons.html', {'entries': ballot_entries,
+                                                      'team': team,
+                                                      'poll': poll,
+                                                      })

@@ -24,5 +24,6 @@ urlpatterns = [
     url(r'^messenger/$', views.messenger),
     url(r'^messenger/send_message/$', views.send_message),
     url(r'^about/$', views.about),
+    url(r'^poll/(?P<poll_pk>\d+)/team/(?P<team_pk>\d+)/$', views.view_team_reasons),
     url(r'^.well-known/acme-challenge/(?P<challenge>[\w_\-]{43})$', views.acme, name='acme'),
 ]

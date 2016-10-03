@@ -28,8 +28,12 @@
                         <option {% if week == ballot.week %}selected{% endif %}>{{ week }}</option>
                     {% endfor %}
                 </select>
+                <span><a href="/poll/{{ ballot.poll.pk }}/">Go to poll results >></a></span>
             </div>
         </form>
+
+
+
         <p>
             <strong>Ballot Type:</strong> {{ ballot.poll_type }}
         </p>
@@ -49,10 +53,12 @@
                 <tr>
                     <td>{{ entry.rank }}</td>
                     <td style="width: 300px">
+                        <a href="/poll/{{ ballot.poll.pk }}/team/{{ entry.team.pk }}/">
                         {% with "images/full60/"|add:entry.team.handle|add:".png" as static_img %}
                             <img class="team-logo" src="{% static static_img %}">
                         {% endwith %}
                         {{ entry.team.name }}
+                        </a>
                     </td>
                     <td>
                         {% if not entry.rationale == None %}

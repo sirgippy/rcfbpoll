@@ -44,10 +44,12 @@
                                 <td>--</td>
                             {% endif %}
                             <td>
-                                {% with "images/full60/"|add:rank.team.handle|add:".png" as static_img %}
-                                <img class="team-logo" src="{% static static_img %}">
-                                {% endwith %}
-                                {{ rank.team.name }}
+                                <a href="/poll/{{ poll.pk }}/team/{{ rank.team.pk }}/">
+                                    {% with "images/full60/"|add:rank.team.handle|add:".png" as static_img %}
+                                    <img class="team-logo" src="{% static static_img %}">
+                                    {% endwith %}
+                                    {{ rank.team.name }}
+                                </a>
                             </td>
                             <td>{{ rank.points }}</td>
                             <td>{{ rank.ppv|floatformat:2 }}</td>
@@ -57,7 +59,11 @@
                 <p>
                     <strong>Others Receiving Votes:</strong>
                     {% for rank in others %}
-                        {{ rank.team.short_name }} {{ rank.points }}{% if not forloop.last %},{% endif %}
+                        <a href="/poll/{{ poll.pk }}/team/{{ rank.team.pk }}/">
+                            {{ rank.team.short_name }}
+                        </a>
+                        {{ rank.points }}
+                        {% if not forloop.last %},{% endif %}
                     {% endfor %}
                 </p>
 			</div>
@@ -72,10 +78,12 @@
                     {% for rank in up_movers %}
                         <tr>
                             <td>
+                                <a href="/poll/{{ poll.pk }}/team/{{ rank.team.pk }}/">
                                 {% with "images/full60/"|add:rank.team.handle|add:".png" as static_img %}
                                 <img class="team-logo" src="{% static static_img %}">
                                 {% endwith %}
                                 {{ rank.team.name }}
+                                </a>
                             </td>
                             <td style="color: green;">+{{ rank.ppv_diff|floatformat:2 }}</td>
                         </tr>
@@ -90,10 +98,12 @@
                     {% for rank in down_movers %}
                         <tr>
                             <td>
+                                <a href="/poll/{{ poll.pk }}/team/{{ rank.team.pk }}/">
                                 {% with "images/full60/"|add:rank.team.handle|add:".png" as static_img %}
                                 <img class="team-logo" src="{% static static_img %}">
                                 {% endwith %}
                                 {{ rank.team.name }}
+                                </a>
                             </td>
                             <td style="color: red;">{{ rank.ppv_diff|floatformat:2 }}</td>
                         </tr>

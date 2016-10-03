@@ -1,0 +1,43 @@
+{% extends 'poll/base.html' %}
+{% load staticfiles %}
+{% block content %}
+    <div class="container">
+        <h3>
+            <a href="/poll/{{ poll.pk }}/">Back to results >></a>
+        </h3>
+
+        <h3>
+            {{ poll.year }}
+            {{ poll.week }}
+            {% with "images/full60/"|add:team.handle|add:".png" as static_img %}
+                <img class="team-logo" src="{% static static_img %}">
+            {% endwith %}
+            {{ team.short_name}}
+            Votes
+        </h3>
+
+		<table class="table table-striped">
+            <tr>
+                <th>User</th>
+                <th>Rank</th>
+                <th>Reason</th>
+            </tr>
+            {% for entry in entries %}
+                <tr>
+                    <td>
+                        <a href="/ballot/{{ entry.ballot.pk }}/">
+                            {{ entry.ballot.user.username }}
+                        </a>
+                    </td>
+                    <td style="text-align: center;">{{ entry.rank }}</td>
+                    <td>{{ entry.rationale }}</td>
+                </tr>
+            {% endfor %}
+        </table>
+
+        <h3>
+            <a href="/poll/{{ poll.pk }}/">Back to results >></a>
+        </h3>
+	</div>
+
+{% endblock %}

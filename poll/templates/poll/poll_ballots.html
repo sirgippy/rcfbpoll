@@ -35,12 +35,14 @@
             {% for rank_row in rank_list %}
                 <tr>
                     <th>{{ rank_row.0 }}</th>
-                    {% for handle, short_name in rank_row.1 %}
+                    {% for team_id, handle, short_name in rank_row.1 %}
                         <td>
+                            <a href="/poll/{{ poll.pk }}/team/{{ team_id }}/">
                             {% with "images/full60/"|add:handle|add:".png" as static_img %}
                                 <img class="team-logo" src="{% static static_img %}">
                             {% endwith %}
                             {{ short_name }}
+                            </a>
                         </td>
                     {% endfor %}
                 </tr>

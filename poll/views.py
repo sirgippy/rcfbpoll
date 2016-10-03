@@ -348,15 +348,15 @@ def view_poll_ballots(request, pk, page=1):
         this_page_ballots = ballot_ids[(page-1)*5:num_ballots]
 
     ballot_entries = BallotEntry.objects.filter(ballot__pk__in=this_page_ballots).values_list(
-        'ballot__pk', 'team__handle', 'team__short_name', 'rank'
+        'ballot__pk', 'team__pk', 'team__handle', 'team__short_name', 'rank'
     )
 
     ballot_dict = dict([(ballot_id, i) for i, ballot_id in enumerate(this_page_ballots)])
 
     rank_dict = defaultdict(lambda: [""]*len(this_page_ballots))
 
-    for (ballot_id, handle, short_name, rank) in ballot_entries:
-        rank_dict[rank][ballot_dict[ballot_id]] = [handle, short_name]
+    for (ballot_id, team_id, handle, short_name, rank) in ballot_entries:
+        rank_dict[rank][ballot_dict[ballot_id]] = [team_id, handle, short_name]
 
     rank_list = list(rank_dict.items())
 

@@ -29,6 +29,8 @@ Then, install the other python package dependencies, e.g.
     pip install -r requirements.txt
     pip install -r requirements_local.txt
 
+(If you're on OS X and get a bug installing six, see [here](https://stackoverflow.com/a/37026323).)
+
 ### 2. Download and run the database
 
 Using django to provision a new database and have the site work is currently not possible as the site uses virtual models and queries are needed within the database to get the results views to work. Future versions may alleviate this requirement or provide scripts to get up and going, but at present we'll need a copy of the existing database.

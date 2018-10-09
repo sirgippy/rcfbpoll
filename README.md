@@ -35,7 +35,7 @@ Using django to provision a new database and have the site work is currently not
 
 A dump of the live site's database as of 10/8/2018 is [here](https://drive.google.com/open?id=1B0Am9pi0M-X5dKCQ41M3v5zURpb0-N0w).
 
-If you're using PostgreSQL, use `pg_restore` to install it. __Don't create a superuser yet;__ This will be done in a future step.
+If you're using PostgreSQL, use `pg_restore` to install it. Each match the credentials listed in `/rcfbpoll/settings/base.py` or adjust it to match the credentials as you set them up to be. __Don't create a superuser yet;__ This will be done in a future step.
 
 ### 3. Register your local deployment on reddit
 

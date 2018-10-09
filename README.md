@@ -22,12 +22,12 @@ Hoping to update to Python 3 soon but for now 🤷
 
 ### 1. Install the required dependencies
 
-e.g. 
+The site is currently configured to use PostgreSQL. If you don't already have it, install it first.
+
+Then, install the other python package dependencies, e.g. 
 
     pip install -r requirements.txt
     pip install -r requirements_local.txt
-    
-You'll also need to install a DBMS. The site is configured to use PostgreSQL, but I'm sure MySQL or SQLite will work if you're motivated enough.
 
 ### 2. Download and run the database
 

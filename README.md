@@ -8,13 +8,15 @@ This is the code repository for the /r/CFB Poll, hosted at https://poll.redditcf
 
 I like the added features of taiga.io versus the issue board on GitHub, so you can find the backlog [here](https://tree.taiga.io/project/gippy-rcfb-poll-website-rebuild/backlog) and an issue board [here](https://tree.taiga.io/project/gippy-rcfb-poll-website-rebuild/issues?page=1&orderBy=status).
 
-The site was developed using Ubuntu. It's probably possible to get it working in other OS environments, but would probably require some finagling. It's deployed to Heroku.
+The site was developed using Ubuntu, but has been confirmed to work on OS X and should be fine on any other \*nix. It's probably possible to get it working in Windows too, but would probably require some finagling. It's deployed to Heroku.
 
 The site exclusively uses [Python Social Auth](https://github.com/python-social-auth/social-core) and OAuth2 interactions on reddit to handle authentication. This is great from a poll management perspective, but can make administrative set-up and local deployment a bit more difficult.
 
 ## Installation & Setup
 
 ### -1. Get Python 2.7 if you don't already have it and set up your virtual environment
+
+I recommend using a virtual environment because some of the dependencies are old and probably shouldn't be your default versions.
 
 Hoping to update to Python 3 soon but for now 🤷
 

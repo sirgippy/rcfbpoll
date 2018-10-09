@@ -22,7 +22,7 @@ Hoping to update to Python 3 soon but for now 🤷
 
 ### 1. Install the required dependencies
 
-The site is currently configured to use PostgreSQL. If you don't already have it, install it first ([OS X setup tutorial](https://www.codementor.io/engineerapart/getting-started-with-postgresql-on-mac-osx-are8jcopb).
+The site is currently configured to use PostgreSQL. If you don't already have it, install it first ([OS X setup tutorial](https://www.codementor.io/engineerapart/getting-started-with-postgresql-on-mac-osx-are8jcopb)).
 
 Then, install the other python package dependencies, e.g. 
 

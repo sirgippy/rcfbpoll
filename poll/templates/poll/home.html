@@ -49,6 +49,14 @@
                         </tr>
                     {% endfor %}
                 </table>
+                {% if dropped and dropped.count > 0 %}
+                    <p>
+                        <strong>Dropped From Rankings:</strong>
+                        {% for rank in dropped %}
+                            {{ rank.rank }} {{ rank.team.short_name }}{% if not forloop.last %},{% endif %}
+                        {% endfor %}
+                    </p>
+                {% endif %}
                 <p>
                     <strong>Others Receiving Votes:</strong>
                     {% for rank in others %}

@@ -24,8 +24,8 @@ def home(request):
     down_movers = ranks.order_by('ppv_diff')[0:5]
 
     dropped = []
-    prev_poll = Poll.objects.get(pk=(int(most_recent_poll.pk)-1))
-    if prev_poll.year == most_recent_poll.year: # don't display dropped teams for first poll of year
+    prev_poll = most_recent_poll.last_week
+    if prev_poll is not None:
         prev_top25 = PollCompare.objects.filter(poll=prev_poll).order_by('rank')[0:25]
 
         teams = []
@@ -308,8 +308,8 @@ def view_poll(request, pk):
     down_movers = ranks.order_by('ppv_diff')[0:5]
 
     dropped = []
-    prev_poll = Poll.objects.get(pk=(int(poll.pk)-1))
-    if prev_poll.year == poll.year: # don't display dropped teams for first poll of year
+    prev_poll = poll.last_week
+    if prev_poll is not None:
         prev_top25 = PollCompare.objects.filter(poll=prev_poll).order_by('rank')[0:25]
 
         teams = []

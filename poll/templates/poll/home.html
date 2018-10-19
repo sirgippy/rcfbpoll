@@ -51,9 +51,9 @@
                 </table>
                 {% if dropped and dropped.count > 0 %}
                     <p>
-                        <strong>Dropped From Rankings:</strong>
+                        <strong>Dropped:</strong>
                         {% for rank in dropped %}
-                            {{ rank.rank }} {{ rank.team.short_name }}{% if not forloop.last %},{% endif %}
+                            #{{ rank.rank }} {{ rank.team.short_name }}{% if not forloop.last %},{% endif %}
                         {% endfor %}
                     </p>
                 {% endif %}

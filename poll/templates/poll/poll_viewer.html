@@ -58,13 +58,10 @@
                 </table>
                 {% if dropped and dropped.count > 0 %}
                     <p>
-                        <strong>Dropped From Rankings:</strong>
+                        <strong>Dropped:</strong>
                         {% for rank in dropped %}
-                            {{ rank.rank }}
-                            <a href="/poll/{{ poll.pk }}/team/{{ rank.team.pk }}/">
-                                {{ rank.team.short_name }}
-                            </a>
-                            {% if not forloop.last %},{% endif %}
+                            #{{ rank.rank }}
+                            {{ rank.team.short_name }}{% if not forloop.last %},{% endif %}
                         {% endfor %}
                     </p>
                 {% endif %}
@@ -74,8 +71,7 @@
                         <a href="/poll/{{ poll.pk }}/team/{{ rank.team.pk }}/">
                             {{ rank.team.short_name }}
                         </a>
-                        {{ rank.points }}
-                        {% if not forloop.last %},{% endif %}
+                        {{ rank.points }}{% if not forloop.last %},{% endif %}
                     {% endfor %}
                 </p>
             </div>

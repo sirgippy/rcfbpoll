@@ -23,11 +23,25 @@ def home(request):
     up_movers = ranks.order_by('-ppv_diff')[0:5]
     down_movers = ranks.order_by('ppv_diff')[0:5]
 
+    dropped = []
+    prev_poll = Poll.objects.get(pk=(int(most_recent_poll.pk)-1))
+    if prev_poll.year == most_recent_poll.year: # don't display dropped teams for first poll of year
+        prev_top25 = PollCompare.objects.filter(poll=prev_poll).order_by('rank')[0:25]
+
+        teams = []
+        for team in top25:
+            teams.append(team.team.pk)
+
+        for team in prev_top25:
+            if team.team.pk not in teams:
+                dropped.append(team)
+
     return render(request, 'poll/home.html', {'poll': most_recent_poll,
                                               'top25': top25,
                                               'others': others,
                                               'up_movers': up_movers,
-                                              'down_movers': down_movers})
+                                              'down_movers': down_movers,
+                                              'dropped': dropped})
 
 
 def edit_ballot(request, pk):
@@ -293,6 +307,19 @@ def view_poll(request, pk):
     up_movers = ranks.order_by('-ppv_diff')[0:5]
     down_movers = ranks.order_by('ppv_diff')[0:5]
 
+    dropped = []
+    prev_poll = Poll.objects.get(pk=(int(poll.pk)-1))
+    if prev_poll.year == poll.year: # don't display dropped teams for first poll of year
+        prev_top25 = PollCompare.objects.filter(poll=prev_poll).order_by('rank')[0:25]
+
+        teams = []
+        for team in top25:
+            teams.append(team.team.pk)
+
+        for team in prev_top25:
+            if team.team.pk not in teams:
+                dropped.append(team)
+
     years = Poll.objects.filter(close_date__lt=timezone.now()).values_list(
         'year', flat=True).distinct().order_by('-year')
     weeks = Poll.objects.filter(year=poll.year).values_list(
@@ -303,6 +330,7 @@ def view_poll(request, pk):
                                                      'others': others,
                                                      'up_movers': up_movers,
                                                      'down_movers': down_movers,
+                                                     'dropped': dropped,
                                                      'years': years,
                                                      'weeks': weeks})
 

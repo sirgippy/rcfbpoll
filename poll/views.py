@@ -1,6 +1,6 @@
 from django.shortcuts import render, redirect
 from .models import Team, Poll, Ballot, User, BallotEntry, PollCompare, PollPoints
-from django.db.models import Q, Value, IntegerField, Sum
+from django.db.models import Q, Sum
 from django.contrib.auth import logout as auth_logout
 from django.utils import timezone
 from django.http import HttpResponse, HttpResponseBadRequest, HttpResponseForbidden
@@ -29,6 +29,7 @@ def home(request):
     up_movers = ranks.order_by('-ppv_diff')[0:5]
     down_movers = ranks.order_by('ppv_diff')[0:5]
 
+    # Tally first-place votes by team
     votes = BallotEntry.objects.filter(ballot__poll=most_recent_poll, rank=1).values('team').annotate(total=Sum('rank'))
     fp_votes = {}
     for vote in votes:
@@ -320,6 +321,13 @@ def view_poll(request, pk):
     up_movers = ranks.order_by('-ppv_diff')[0:5]
     down_movers = ranks.order_by('ppv_diff')[0:5]
 
+    # Tally first-place votges by team
+    votes = BallotEntry.objects.filter(ballot__poll=poll, rank=1).values('team').annotate(total=Sum('rank'))
+    fp_votes = {}
+    for vote in votes:
+        fp_votes[vote['team']] = vote['total']
+
+    # Find teams dropped from last week's poll
     dropped = []
     prev_poll = poll.last_week
     if prev_poll is not None:
@@ -337,11 +345,6 @@ def view_poll(request, pk):
         'year', flat=True).distinct().order_by('-year')
     weeks = Poll.objects.filter(year=poll.year).values_list(
         'week', flat=True).order_by('-close_date')
-
-    votes = BallotEntry.objects.filter(ballot__poll=poll, rank=1).values('team').annotate(total=Sum('rank'))
-    fp_votes = {}
-    for vote in votes:
-        fp_votes[vote['team']] = vote['total']
 
     return render(request, 'poll/poll_viewer.html', {'poll': poll,
                                                      'top25': top25,

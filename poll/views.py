@@ -1,9 +1,10 @@
 from django.shortcuts import render, redirect
 from .models import Team, Poll, Ballot, User, BallotEntry, PollCompare, PollPoints
-from django.db.models import Q
+from django.db.models import Q, Value, IntegerField, Sum
 from django.contrib.auth import logout as auth_logout
 from django.utils import timezone
 from django.http import HttpResponse, HttpResponseBadRequest, HttpResponseForbidden
+from django.template.defaultfilters import register
 import json
 import os
 from urllib import unquote
@@ -12,6 +13,11 @@ from collections import defaultdict
 from math import ceil
 import csv
 
+@register.filter(name='lookup')
+def lookup(dict, index):
+    if index in dict:
+        return dict[index]
+    return ''
 
 def home(request):
     polls = Poll.objects.filter(close_date__lt=timezone.now()).order_by('-close_date')
@@ -23,6 +29,12 @@ def home(request):
     up_movers = ranks.order_by('-ppv_diff')[0:5]
     down_movers = ranks.order_by('ppv_diff')[0:5]
 
+    votes = BallotEntry.objects.filter(ballot__poll=most_recent_poll, rank=1).values('team').annotate(total=Sum('rank'))
+    fp_votes = {}
+    for vote in votes:
+        fp_votes[vote['team']] = vote['total']
+
+    # Find which teams dropped out from last week's poll
     dropped = []
     prev_poll = most_recent_poll.last_week
     if prev_poll is not None:
@@ -41,7 +53,8 @@ def home(request):
                                               'others': others,
                                               'up_movers': up_movers,
                                               'down_movers': down_movers,
-                                              'dropped': dropped})
+                                              'dropped': dropped,
+                                              'fp_votes': fp_votes})
 
 
 def edit_ballot(request, pk):
@@ -325,6 +338,11 @@ def view_poll(request, pk):
     weeks = Poll.objects.filter(year=poll.year).values_list(
         'week', flat=True).order_by('-close_date')
 
+    votes = BallotEntry.objects.filter(ballot__poll=poll, rank=1).values('team').annotate(total=Sum('rank'))
+    fp_votes = {}
+    for vote in votes:
+        fp_votes[vote['team']] = vote['total']
+
     return render(request, 'poll/poll_viewer.html', {'poll': poll,
                                                      'top25': top25,
                                                      'others': others,
@@ -332,7 +350,8 @@ def view_poll(request, pk):
                                                      'down_movers': down_movers,
                                                      'dropped': dropped,
                                                      'years': years,
-                                                     'weeks': weeks})
+                                                     'weeks': weeks,
+                                                     'fp_votes': fp_votes})
 
 
 def messenger(request):

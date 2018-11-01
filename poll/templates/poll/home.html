@@ -44,6 +44,9 @@
                                 <img class="team-logo" src="{% static static_img %}">
                                 {% endwith %}
                                 {{ rank.team.name }}
+                                {% if fp_votes|lookup:rank.team.pk %}
+                                    ({{ fp_votes|lookup:rank.team.pk }})
+                                {% endif %}
                             </td>
                             <td id="team-points">{{ rank.points }}</td>
                         </tr>

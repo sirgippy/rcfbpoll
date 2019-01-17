@@ -7,7 +7,3 @@ __pycache__
 db.sqlite3
 /.idea
 /Poll Data.ods
-.vscode
-rcfbpoll.dump
-Pipfile
-Pipfile.lock

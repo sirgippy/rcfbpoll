@@ -24,8 +24,8 @@ def home(request):
     most_recent_poll = polls[0]
 
     ranks = PollCompare.objects.filter(poll=most_recent_poll).order_by('rank')
-    top25 = ranks[0:25]
-    others = ranks[25:]
+    top25 = ranks.filter(rank__lte=25)
+    others = ranks.filter(rank__gt=25)
     up_movers = ranks.order_by('-ppv_diff')[0:5]
     down_movers = ranks.order_by('ppv_diff')[0:5]
 
@@ -39,7 +39,7 @@ def home(request):
     dropped = []
     prev_poll = most_recent_poll.last_week
     if prev_poll is not None:
-        prev_top25 = PollCompare.objects.filter(poll=prev_poll).order_by('rank')[0:25]
+        prev_top25 = PollCompare.objects.filter(poll=prev_poll, rank__lte=25).order_by('rank')
 
         teams = []
         for team in top25:
@@ -316,8 +316,8 @@ def view_poll(request, pk):
         return HttpResponseForbidden()
 
     ranks = PollCompare.objects.filter(poll=poll).order_by('rank')
-    top25 = ranks[0:25]
-    others = ranks[25:]
+    top25 = ranks.filter(rank__lte=25)
+    others = ranks.filter(rank__gt=25)
     up_movers = ranks.order_by('-ppv_diff')[0:5]
     down_movers = ranks.order_by('ppv_diff')[0:5]
 

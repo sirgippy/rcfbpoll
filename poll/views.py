@@ -12,6 +12,7 @@ from reddit import message_voters
 from collections import defaultdict
 from math import ceil
 import csv
+from proxy.views import proxy_view
 
 @register.filter(name='lookup')
 def lookup(dict, index):
@@ -544,3 +545,7 @@ def view_team_reasons(request, poll_pk, team_pk):
                                                       'team': team,
                                                       'poll': poll,
                                                       })
+
+
+def fcs_proxy(request):
+    return proxy_view(request, 'https://www.redditcfb.com/fcstop25.txt')

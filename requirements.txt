@@ -5,3 +5,4 @@ psycopg2==2.7
 whitenoise==3.2
 python-social-auth==0.2.19
 praw==6.0
+django-proxy==1.2.1

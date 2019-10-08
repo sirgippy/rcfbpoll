@@ -26,4 +26,5 @@ urlpatterns = [
     url(r'^about/$', views.about),
     url(r'^poll/(?P<poll_pk>\d+)/team/(?P<team_pk>\d+)/$', views.view_team_reasons),
     url(r'^.well-known/acme-challenge/(?P<challenge>[\w_\-]{43})$', views.acme, name='acme'),
+    url(r'^fcs/$', views.fcs_proxy)
 ]

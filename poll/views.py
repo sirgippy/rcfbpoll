@@ -14,11 +14,13 @@ from math import ceil
 import csv
 from proxy.views import proxy_view
 
+
 @register.filter(name='lookup')
 def lookup(dict, index):
     if index in dict:
         return dict[index]
     return ''
+
 
 def home(request):
     polls = Poll.objects.filter(close_date__lt=timezone.now()).order_by('-close_date')
@@ -31,7 +33,11 @@ def home(request):
     down_movers = ranks.order_by('ppv_diff')[0:5]
 
     # Tally first-place votes by team
-    votes = BallotEntry.objects.filter(ballot__poll=most_recent_poll, rank=1).values('team').annotate(total=Sum('rank'))
+    votes = BallotEntry.objects.filter(
+        ballot__poll=most_recent_poll,
+        ballot__submission_date__isnull=False,
+        rank=1
+    ).values('team').annotate(total=Sum('rank'))
     fp_votes = {}
     for vote in votes:
         fp_votes[vote['team']] = vote['total']
@@ -322,8 +328,12 @@ def view_poll(request, pk):
     up_movers = ranks.order_by('-ppv_diff')[0:5]
     down_movers = ranks.order_by('ppv_diff')[0:5]
 
-    # Tally first-place votges by team
-    votes = BallotEntry.objects.filter(ballot__poll=poll, rank=1).values('team').annotate(total=Sum('rank'))
+    # Tally first-place votes by team
+    votes = BallotEntry.objects.filter(
+        ballot__poll=poll,
+        ballot__submission_date__isnull=False,
+        rank=1
+    ).values('team').annotate(total=Sum('rank'))
     fp_votes = {}
     for vote in votes:
         fp_votes[vote['team']] = vote['total']

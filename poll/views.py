@@ -341,7 +341,7 @@ def view_poll(request, pk):
     dropped = []
     prev_poll = poll.last_week
     if prev_poll is not None:
-        prev_top25 = PollCompare.objects.filter(poll=prev_poll).order_by('rank')[0:25]
+        prev_top25 = PollCompare.objects.filter(poll=prev_poll, rank__lte=25).order_by('rank')
 
         teams = []
         for team in top25:

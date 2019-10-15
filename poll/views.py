@@ -7,7 +7,7 @@ from django.http import HttpResponse, HttpResponseBadRequest, HttpResponseForbid
 from django.template.defaultfilters import register
 import json
 import os
-from urllib import unquote
+from urllib.parse import unquote
 from collections import defaultdict
 from math import ceil
 import csv
@@ -120,7 +120,7 @@ def not_a_user(request):
 
 
 def my_ballots(request):
-    if not request.user.is_authenticated():
+    if not request.user.is_authenticated:
         return render(request, 'poll/login.html')
 
     this_user = User.objects.get(username=request.user.username)

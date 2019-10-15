@@ -1,4 +1,4 @@
-from rcfbpoll.settings.base import *
+from .base import *
 
 DEBUG = True
 INSTALLED_APPS += {

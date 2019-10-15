@@ -6,10 +6,10 @@ from django.utils import timezone
 
 class User(models.Model):
     username = models.CharField(max_length=32)
-    primary_affiliation = models.ForeignKey('Team', blank=True, null=True)
+    primary_affiliation = models.ForeignKey('Team', blank=True, null=True, on_delete=models.CASCADE)
 
-    def __unicode__(self):
-        return self.username
+    # def __unicode__(self):
+    #     return self.username
 
     def is_a_voter(self):
         return UserRole.objects.filter(user=self, role='voter').exists()
@@ -19,16 +19,16 @@ class User(models.Model):
 
 
 class UserRole(models.Model):
-    user = models.ForeignKey('User')
+    user = models.ForeignKey('User', on_delete=models.CASCADE)
     role = models.CharField(max_length=20)
 
-    def __unicode__(self):
-        return unicode(self.user) + ' ' + unicode(self.role)
+    # def __unicode__(self):
+    #     return unicode(self.user) + ' ' + unicode(self.role)
 
 
 class UserSecondaryAffiliations(models.Model):
-    user = models.ForeignKey('User')
-    team = models.ForeignKey('Team')
+    user = models.ForeignKey('User', on_delete=models.CASCADE)
+    team = models.ForeignKey('Team', on_delete=models.CASCADE)
 
 
 class Team(models.Model):
@@ -42,8 +42,8 @@ class Team(models.Model):
     class Meta:
         ordering = ('name',)
 
-    def __unicode__(self):
-        return unicode(self.name)
+    # def __unicode__(self):
+    #     return unicode(self.name)
 
 
 class Poll(models.Model):
@@ -51,10 +51,10 @@ class Poll(models.Model):
     week = models.CharField(max_length=20)
     open_date = models.DateTimeField()
     close_date = models.DateTimeField()
-    last_week = models.ForeignKey('Poll', blank=True, null=True)
+    last_week = models.ForeignKey('Poll', blank=True, null=True, on_delete=models.CASCADE)
 
-    def __unicode__(self):
-        return unicode(self.year) + ' ' + unicode(self.week)
+    # def __unicode__(self):
+    #     return unicode(self.year) + ' ' + unicode(self.week)
 
     @property
     def is_open(self):
@@ -69,8 +69,8 @@ class Poll(models.Model):
 
 
 class Ballot(models.Model):
-    user = models.ForeignKey('User')
-    poll = models.ForeignKey('Poll')
+    user = models.ForeignKey('User', on_delete=models.CASCADE)
+    poll = models.ForeignKey('Poll', on_delete=models.CASCADE)
     submission_date = models.DateTimeField(blank=True, null=True)
     poll_type = models.CharField(max_length=10,
                                  blank=True,
@@ -113,18 +113,18 @@ class Ballot(models.Model):
     def is_closed(self):
         return self.poll.is_closed
 
-    def __unicode__(self):
-        return unicode(self.poll) + ' ' + unicode(self.user)
+    # def __unicode__(self):
+    #     return unicode(self.poll) + ' ' + unicode(self.user)
 
 
 class BallotEntry(models.Model):
     rank = models.IntegerField()
-    ballot = models.ForeignKey('Ballot')
-    team = models.ForeignKey('Team')
+    ballot = models.ForeignKey('Ballot', on_delete=models.CASCADE)
+    team = models.ForeignKey('Team', on_delete=models.CASCADE)
     rationale = models.TextField(blank=True, null=True)
 
-    def __unicode__(self):
-        return unicode(self.ballot) + ' ' + unicode(self.rank) + ' ' + unicode(self.team)
+    # def __unicode__(self):
+    #     return unicode(self.ballot) + ' ' + unicode(self.rank) + ' ' + unicode(self.team)
 
 
 class PollPoints(models.Model):

@@ -8,8 +8,8 @@ class User(models.Model):
     username = models.CharField(max_length=32)
     primary_affiliation = models.ForeignKey('Team', blank=True, null=True, on_delete=models.CASCADE)
 
-    # def __unicode__(self):
-    #     return self.username
+    def __str__(self):
+        return self.username
 
     def is_a_voter(self):
         return UserRole.objects.filter(user=self, role='voter').exists()
@@ -22,8 +22,8 @@ class UserRole(models.Model):
     user = models.ForeignKey('User', on_delete=models.CASCADE)
     role = models.CharField(max_length=20)
 
-    # def __unicode__(self):
-    #     return unicode(self.user) + ' ' + unicode(self.role)
+    def __str__(self):
+        return str(self.user) + ' ' + str(self.role)
 
 
 class UserSecondaryAffiliations(models.Model):
@@ -42,8 +42,8 @@ class Team(models.Model):
     class Meta:
         ordering = ('name',)
 
-    # def __unicode__(self):
-    #     return unicode(self.name)
+    def __str__(self):
+        return str(self.name)
 
 
 class Poll(models.Model):
@@ -53,8 +53,8 @@ class Poll(models.Model):
     close_date = models.DateTimeField()
     last_week = models.ForeignKey('Poll', blank=True, null=True, on_delete=models.CASCADE)
 
-    # def __unicode__(self):
-    #     return unicode(self.year) + ' ' + unicode(self.week)
+    def __str__(self):
+        return str(self.year) + ' ' + str(self.week)
 
     @property
     def is_open(self):
@@ -113,8 +113,8 @@ class Ballot(models.Model):
     def is_closed(self):
         return self.poll.is_closed
 
-    # def __unicode__(self):
-    #     return unicode(self.poll) + ' ' + unicode(self.user)
+    def __str__(self):
+        return str(self.poll) + ' ' + str(self.user)
 
 
 class BallotEntry(models.Model):
@@ -123,8 +123,8 @@ class BallotEntry(models.Model):
     team = models.ForeignKey('Team', on_delete=models.CASCADE)
     rationale = models.TextField(blank=True, null=True)
 
-    # def __unicode__(self):
-    #     return unicode(self.ballot) + ' ' + unicode(self.rank) + ' ' + unicode(self.team)
+    def __str__(self):
+        return str(self.ballot) + ' ' + str(self.rank) + ' ' + str(self.team)
 
 
 class PollPoints(models.Model):

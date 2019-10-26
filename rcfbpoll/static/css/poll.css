@@ -20,9 +20,13 @@ body {
 	border-radius: 15px;
 }
 
-.team-name {
-	text-align: left;
-	margin-left: 5px;
+.team-container {
+    display: flex;
+    align-items: center;
+}
+
+.table.teams-table tr td {
+    vertical-align: middle;
 }
 
 #submit {
@@ -89,8 +93,7 @@ body {
 
 .team-logo {
     height: 25px;
-    width: auto;
-    margin-left: 10px;
+    margin-right: 8px;
 }
 
 #save-button{

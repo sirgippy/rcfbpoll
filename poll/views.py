@@ -9,7 +9,7 @@ import json
 import os
 from urllib import unquote
 from reddit import message_voters
-from collections import defaultdict
+from collections import defaultdict, OrderedDict
 from math import ceil
 import csv
 from proxy.views import proxy_view
@@ -79,23 +79,23 @@ def edit_ballot(request, pk):
     entries = ballot.ballotentry_set.all().order_by('rank')
 
     all_teams = Team.objects.filter(use_for_ballot=True)
-    teams = dict()
-    teams['acc'] = all_teams.filter(conference='ACC')
-    teams['bigten'] = all_teams.filter(conference='Big Ten')
-    teams['big12'] = all_teams.filter(conference='Big 12')
-    teams['pac12'] = all_teams.filter(conference='Pac-12')
-    teams['sec'] = all_teams.filter(conference='SEC')
-    teams['ind'] = all_teams.filter(conference='D1 Independents')
-    teams['aac'] = all_teams.filter(conference='American')
-    teams['cusa'] = all_teams.filter(conference='Conference USA')
-    teams['mac'] = all_teams.filter(conference='MAC')
-    teams['mwc'] = all_teams.filter(conference='Mountain West')
-    teams['sbc'] = all_teams.filter(conference='Sun Belt')
-    teams['other'] = all_teams.filter(~Q(division='FBS'))
+    team_groups = OrderedDict()
+    team_groups['ACC'] = all_teams.filter(conference='ACC')
+    team_groups['Big 12'] = all_teams.filter(conference='Big 12')
+    team_groups['Big Ten'] = all_teams.filter(conference='Big Ten')
+    team_groups['Pac 12'] = all_teams.filter(conference='Pac-12')
+    team_groups['SEC'] = all_teams.filter(conference='SEC')
+    team_groups['FBS Independents'] = all_teams.filter(conference='D1 Independents')
+    team_groups['American'] = all_teams.filter(conference='American')
+    team_groups['Conference USA'] = all_teams.filter(conference='Conference USA')
+    team_groups['MAC'] = all_teams.filter(conference='MAC')
+    team_groups['Mountain West'] = all_teams.filter(conference='Mountain West')
+    team_groups['Sun Belt'] = all_teams.filter(conference='Sun Belt')
+    team_groups['Select FCS Teams'] = all_teams.filter(~Q(division='FBS'))
 
     return render(request, 'poll/ballot_editor.html', {'ballot': ballot,
                                                        'entries': entries,
-                                                       'teams': teams})
+                                                       'team_groups': team_groups})
 
 
 def create_ballot(request, pk):

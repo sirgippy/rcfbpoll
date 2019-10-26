@@ -95,174 +95,22 @@
 				<div class="tab-content">
 					<div id="teams" class="tab-pane fade in active">
 						<div id="teams-accordion">
-							<h3>ACC</h3>
-							<div>
-								<ul class="teamlist">
-                                    {% for team in teams.acc %}
-                                        <li class="team">
-                                            {% with "images/full60/"|add:team.handle|add:".png" as static_img %}
-                                                <img class="team-logo" src="{% static static_img %}">
-                                            {% endwith %}
-                                            <span class="team-name">{{ team.name }}</span>
-                                            <input type="hidden" class="team-handle" value="{{ team.handle }}">
-                                        </li>
-                                    {% endfor %}
-                                </ul>
-							</div>
-							<h3>Big 12</h3>
-							<div>
-								<ul class="teamlist">
-                                    {% for team in teams.big12 %}
-                                        <li class="team">
-                                            {% with "images/full60/"|add:team.handle|add:".png" as static_img %}
-                                                <img class="team-logo" src="{% static static_img %}">
-                                            {% endwith %}
-                                            <span class="team-name">{{ team.name }}</span>
-                                            <input type="hidden" class="team-handle" value="{{ team.handle }}">
-                                        </li>
-                                    {% endfor %}
-                                </ul>
-							</div>
-							<h3>Big Ten</h3>
-							<div>
-								<ul class="teamlist">
-                                    {% for team in teams.bigten %}
-                                        <li class="team">
-                                            {% with "images/full60/"|add:team.handle|add:".png" as static_img %}
-                                                <img class="team-logo" src="{% static static_img %}">
-                                            {% endwith %}
-                                            <span class="team-name">{{ team.name }}</span>
-                                            <input type="hidden" class="team-handle" value="{{ team.handle }}">
-                                        </li>
-                                    {% endfor %}
-                                </ul>
-							</div>
-							<h3>Pac-12</h3>
-							<div>
-								<ul class="teamlist">
-                                    {% for team in teams.pac12 %}
-                                        <li class="team">
-                                            {% with "images/full60/"|add:team.handle|add:".png" as static_img %}
-                                                <img class="team-logo" src="{% static static_img %}">
-                                            {% endwith %}
-                                            <span class="team-name">{{ team.name }}</span>
-                                            <input type="hidden" class="team-handle" value="{{ team.handle }}">
-                                        </li>
-                                    {% endfor %}
-                                </ul>
-							</div>
-							<h3>SEC</h3>
-							<div>
-								<ul class="teamlist">
-                                    {% for team in teams.sec %}
-                                        <li class="team">
-                                            {% with "images/full60/"|add:team.handle|add:".png" as static_img %}
-                                                <img class="team-logo" src="{% static static_img %}">
-                                            {% endwith %}
-                                            <span class="team-name">{{ team.name }}</span>
-                                            <input type="hidden" class="team-handle" value="{{ team.handle }}">
-                                        </li>
-                                    {% endfor %}
-                                </ul>
-							</div>
-                            <h3>FBS Independents</h3>
-                            <div>
-                                <ul class="teamlist">
-                                    {% for team in teams.ind %}
-                                        <li class="team">
-                                            {% with "images/full60/"|add:team.handle|add:".png" as static_img %}
-                                                <img class="team-logo" src="{% static static_img %}">
-                                            {% endwith %}
-                                            <span class="team-name">{{ team.name }}</span>
-                                            <input type="hidden" class="team-handle" value="{{ team.handle }}">
-                                        </li>
-                                    {% endfor %}
-                                </ul>
-                            </div>
-							<h3>American</h3>
-							<div>
-								<ul class="teamlist">
-                                    {% for team in teams.aac %}
-                                        <li class="team">
-                                            {% with "images/full60/"|add:team.handle|add:".png" as static_img %}
-                                                <img class="team-logo" src="{% static static_img %}">
-                                            {% endwith %}
-                                            <span class="team-name">{{ team.name }}</span>
-                                            <input type="hidden" class="team-handle" value="{{ team.handle }}">
-                                        </li>
-                                    {% endfor %}
-                                </ul>
-							</div>
-							<h3>Conference USA</h3>
-							<div>
-								<ul class="teamlist">
-                                    {% for team in teams.cusa %}
-                                        <li class="team">
-                                            {% with "images/full60/"|add:team.handle|add:".png" as static_img %}
-                                                <img class="team-logo" src="{% static static_img %}">
-                                            {% endwith %}
-                                            <span class="team-name">{{ team.name }}</span>
-                                            <input type="hidden" class="team-handle" value="{{ team.handle }}">
-                                        </li>
-                                    {% endfor %}
-                                </ul>
-							</div>
-							<h3>MAC</h3>
-							<div>
-								<ul class="teamlist">
-                                    {% for team in teams.mac %}
-                                        <li class="team">
-                                            {% with "images/full60/"|add:team.handle|add:".png" as static_img %}
-                                                <img class="team-logo" src="{% static static_img %}">
-                                            {% endwith %}
-                                            <span class="team-name">{{ team.name }}</span>
-                                            <input type="hidden" class="team-handle" value="{{ team.handle }}">
-                                        </li>
-                                    {% endfor %}
-                                </ul>
-							</div>
-							<h3>Mountain West</h3>
-							<div>
-								<ul class="teamlist">
-                                    {% for team in teams.mwc %}
-                                        <li class="team">
-                                            {% with "images/full60/"|add:team.handle|add:".png" as static_img %}
-                                                <img class="team-logo" src="{% static static_img %}">
-                                            {% endwith %}
-                                            <span class="team-name">{{ team.name }}</span>
-                                            <input type="hidden" class="team-handle" value="{{ team.handle }}">
-                                        </li>
-                                    {% endfor %}
-                                </ul>
-							</div>
-							<h3>Sun Belt</h3>
-							<div>
-								<ul class="teamlist">
-                                    {% for team in teams.sbc %}
-                                        <li class="team">
-                                            {% with "images/full60/"|add:team.handle|add:".png" as static_img %}
-                                                <img class="team-logo" src="{% static static_img %}">
-                                            {% endwith %}
-                                            <span class="team-name">{{ team.name }}</span>
-                                            <input type="hidden" class="team-handle" value="{{ team.handle }}">
-                                        </li>
-                                    {% endfor %}
-                                </ul>
-							</div>
-							<h3>Select FCS Teams</h3>
-							<div>
-								<ul class="teamlist">
-                                    {% for team in teams.other %}
-                                        <li class="team">
-                                            {% with "images/full60/"|add:team.handle|add:".png" as static_img %}
-                                                <img class="team-logo" src="{% static static_img %}">
-                                            {% endwith %}
-                                            <span class="team-name">{{ team.name }}</span>
-                                            <input type="hidden" class="team-handle" value="{{ team.handle }}">
-                                        </li>
-                                    {% endfor %}
-                                </ul>
-							</div>
+                            {% for name, teams in team_groups.items %}
+                                <h3>{{ name }}</h3>
+                                <div>
+                                    <ul class="teamlist">
+                                        {% for team in teams %}
+                                            <li class="team">
+                                                {% with "images/full60/"|add:team.handle|add:".png" as static_img %}
+                                                    <img class="team-logo" src="{% static static_img %}">
+                                                {% endwith %}
+                                                <span class="team-name">{{ team.name }}</span>
+                                                <input type="hidden" class="team-handle" value="{{ team.handle }}">
+                                            </li>
+                                        {% endfor %}
+                                    </ul>
+                                </div>
+                            {% endfor %}
 						</div>
 					</div>
 					<div id="submit" class="tab-pane fade">

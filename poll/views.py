@@ -78,7 +78,7 @@ def edit_ballot(request, pk):
 
     entries = ballot.ballotentry_set.all().order_by('rank')
 
-    all_teams = Team.objects.filter(use_for_ballot=True)
+    all_teams = Team.objects.filter(use_for_ballot=True).order_by('name')
     teams = dict()
     teams['acc'] = all_teams.filter(conference='ACC')
     teams['bigten'] = all_teams.filter(conference='Big Ten')

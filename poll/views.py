@@ -519,7 +519,7 @@ def export_ballots(request, pk):
     writer.writerow(['User'] + [username for username in usernames])
     writer.writerow(['Type'] + [poll_type for poll_type in types])
     for rank in rank_list:
-        writer.writerow([unicode(s).encode('utf-8') for s in rank])
+        writer.writerow([str(s).encode('utf-8') for s in rank])
 
     return response
 

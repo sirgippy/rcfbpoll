@@ -14,7 +14,7 @@ The site exclusively uses [Python Social Auth](https://github.com/python-social-
 
 ## Installation & Setup
 
-### -1. Get Python 3.7 if you don't already have it and set up your virtual environment
+### -1. Get Python 3.9 if you don't already have it and set up your virtual environment
 
 I recommend using a virtual environment because it's good practice to make sure this project's dependencies don't conflict with another's.
 

@@ -21,8 +21,6 @@ urlpatterns = [
     url(r'^poll/(?P<pk>\d+)/export_ballots/$', views.export_ballots),
     url(r'^poll/(?P<pk>\d+)/ballots/(?P<page>\d+)/$', views.view_poll_ballots),
     url(r'^show_ballots/$', views.show_ballots),
-    url(r'^messenger/$', views.messenger),
-    url(r'^messenger/send_message/$', views.send_message),
     url(r'^about/$', views.about),
     url(r'^poll/(?P<poll_pk>\d+)/team/(?P<team_pk>\d+)/$', views.view_team_reasons),
     url(r'^.well-known/acme-challenge/(?P<challenge>[\w_\-]{43})$', views.acme, name='acme'),

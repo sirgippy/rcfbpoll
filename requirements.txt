@@ -4,6 +4,5 @@ gunicorn==19.5.0
 psycopg2==2.8
 whitenoise==3.2
 python-social-auth==0.2.19
-praw==6.0.0
 django-proxy==1.2.1
 update-checker==0.16

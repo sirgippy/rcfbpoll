@@ -8,7 +8,6 @@ from django.template.defaultfilters import register
 import json
 import os
 from urllib import unquote
-from reddit import message_voters
 from collections import defaultdict
 from math import ceil
 import csv
@@ -372,17 +371,6 @@ def messenger(request):
     if not request.user.is_staff:
         return HttpResponseForbidden()
     return render(request, 'poll/messenger.html')
-
-
-def send_message(request):
-    username = request.user.username
-    social = request.user.social_auth.get(provider='reddit')
-    access_token = social.extra_data['access_token']
-    title = request.POST.get('title')
-    body = request.POST.get('message_body')
-    if request.POST.get('recipient') == 'Voters':
-        message_voters(username, access_token, title, body)
-    return HttpResponse()
 
 
 def acme(request, challenge):

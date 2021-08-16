@@ -3,7 +3,7 @@ from . import views
 
 urlpatterns = [
     url(r'^$', views.home, name='home'),
-    url('', include('social.apps.django_app.urls', namespace='social')),
+    url('', include('social_django.urls', namespace='social')),
     url(r'^edit_ballot/(?P<pk>\d+)/$', views.edit_ballot, name='edit_ballot'),
     url(r'^logout/$', views.logout),
     url(r'^my_ballots/$', views.my_ballots),

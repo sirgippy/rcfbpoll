@@ -4,7 +4,7 @@ import csv
 try:
     conn = psycopg2.connect("dbname='rcfbpoll' user='sirgippy' host='localhost' password='password'")
 except:
-    print "I am unable to connect to the database"
+    print("I am unable to connect to the database")
 
 cur = conn.cursor()
 
@@ -22,7 +22,7 @@ with open('./csvs/ballots.csv', 'rb') as csvfile:
         try:
             user_id = cur.fetchone()[0]
         except:
-            print username
+            print(username)
             raise ValueError("Don't recognize user.")
         poll_type = row[3]
         cur.execute("""INSERT INTO poll_ballot(poll_type,poll_id,user_id,submission_date) VALUES (%s,%s,%s,%s)""",
@@ -38,7 +38,7 @@ with open('./csvs/ballots.csv', 'rb') as csvfile:
             try:
                 team_id = cur.fetchone()[0]
             except:
-                print team_handle
+                print(team_handle)
                 raise ValueError("Don't recognize team.")
 
             cur.execute("""INSERT INTO poll_ballotentry(rank,ballot_id,team_id) VALUES (%s,%s,%s)""",

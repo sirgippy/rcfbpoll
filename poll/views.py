@@ -7,7 +7,7 @@ from django.http import HttpResponse, HttpResponseBadRequest, HttpResponseForbid
 from django.template.defaultfilters import register
 import json
 import os
-from urllib import unquote
+from urllib.parse import unquote
 from collections import defaultdict
 from math import ceil
 import csv
@@ -65,7 +65,7 @@ def home(request):
 
 
 def edit_ballot(request, pk):
-    if not request.user.is_authenticated():
+    if not request.user.is_authenticated:
         return render(request, 'poll/login.html')
 
     ballot = Ballot.objects.get(pk=pk)
@@ -120,7 +120,7 @@ def not_a_user(request):
 
 
 def my_ballots(request):
-    if not request.user.is_authenticated():
+    if not request.user.is_authenticated:
         return render(request, 'poll/login.html')
 
     this_user = User.objects.get(username=request.user.username)
@@ -261,7 +261,7 @@ def retract_ballot(request, pk):
 def view_ballot(request, pk):
     ballot = Ballot.objects.get(pk=pk)
 
-    if request.user.is_authenticated():
+    if request.user.is_authenticated:
         this_user = User.objects.get(username=request.user.username)
 
         if not ballot.is_closed and ballot.user != this_user and not request.user.is_staff:
@@ -274,7 +274,7 @@ def view_ballot(request, pk):
     entries = ballot.ballotentry_set.all().order_by('rank')
 
     user_ballots = Ballot.objects.filter(user=ballot.user, submission_date__isnull=False)
-    if not request.user.is_authenticated() or ballot.user != this_user:
+    if not request.user.is_authenticated or ballot.user != this_user:
         user_ballots = user_ballots.filter(poll__close_date__lt=timezone.now())
     years = user_ballots.values_list('poll__year', flat=True).distinct().order_by('-poll__year')
     weeks = user_ballots.filter(poll__year=ballot.year).values_list('poll__week', flat=True).order_by('-poll')
@@ -341,7 +341,7 @@ def view_poll(request, pk):
     dropped = []
     prev_poll = poll.last_week
     if prev_poll is not None:
-        prev_top25 = PollCompare.objects.filter(poll=prev_poll).order_by('rank')[0:25]
+        prev_top25 = PollCompare.objects.filter(poll=prev_poll, rank__lte=25).order_by('rank')
 
         teams = []
         for team in top25:
@@ -519,7 +519,7 @@ def export_ballots(request, pk):
     writer.writerow(['User'] + [username for username in usernames])
     writer.writerow(['Type'] + [poll_type for poll_type in types])
     for rank in rank_list:
-        writer.writerow([unicode(s).encode('utf-8') for s in rank])
+        writer.writerow([str(s).encode('utf-8') for s in rank])
 
     return response
 

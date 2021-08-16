@@ -4,7 +4,7 @@ import csv
 try:
     conn = psycopg2.connect("dbname='rcfbpoll' user='sirgippy' host='localhost' password='password'")
 except:
-    print "I am unable to connect to the database"
+    print("I am unable to connect to the database")
 
 cur = conn.cursor()
 
